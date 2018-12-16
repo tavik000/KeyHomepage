@@ -1445,12 +1445,13 @@ span.border.two:after {
 		margin-right: 5em;
 		min-height: 433px;
 	}
-	#work{
+	#work,.blog{
      padding: 0 0;
+	}
+  #work{
+    background:;
   }
-  .blog{
-     padding: 0 0;
-  }
+
 	.footer {
 		min-height: 650px;
 		padding: 4em 0 0em 0;
