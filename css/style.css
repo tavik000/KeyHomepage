@@ -1448,6 +1448,9 @@ span.border.two:after {
 	#work,.blog{
      padding: 0 0;
 	}
+  #work{
+    background-image: url(../images/texture.png);
+  }
 	.footer {
 		min-height: 650px;
 		padding: 4em 0 0em 0;
