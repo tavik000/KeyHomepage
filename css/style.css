@@ -1445,9 +1445,12 @@ span.border.two:after {
 		margin-right: 5em;
 		min-height: 433px;
 	}
-	#work,.blog{
+	#work{
      padding: 0 0;
-	}
+  }
+  .blog{
+     padding: 0 0;
+  }
 	.footer {
 		min-height: 650px;
 		padding: 4em 0 0em 0;
