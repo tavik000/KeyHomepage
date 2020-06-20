@@ -1452,7 +1452,7 @@ span.border.two:after {
 		min-height: 433px;
 	}
 	#work,.blog{
-     padding: 0 0;
+     /* padding: 0 0; */
 	}
   #work{
     background-image: url(../images/texture.png);
