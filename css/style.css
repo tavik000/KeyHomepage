@@ -66,6 +66,10 @@ body h1,h2,h3,h4,h5,h6{
 span.menu{
 	display:none;
 }
+
+.highlight-glow{
+	color: gold !important;
+}
 /*-- nav-hover --*/
 .link-effect-3 a {
 	padding: 10px 0;
@@ -89,6 +93,8 @@ span.menu{
 	-moz-transition: max-width 0.5s;
 	transition: max-width 0.5s;
 }
+
+
 .link-effect-3 a:hover::before {
 	max-width: 100%;
 }
@@ -687,7 +693,8 @@ h4.timeline-title a {
 h4.timeline-content {
     margin: 0;
     padding: 5px 0;
-	color:rgb(176, 221, 215);
+	color:rgb(40, 59, 92);
+	font-size: medium;
 }
 h4.timeline-title a:hover {
     color: #00C6D7;
@@ -1450,9 +1457,6 @@ span.border.two:after {
 		float: right;
 		margin-right: 5em;
 		min-height: 433px;
-	}
-	#work,.blog{
-     /* padding: 0 0; */
 	}
   #work{
     background-image: url(../images/texture.png);
