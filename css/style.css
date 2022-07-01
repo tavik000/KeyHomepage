@@ -1237,7 +1237,7 @@ right: 30px;
 #awards {
   padding:5em 0 0 0;
   background: #08090B;
-  height:600px;
+  height:1200px;
 }
 .award-year {
 color: #171617;
@@ -1268,6 +1268,7 @@ color: #fff !important;
 }
 .awards .timeline-panel {
   border-bottom: 5px solid #2E71C2;
+  padding-top: 50px;
 }
 
 .awards-button {
