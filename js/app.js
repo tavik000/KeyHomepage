@@ -13,9 +13,9 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 jQuery(document).ready(function($) {
  $(".img-thumb").hover(function() {
-        $(this).find(".img-caption").fadeIn(200)
+        $(this).find(".img-cover").addClass("active")
     }, function() {
-        $(this).find(".img-caption").fadeOut(200)
+        $(this).find(".img-cover").removeClass("active")
     });
 })
 
