@@ -120,12 +120,6 @@ span.menu {
 	max-width: 100%;
 }
 
-.book {
-	padding: 0;
-	margin: auto;
-    margin-bottom: 200px;
-    margin-top: 100px;
-}
 
 /*--banner-info--*/
 .banner-info {
@@ -1537,10 +1531,61 @@ ul {
 
 /*-- //awards --*/
 
+/*-- books --*/
 #books {
 	padding: 5em 0 0 0;
-	background: #08090B;
+	background: #1c1b1b;
 }
+
+.book {
+	padding: 0;
+	margin: 30px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+	box-shadow: 0px 20px 50px #555;
+}
+
+#inner-box
+{
+   width:300px; /* or whatever width you want. */
+   max-width:300px; /* or whatever width you want. */
+   height: 375px;
+   max-height: 375px;
+   display: inline-block;
+}
+
+.img-shadow-1:hover
+{
+transform:scale(1.1);
+-webkit-transform:scale(1.1);
+-moz-transform:scale(1.1);
+-ms-transform:scale(1.1);
+-o-transform:scale(1.1);
+
+-webkit-box-shadow: 0 58px 36px -56px black;
+-moz-box-shadow: 0 58px 36px -56px black;
+box-shadow: 0 58px 36px -56px black;
+}
+
+.img-shadow-1
+{
+transition:all .6s ease-in-out;
+-webkit-transition:all .6s ease-in-out;
+-moz-transition:all .6s ease-in-out;
+-ms-transition:all .6s ease-in-out;
+-o-transition:all .6s ease-in-out;
+}
+
+.img-shadow-1:hover
+{
+transition:all .6s ease-in-out;
+-webkit-transition:all .6s ease-in-out;
+-moz-transition:all .6s ease-in-out;
+-ms-transition:all .6s ease-in-out;
+-o-transition:all .6s ease-in-out;
+}
+
+/*-- //books --*/
 /*-- contact --*/
 .mail_us {
 	margin-bottom: 50px;
