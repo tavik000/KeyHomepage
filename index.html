@@ -23,7 +23,9 @@
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
 				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
 			});
 		});
 	</script>
@@ -60,7 +62,8 @@
 									<li><a class="scroll" data-hover="books" href="#books">Books</a></li>
 									<li><a data-hover="Blog" target="_blank"
 											href="https://blog-c5014.firebaseapp.com">Blog</a></li>
-									<li><a class="scroll notranslate" data-hover="Contact" href="#contact">Contact</a></li>
+									<li><a class="scroll notranslate" data-hover="Contact" href="#contact">Contact</a>
+									</li>
 								</ul>
 							</nav>
 							<!-- script-for-menu -->
@@ -75,23 +78,25 @@
 						</div>
 						<div class="clearfix"></div>
 
-									<li><div id="google_translate_element"></div></li>
-									
- 
-									<script type="text/javascript">
-										function googleTranslateElementInit() {
-											new google.translate.TranslateElement(
-												{pageLanguage: 'en', includedLanguages : 'ja,zh-TW,zh-CN,ko' },
-												'google_translate_element'
-											);
-										}
-									</script>
-								 
-									<script type="text/javascript"
-											src=
-								"https://translate.google.com/translate_a/element.js?
+						<li>
+							<div id="google_translate_element"></div>
+						</li>
+
+
+						<script type="text/javascript">
+							function googleTranslateElementInit() {
+								new google.translate.TranslateElement({
+										pageLanguage: 'en',
+										includedLanguages: 'ja,zh-TW,zh-CN,ko'
+									},
+									'google_translate_element'
+								);
+							}
+						</script>
+
+						<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
 								cb=googleTranslateElementInit">
-									</script>
+						</script>
 					</div>
 
 				</div>
@@ -150,14 +155,15 @@
 						<li>
 							<ul class="address-text">
 								<li><b class="notranslate">RESUME(JA)</b></li>
-								<li><a href="assets/Key_GameEngineer_Rirekisho_Combined_Homepage_Feb2024.pdf" class="btn-rounded-white"
-										target="_blank">Download Resume</a></li>
+								<li><a href="assets/Key_GameEngineer_Rirekisho_Combined_Homepage_Feb2024.pdf"
+										class="btn-rounded-white" target="_blank">Download Resume</a></li>
 							</ul>
 						</li>
 						<li>
 							<ul class="address-text">
 								<li><b>SOCIAL MEDIA</b></li>
-								<li><a href="https://linktr.ee/keyzhao"><i class="glyphicon glyphicon-tree-conifer"></i> Linktree</a></li>
+								<li><a href="https://linktr.ee/keyzhao"><i class="glyphicon glyphicon-tree-conifer"></i>
+										Linktree</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -187,10 +193,9 @@
 					$('#horizontalTab').easyResponsiveTabs({
 						type: 'default', //Types: default, vertical, accordion           
 						width: 'auto', //auto or any width like 600px
-						fit: true   // 100% fit in a container
+						fit: true // 100% fit in a container
 					});
 				});
-
 			</script>
 			<div class="sap_tabs">
 				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
@@ -511,7 +516,8 @@
 							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
 								<div class="col-md-4 team-gd img-thumb">
 									<div class="img-caption">
-										<h3 class="text-center">Apeiron</h3><span class="text-center">Platform: Windows <br>
+										<h3 class="text-center">Apeiron</h3><span class="text-center">Platform: Windows
+											<br>
 											Game Engine: Unity <br>Genre: NFT Action RTS Card Battle Game </span><a
 											target="_blank" rel="noopener noreferrer"
 											href="https://store.epicgames.com/en-US/p/apeiron-b83793"
@@ -522,12 +528,12 @@
 								</div>
 								<div class="col-md-4 team-gd img-thumb">
 									<div class="img-caption">
-										<h3 class="text-center">Every Hero</h3><span class="text-center">Platform: Android / iOS
-											<br>Game Engine: Unity <br>Genre: Rogue-lite, Action RPG, Hack & Slash 
+										<h3 class="text-center">Every Hero</h3><span class="text-center">Platform:
+											Android / iOS
+											<br>Game Engine: Unity <br>Genre: Rogue-lite, Action RPG, Hack & Slash
 											<br><strong>Reach App Store Action Game Ranking No.2
-											<br>Reach 1 million players</strong> </span>
-											<a
-											target="_blank" rel="noopener noreferrer"
+												<br>Reach 1 million players</strong> </span>
+										<a target="_blank" rel="noopener noreferrer"
 											href="https://apps.apple.com/us/app/every-hero-ultimate-action/id1525597044"
 											class="btn btn-primary btn-block" title="App Store">View project<i
 												class="fa fa-chevron-circle-right fa-align-right"></i></a>
@@ -549,10 +555,10 @@
 									<div class="img-caption">
 										<h3 class="text-center">Blite</h3><span class="text-center">Platform: Windows
 											<br>Game Engine: Unity
-											<br>Genre: Puzzle, 2D Platformer 
-											<br><strong>Global Game Jam Hong Kong Best Original game Award</strong></span>
-											<a
-											target="_blank" rel="noopener noreferrer"
+											<br>Genre: Puzzle, 2D Platformer
+											<br><strong>Global Game Jam Hong Kong Best Original game
+												Award</strong></span>
+										<a target="_blank" rel="noopener noreferrer"
 											href="https://www.youtube.com/watch?v=YRxEiL2IRiU"
 											class="btn btn-primary btn-block" title="STEAM">View project<i
 												class="fa fa-chevron-circle-right fa-align-right"></i></a>
@@ -562,23 +568,23 @@
 								<div class="clearfix"></div>
 								<div class="col-md-4 team-gd img-thumb">
 									<div class="img-caption">
-										<h3 class="text-center">GUARDS!</h3><span class="text-center">Platform: Windows <br>
+										<h3 class="text-center">GUARDS!</h3><span class="text-center">Platform: Windows
+											<br>
 											Game Engine: Unreal Engine <br>
 											Genre: Action, Hack & Slash, Multiplayer <br>
-											Role: QA, Localization</span><a
-											target="_blank" rel="noopener noreferrer"
+											Role: QA, Localization</span><a target="_blank" rel="noopener noreferrer"
 											href="https://store.steampowered.com/app/2514460/GUARDS/"
 											class="btn btn-primary btn-block" title="Video">View project<i
 												class="fa fa-chevron-circle-right fa-align-right"></i></a>
 									</div>
 									<img class="img-cover" src="images/pic29.png" alt="">
-								</div>	
+								</div>
 								<div class="col-md-4 team-gd img-thumb">
 									<div class="img-caption">
 										<h3 class="text-center">Doki Doki House</h3>
 										<span class="text-center">
 											Platform: Android / iOS / Windows<br>
-											Game Engine: Unity, Renpy <br>	
+											Game Engine: Unity, Renpy <br>
 											Role: Tool Development
 										</span><a target="_blank" rel="noopener noreferrer"
 											href="https://apps.apple.com/hk/app/心跳度假屋/id1604558574"
@@ -593,9 +599,9 @@
 											Platform: Windows<br>
 											Tool: World Editor<br>
 											Genre: Racing, Action, Multiplayer<br>
-											Warcraft3 Custom Map 
-										 </span><a target="_blank"
-											rel="noopener noreferrer" href="https://github.com/tavik000/HeroRace"
+											Warcraft3 Custom Map
+										</span><a target="_blank" rel="noopener noreferrer"
+											href="https://github.com/tavik000/HeroRace"
 											class="btn btn-primary btn-block" title="GITHUB">View project<i
 												class="fa fa-chevron-circle-right fa-align-right"></i></a>
 									</div>
@@ -605,12 +611,11 @@
 								<div class="col-md-4 team-gd img-thumb">
 									<div class="img-caption">
 										<h3 class="text-center">The Lost Strings</h3><span class="text-center">
-										Platform: Windows / Android / iOS<br>
-										Game Engine: Unity<br>
-										Genre: 2D Platformer, Action, Multiplayer, Puzzle<br>
-										Freelance Project
-										</span><a
-											target="_blank" rel="noopener noreferrer"
+											Platform: Windows / Android / iOS<br>
+											Game Engine: Unity<br>
+											Genre: 2D Platformer, Action, Multiplayer, Puzzle<br>
+											Freelance Project
+										</span><a target="_blank" rel="noopener noreferrer"
 											href="https://store.steampowered.com/app/1128750/The_Lost_Strings"
 											class="btn btn-primary btn-block" title="STEAM">View project<i
 												class="fa fa-chevron-circle-right fa-align-right"></i></a>
@@ -624,8 +629,8 @@
 											Game Engine: Unity<br>
 											Genre: Action, Simulation<br>
 											Global Game Jam 2019 Project
-											</span><a target="_blank"
-											rel="noopener noreferrer" href="https://github.com/tavik000/HomeSleepHome"
+										</span><a target="_blank" rel="noopener noreferrer"
+											href="https://github.com/tavik000/HomeSleepHome"
 											class="btn btn-primary btn-block" title="GITHUB">View project<i
 												class="fa fa-chevron-circle-right fa-align-right"></i></a>
 									</div>
@@ -637,8 +642,7 @@
 											Platform: iOS<br>
 											Game Engine: Unity<br>
 											Genre: Puzzle
-											</span><a
-											target="_blank" rel="noopener noreferrer"
+										</span><a target="_blank" rel="noopener noreferrer"
 											href="https://github.com/tavik000/ColorPicking"
 											class="btn btn-primary btn-block" title="GITHUB">View project<i
 												class="fa fa-chevron-circle-right fa-align-right"></i></a>
@@ -666,8 +670,8 @@
 											Platform: Windows<br>
 											Game Engine: Untiy<br>
 											Genre: Action
-											</span><a target="_blank"
-											rel="noopener noreferrer" href="https://github.com/tavik000/KappyBird"
+										</span><a target="_blank" rel="noopener noreferrer"
+											href="https://github.com/tavik000/KappyBird"
 											class="btn btn-primary btn-block" title="GITHUB">View project<i
 												class="fa fa-chevron-circle-right fa-align-right"></i></a>
 									</div>
@@ -840,7 +844,7 @@
 										<h3 class="text-center">Doki Doki House</h3>
 										<span class="text-center">
 											Platform: Android / iOS / Windows<br>
-											Game Engine: Unity, Renpy <br>	
+											Game Engine: Unity, Renpy <br>
 											Role: Tool Development
 										</span><a target="_blank" rel="noopener noreferrer"
 											href="https://apps.apple.com/hk/app/心跳度假屋/id1604558574"
@@ -1045,10 +1049,10 @@
 				<h3>MY <span>SERVICES</span></h3>
 				<span class="border two"></span>
 			</div> -->
-			<!-- services-grids -->
-			<!-- <div class="wthree_about_right_grids w3l-agile"> -->
-				<!-- <div class="row"> -->
-					<!-- <div class="col-md-6 wthree_about_right_grid">
+	<!-- services-grids -->
+	<!-- <div class="wthree_about_right_grids w3l-agile"> -->
+	<!-- <div class="row"> -->
+	<!-- <div class="col-md-6 wthree_about_right_grid">
 						<div class="col-xs-4 wthree_about_right_grid_left">
 							<div class="hvr-rectangle-in">
 								<i class="glyphicon glyphicon-globe"></i>
@@ -1074,9 +1078,9 @@
 						<div class="clearfix"> </div>
 					</div>
 				</div> -->
-				<!-- <div class="row"> -->
-					<!-- <div class="col-md-6 wthree_about_right_grid"> -->
-						<!-- <div class="col-xs-4 wthree_about_right_grid_left">
+	<!-- <div class="row"> -->
+	<!-- <div class="col-md-6 wthree_about_right_grid"> -->
+	<!-- <div class="col-xs-4 wthree_about_right_grid_left">
 							<div class="hvr-rectangle-in">
 								<i class="glyphicon glyphicon-tower"></i>
 							</div>
@@ -1086,8 +1090,8 @@
 							<p>Unreal Engine 5, Unity3D, WorldEditor for Warcraft3.<br><br></p>
 						</div>
 						<div class="clearfix"> </div> -->
-					<!-- </div> -->
-					<!-- <div class="col-md-6 wthree_about_right_grid">
+	<!-- </div> -->
+	<!-- <div class="col-md-6 wthree_about_right_grid">
 						<div class="col-xs-4 wthree_about_right_grid_left">
 							<div class="hvr-rectangle-in">
 								<i class="glyphicon glyphicon-cog"></i>
@@ -1100,11 +1104,11 @@
 						</div>
 						<div class="clearfix"> </div>
 					</div> -->
-				<!-- </div>
+	<!-- </div>
 			</div>
 			<div class="clearfix"> </div> -->
-			<!-- services-grids -->
-		<!-- </div>
+	<!-- services-grids -->
+	<!-- </div>
 	</div> -->
 	<!-- services -->
 
@@ -1120,7 +1124,8 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="skills-item row-md-3">
-							<h4 class="skills-long-item"><i class="fab fa-html5"></i> HTML / CSS / JavaScript / TypeScript</h4>
+							<h4 class="skills-long-item"><i class="fab fa-html5"></i> HTML / CSS / JavaScript /
+								TypeScript</h4>
 							<div class="skills-star">
 								<i>4 years</i>
 								<!-- <i class="glyphicon glyphicon-star"></i>
@@ -1344,7 +1349,8 @@
 							</div>
 							<div class="timeline-body">
 								<p>​Msc in Information Technology</p>
-								<p>Mainly focus on Artificial Intelligence, Machine Learning. and joined course of Game Design and Game Development</p>
+								<p>Mainly focus on Artificial Intelligence, Machine Learning. and joined course of Game
+									Design and Game Development</p>
 							</div>
 						</div>
 					</li>
@@ -1485,7 +1491,10 @@
 							<div class="wpb_wrapper">
 								<div class="wpb_text_column wpb_content_element  award-year">
 									<div class="wpb_wrapper">
-										<p>2022</p>
+										<p>
+											2022
+											<i class="fas fa-award"></i>
+										</p>
 									</div>
 								</div>
 								<div class="wpb_raw_code wpb_content_element wpb_raw_html award-name">
@@ -1506,7 +1515,10 @@
 							<div class="wpb_wrapper">
 								<div class="wpb_text_column wpb_content_element  award-year">
 									<div class="wpb_wrapper">
-										<p>2022</p>
+										<p>
+											2022
+											<i class="fas fa-award"></i>
+										</p>
 									</div>
 								</div>
 								<div class="wpb_raw_code wpb_content_element wpb_raw_html award-name">
@@ -1515,7 +1527,6 @@
 											<li><a href="https://globalgamejam.org/2022/games/blite-6"
 													class="awards-button" title="Information">Blite</a></li>
 											<li>Best Original Game</li>
-											<li></li>
 											<li>Global Game Jam Hong Kong 2022</li>
 										</ul>
 									</div>
@@ -1528,7 +1539,10 @@
 							<div class="wpb_wrapper">
 								<div class="wpb_text_column wpb_content_element  award-year">
 									<div class="wpb_wrapper">
-										<p>2018</p>
+										<p>
+											2018
+											<i class="fas fa-award"></i>
+										</p>
 									</div>
 								</div>
 
@@ -1551,8 +1565,10 @@
 							<div class="wpb_wrapper">
 								<div class="wpb_text_column wpb_content_element  award-year">
 									<div class="wpb_wrapper">
-										<p>2015</p>
-
+										<p>
+											2015
+											<i class="fas fa-award"></i>
+										</p>
 									</div>
 								</div>
 
@@ -1583,34 +1599,35 @@
 				<span class="border two"></span>
 			</div>
 			<!-- <div class="row"> -->
-				<!-- <div class="col-md-12 col-md-offset-3"> -->
+			<!-- <div class="col-md-12 col-md-offset-3"> -->
 
-				<div class="img-shadow-1 book" id="inner-box">
-					<a href="https://www.amazon.co.jp/Designing-Games-Guide-Engineering-Experiences/dp/1449337937/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2PDRUBI6LY52G&keywords=designing+games+tynan&qid=1697424735&s=books&sprefix=designing+games+tynan%2Cstripbooks%2C147&sr=1-1">
-						<img src="images/DesigningGamesCover.png" alt="" width="300" height="375">
-					</a>
+			<div class="img-shadow-1 book" id="inner-box">
+				<a
+					href="https://www.amazon.co.jp/Designing-Games-Guide-Engineering-Experiences/dp/1449337937/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2PDRUBI6LY52G&keywords=designing+games+tynan&qid=1697424735&s=books&sprefix=designing+games+tynan%2Cstripbooks%2C147&sr=1-1">
+					<img src="images/DesigningGamesCover.png" alt="" width="300" height="375">
+				</a>
 
-				</div>
+			</div>
 
-				<div class="img-shadow-1 book" id="inner-box">
-					<a href="https://gameprogrammingpatterns.com">
-						<img src="images/GameProgrammingPatternsCover.jpg" alt="" width="300" height="375">
-					</a>
+			<div class="img-shadow-1 book" id="inner-box">
+				<a href="https://gameprogrammingpatterns.com">
+					<img src="images/GameProgrammingPatternsCover.jpg" alt="" width="300" height="375">
+				</a>
 
-				</div>
+			</div>
 
-				<div class="img-shadow-1 book" id="inner-box">
-					<a href="https://www.amazon.co.jp/-/en/Robert-C-Martin/dp/0132350882">
-						<img src="images/CleanCodeCover.jpg" alt="" width="300" height="375">
-					</a>
-				</div>
+			<div class="img-shadow-1 book" id="inner-box">
+				<a href="https://www.amazon.co.jp/-/en/Robert-C-Martin/dp/0132350882">
+					<img src="images/CleanCodeCover.jpg" alt="" width="300" height="375">
+				</a>
+			</div>
 
-				<!-- </div> -->
+			<!-- </div> -->
 
 		</div>
 	</div>
 	<!-- //books -->
-	
+
 	<!-- top-grids -->
 	<div class="blog" id="blogs">
 		<a target="_blank" href="https://blog-c5014.firebaseapp.com">
@@ -1691,7 +1708,7 @@
 	</div>
 	</div>
 	<footer>
-		<div class="Cntr">                
+		<div class="Cntr">
 			<p class="notranslate">COPYRIGHT &copy; 2018 KEY</p>
 		</div>
 		</div>
