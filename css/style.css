@@ -961,6 +961,11 @@ ul.year li:nth-child(5) {
 	background: -webkit-radial-gradient(top left, #225DA2FF, #32172C);
 }
 
+.skills-title {
+	color: white;
+	margin-bottom: 1em;
+}
+
 .skills i {
 	color: white;
 }
@@ -1039,7 +1044,9 @@ ul.year li:nth-child(5) {
 	font-size: 1.8em;
 	font-family: 'Asap', sans-serif;
 	margin: 0;
-	#163CA0FF padding: 0;
+	#163CA0FF {
+		padding: 0;
+	}
 }
 
 .portfolio-head h2 span {
@@ -1291,7 +1298,7 @@ div#portfolioModal10 {
 	right: 0;
 	bottom: 70%;
 	font-size: 30px;
-	color: #white;
+	color: white;
 }
 
 .img-thumb .img-caption span {
@@ -1410,7 +1417,7 @@ div#portfolioModal10 {
 	top: 25px;
 	right: 25px;
 	width: 45px;
-	height: 45px background-color: transparent;
+	height: 45px; background-color: transparent;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -2087,6 +2094,7 @@ footer .Cntr {
 		max-height: 32px;
 		/* fallback */
 		-webkit-line-clamp: 2;
+		line-clamp: 2;
 		/* number of lines to show */
 		-webkit-box-orient: vertical;
 	}
