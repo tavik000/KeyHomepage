@@ -1541,18 +1541,19 @@ ul {
 /*-- books --*/
 #books {
 	padding: 5em 0 0 0;
+	padding-bottom: 200px;
 	background: #1c1b1b;
 }
 
 .book {
 	padding: 0;
 	margin: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
     margin-top: 100px;
 	box-shadow: 0px 20px 50px #555;
 }
 
-#inner-box
+.inner-box
 {
    width:300px; /* or whatever width you want. */
    max-width:300px; /* or whatever width you want. */
