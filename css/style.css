@@ -789,7 +789,7 @@ span.border.one:after {
 .timeline>li {
 	margin-bottom: 10px;
 	position: relative;
-	height: 157px;
+	height: 190px;
 }
 
 .timeline>li:before,
@@ -919,7 +919,7 @@ ul.year {
 
 ul.year li {
 	list-style: none;
-	margin-top: 30px;
+	margin-top: 45px;
 	font-size: 1em;
 	color: #fff;
 	text-align: center;
@@ -930,19 +930,19 @@ ul.year li {
 }
 
 ul.year li:nth-child(2) {
-	margin-top: 119px;
+	margin-top: 155px;
 }
 
 ul.year li:nth-child(3) {
-	margin-top: 129px;
+	margin-top: 155px;
 }
 
 ul.year li:nth-child(4) {
-	margin-top: 116px;
+	margin-top: 155px;
 }
 
 ul.year li:nth-child(5) {
-	margin-top: 112px;
+	margin-top: 155px;
 }
 
 .timeline-badge.success i {
