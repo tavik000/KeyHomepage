@@ -120,6 +120,11 @@ span.menu {
 	max-width: 100%;
 }
 
+.translate-element {
+    transform: scale(1.5); 
+    transform-origin: top left; 
+}
+
 
 /*--banner-info--*/
 .banner-info {
