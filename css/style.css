@@ -1308,7 +1308,7 @@ div#portfolioModal10 {
 	border-radius: 25px;
 	z-index: 999;
 	transition: all ease 0.2s;
-	transform: scale(1.8) translateX(295px);
+	transform: scale(1.8) translateX(295px) translateY(60px);
 	pointer-events: none;
 }
 
