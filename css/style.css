@@ -121,8 +121,8 @@ span.menu {
 }
 
 .translate-element {
-    transform: scale(1.5); 
-    transform-origin: top left; 
+	transform: scale(1.5);
+	transform-origin: top left;
 }
 
 
@@ -1049,6 +1049,7 @@ ul.year li:nth-child(5) {
 	font-size: 1.8em;
 	font-family: 'Asap', sans-serif;
 	margin: 0;
+
 	#163CA0FF {
 		padding: 0;
 	}
@@ -1270,15 +1271,31 @@ div#portfolioModal10 {
 	border-radius: 25px;
 }
 
-.img-cover.active {
+
+.img-cover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img-cover.active img{
 	transform: scale(1.05);
 }
 
-.img-cover {
+.img-cover img {
 	transition: .2s;
+	cursor: pointer;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease;
 }
 
-.img-thumb .img-caption {
+.img-cover:hover~.img-caption {
+	opacity: 0.85;
+	pointer-events: auto;
+}
+
+.img-caption {
 	/* display: none; */
 	position: absolute;
 	top: 0;
@@ -1291,17 +1308,16 @@ div#portfolioModal10 {
 	border-radius: 25px;
 	z-index: 999;
 	transition: all ease 0.2s;
+	transform: scale(1.8) translateX(295px);
+	pointer-events: none;
 }
 
-.img-caption:hover {
-	opacity: 0.85;
-}
 
 .img-thumb .img-caption h3 {
 	left: 0;
 	position: absolute;
 	right: 0;
-	top: 0%;
+	top: 10%;
 	font-size: 30px;
 	color: white;
 	white-space: nowrap;
@@ -1313,7 +1329,7 @@ div#portfolioModal10 {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 20%;
+	top: 30%;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -1439,7 +1455,8 @@ div#portfolioModal10 {
 	top: 25px;
 	right: 25px;
 	width: 45px;
-	height: 45px; background-color: transparent;
+	height: 45px;
+	background-color: transparent;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -1570,49 +1587,47 @@ ul {
 .book {
 	padding: 0;
 	margin: 30px;
-    margin-bottom: 30px;
-    margin-top: 100px;
+	margin-bottom: 30px;
+	margin-top: 100px;
 	box-shadow: 0px 20px 50px #555;
 }
 
-.inner-box
-{
-   width:300px; /* or whatever width you want. */
-   max-width:300px; /* or whatever width you want. */
-   height: 375px;
-   max-height: 375px;
-   display: inline-block;
+.inner-box {
+	width: 300px;
+	/* or whatever width you want. */
+	max-width: 300px;
+	/* or whatever width you want. */
+	height: 375px;
+	max-height: 375px;
+	display: inline-block;
 }
 
-.img-shadow-1:hover
-{
-transform:scale(1.1);
--webkit-transform:scale(1.1);
--moz-transform:scale(1.1);
--ms-transform:scale(1.1);
--o-transform:scale(1.1);
+.img-shadow-1:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
 
--webkit-box-shadow: 0 58px 36px -56px black;
--moz-box-shadow: 0 58px 36px -56px black;
-box-shadow: 0 58px 36px -56px black;
+	-webkit-box-shadow: 0 58px 36px -56px black;
+	-moz-box-shadow: 0 58px 36px -56px black;
+	box-shadow: 0 58px 36px -56px black;
 }
 
-.img-shadow-1
-{
-transition:all .6s ease-in-out;
--webkit-transition:all .6s ease-in-out;
--moz-transition:all .6s ease-in-out;
--ms-transition:all .6s ease-in-out;
--o-transition:all .6s ease-in-out;
+.img-shadow-1 {
+	transition: all .6s ease-in-out;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
 }
 
-.img-shadow-1:hover
-{
-transition:all .6s ease-in-out;
--webkit-transition:all .6s ease-in-out;
--moz-transition:all .6s ease-in-out;
--ms-transition:all .6s ease-in-out;
--o-transition:all .6s ease-in-out;
+.img-shadow-1:hover {
+	transition: all .6s ease-in-out;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
 }
 
 /*-- //books --*/
@@ -2557,6 +2572,7 @@ footer .Cntr {
 		margin: 0em 0 1em 0;
 		padding: 0;
 	}
+
 	.skills .skills-item h4 {
 		font-size: 0.8em;
 	}
@@ -2821,6 +2837,7 @@ footer .Cntr {
 		font-size: 0.6em;
 	}
 }
+
 @media(max-width:320px) {
 	.resp-tab-item {
 		margin: 0 0px 4px 0;
@@ -2881,6 +2898,7 @@ footer .Cntr {
 		padding: 6px 0;
 	}
 }
+
 @media(max-width:310px) {
 	.img-thumb .img-caption span {
 		top: 30%;
