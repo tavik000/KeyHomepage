@@ -1300,7 +1300,7 @@ div#portfolioModal10 {
 }
 
 .img-cover:hover~.img-caption {
-	opacity: 0.85;
+	opacity: 0.95;
 	pointer-events: auto;
 }
 
