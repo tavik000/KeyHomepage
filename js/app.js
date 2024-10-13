@@ -11,19 +11,23 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-jQuery(document).ready(function($) {
- $(".img-thumb").hover(function() {
-        $(this).find(".img-cover").addClass("active")
-    }, function() {
-        $(this).find(".img-cover").removeClass("active")
-    });
+jQuery(document).ready(function ($) {
+  $(".img-thumb").hover(function () {
+    $(this).find(".img-cover").addClass("active")
+    setTimeout(() => {
+      $(this).find(".img-caption").addClass("active");
+    }, 0);
+  }, function () {
+    $(this).find(".img-cover").removeClass("active")
+    $(this).find(".img-caption").removeClass("active")
+  });
 })
 
-particlesJS.load('particles-js', 'assets/particles.json', function() {
+particlesJS.load('particles-js', 'assets/particles.json', function () {
   console.log('callback - particles.js config loaded');
 });
 particlesJS('particles-js',
-  
+
   {
     "particles": {
       "number": {

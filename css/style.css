@@ -1305,7 +1305,6 @@ div#portfolioModal10 {
 }
 
 .img-caption {
-	/* display: none; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1329,7 +1328,6 @@ div#portfolioModal10 {
 	display: none;
 }
 
-/* @media screen and (max-width: 1536px) { */
 @media screen and (max-width: 1780px) {
 	.img-caption {
 		transform: scale(1.4) translateX(325px) translateY(30px) !important;
@@ -1501,7 +1499,6 @@ div#portfolioModal10 {
 
 	.img-caption {
 		transform: scale(1) translateX(0px) translateY(0px) !important;
-		pointer-events: auto;
 	}
 
 	.img-reverse {
@@ -1509,7 +1506,13 @@ div#portfolioModal10 {
 	}
 
 	.view-button {
+		display: hidden;
+		pointer-events: none;
+	}
+
+	.img-caption.active .view-button {
 		display: block;
+		pointer-events: auto;
 	}
 
 	.key-blog-remake-title {
