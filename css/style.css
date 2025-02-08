@@ -1846,12 +1846,54 @@ ul {
 	background: #1c1b1b;
 }
 
+.book-list {
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .book {
 	padding: 0;
 	margin: 30px;
 	margin-bottom: 30px;
 	margin-top: 100px;
 	box-shadow: 0px 20px 50px #555;
+}
+
+.notebook {
+	margin-top: 16px;
+	position: relative;
+	cursor: default;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.notebook .tooltiptext {
+	visibility: hidden;
+	padding: 0.25em 0.5em;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.25em;
+	white-space: nowrap;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 100%;
+	transition-property: visibility;
+	transition-delay: 0s;
+}
+
+.tooltiptext {
+	margin-left: -100%;
+}
+
+.notebook:hover .tooltiptext {
+	visibility: visible;
+	transition-delay: 0.3s;
 }
 
 .inner-box {
