@@ -1768,6 +1768,29 @@ div#portfolioModal10 {
 }
 
 /*-- //portfolio --*/
+
+.work-study-note-button {
+	text-decoration: none;
+	color: #BBB;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: left;
+	list-style: none;
+	outline: none;
+	text-decoration: underline;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.work-study-note-button:hover {
+	background: #2E71C2;
+	color: #fff;
+}
+
 /*-- awards --*/
 #awards {
 	padding: 5em 0 0 0;
