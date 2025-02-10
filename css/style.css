@@ -1055,6 +1055,19 @@ ul.year li:nth-child(5) {
 	left: 0;
 }
 
+.skill-icon {
+	width: 20px;
+	height: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-size: cover;
+	content: '';
+}
+
+.invert-white {
+	filter: brightness(0) invert(1);
+}
+
 
 /*--//skills--*/
 
