@@ -31,7 +31,7 @@ var portfolioProjects = [
         link: "https://store.steampowered.com/app/2680380/HYKENorthern_Lights/?l=japanese",
         title: "HYKE: Northern Light(s)",
         notranslate: true,
-        desc: "Platform: Steam, Nintendo Switch, PS5, iOS, Mac<br>Game Engine: Unreal Engine 5<br>Genre: Action Adventure<br>Outsourcing Project at Blast Edge Games (Jul 2024 – Sep 2024)<br>Role: Gameplay Programmer<br>Responsibilities: Character gameplay programming, debugging, and iOS/Nintendo Switch optimization in a 50-person development team<br>Programming Language: C++",
+        desc: "Platform: Steam, Nintendo Switch, PS5, iOS, Mac<br>Game Engine: Unreal Engine 5<br>Genre: Action Adventure<br>Outsourcing Project at Blast Edge Games (Jul 2024 – Sep 2024)<br>Role: Gameplay Programmer<br>Responsibilities: Character gameplay programming, debugging, Memory & CPU optimization in a 50-person development team<br>Programming Language: C++",
         btn: { label: "View project", title: "Steam" },
         categories: ["game"]
     },
