@@ -20,7 +20,7 @@ var skillGroups = [
             },
             {
                 name: 'HTML / CSS / JavaScript / TypeScript',
-                level: '4 years',
+                level: '5 years',
                 icon: '<i class="fab fa-html5"></i>',
                 itemClass: 'row-md-3',
                 titleClass: 'skills-long-item'
@@ -52,13 +52,13 @@ var skillGroups = [
         skills: [
             {
                 name: 'Git + Github',
-                level: '9 years',
+                level: '10 years',
                 icon: '<i class="fab fa-github-alt"></i>',
                 notranslate: true
             },
             {
                 name: 'Perforce',
-                level: '8 months',
+                level: '2 years',
                 icon: '<i class="fas fa-circle-notch"></i>',
                 notranslate: true
             },
@@ -76,25 +76,25 @@ var skillGroups = [
             },
             {
                 name: 'Jira',
-                level: '4 months',
+                level: '2 years',
                 icon: '<i class="fa-brands fa-jira"></i>',
                 notranslate: true
             },
             {
                 name: 'Visual Studio Code',
-                level: '7 years',
+                level: '8 years',
                 icon: '<img src="images/icon-vsc.svg" class="skill-icon invert-white" alt="*">',
                 notranslate: true
             },
             {
                 name: 'Rider',
-                level: '5 years',
+                level: '7 years',
                 icon: '<img src="images/icon-rider.svg" class="skill-icon" alt="*">',
                 notranslate: true
             },
             {
                 name: 'Slack',
-                level: '5 years',
+                level: '7 years',
                 icon: '<i class="fab fa-slack"></i>',
                 notranslate: true
             }
@@ -107,7 +107,7 @@ var skillGroups = [
         skills: [
             {
                 name: 'Unreal Engine 5',
-                level: '2 years',
+                level: '3 years',
                 icon: '<img src="images/unreal-engine-svgrepo-com.svg" class="skill-icon invert-white" alt="*">',
                 notranslate: true
             },
@@ -126,7 +126,7 @@ var skillGroups = [
         skills: [
             {
                 name: 'React + Next.js',
-                level: '5 months',
+                level: '1 year',
                 icon: '<i class="fa-brands fa-react"></i>',
                 notranslate: true
             },
