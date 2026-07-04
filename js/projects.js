@@ -9,6 +9,15 @@ var portfolioProjects = [
     // ── GAME DEVELOPMENT ─────────────────────────────────────────────────────
 
     {
+        img: "images/HookRacer.jpg",
+        link: "https://www.youtube.com/watch?v=GqbONar8b5c&time_continue=0&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fhistoria.co.jp%2F",
+        title: "Hook Racer",
+        notranslate: true,
+        desc: "Platform: Windows<br>Game Engine: Unreal Engine 5<br>Genre: Racing, Action<br><strong>第24回UE5ぷちコン 盛り上がるで賞</strong><br>Self-produced game for Game Jam (7 weeks in 2025)<br>Responsible for game programming and game design and pixel art and music as a solo developer<br>Used Language: C++",
+        btn: { label: "View project", title: "Video" },
+        categories: ["game"]
+    },
+    {
         img: "images/HykeNothernLights.jpg",
         link: "https://store.steampowered.com/app/2680380/HYKENorthern_Lights/?l=japanese",
         title: "HYKE: Northern Light(s)",
@@ -54,8 +63,8 @@ var portfolioProjects = [
         categories: ["game"]
     },
     {
-        img: "images/pic28.png",
-        link: "https://store.epicgames.com/en-US/p/apeiron-b83793",
+        img: "images/Apeiron.jpg",
+        link: "https://store.steampowered.com/app/3072850/Apeiron/",
         title: "Apeiron",
         desc: "Platform: Windows<br>Game Engine: Unity<br>Genre: NFT Action RTS Card Battle Game<br>Outsourcing Project in Ember Entertainment (2022-2023)<br>Lead Programmer, Responsible for system design, gameplay programming (Character Skill) in 5-person team<br>Used Language: C#",
         btn: { label: "View project", title: "Video" },
