@@ -9,6 +9,15 @@ var portfolioProjects = [
     // ── GAME DEVELOPMENT ─────────────────────────────────────────────────────
 
     {
+        img: "images/BeastOfReincarnation.jpg",
+        link: "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
+        title: "Beast of Reincarnation",
+        notranslate: true,
+        desc: "Platform: Steam, PS5, Xbox Series X/S<br>Game Engine: Unreal Engine 5<br>Genre: ARPG, Hack and Slash, Action Adventure<br> (Oct 2024 – Jun 2026)<br>Responsible for Event and UI programming<br>Used Language: C++",
+        btn: { label: "View project", title: "Steam" },
+        categories: ["game"]
+    },
+    {
         img: "images/HookRacer.jpg",
         link: "https://www.youtube.com/watch?v=GqbONar8b5c&time_continue=0&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fhistoria.co.jp%2F",
         title: "Hook Racer",
@@ -22,7 +31,7 @@ var portfolioProjects = [
         link: "https://store.steampowered.com/app/2680380/HYKENorthern_Lights/?l=japanese",
         title: "HYKE: Northern Light(s)",
         notranslate: true,
-        desc: "Platform: Windows, Nintendo Switch, PS5, iOS, Mac<br>Game Engine: Unreal Engine 5<br>Genre: Action Adventure<br>Outsourcing Project at Blast Edge Games (Jul 2024 – Sep 2024)<br>Role: Gameplay Programmer<br>Responsibilities: Character gameplay programming, debugging, and iOS/Nintendo Switch optimization in a 50-person development team<br>Programming Language: C++",
+        desc: "Platform: Steam, Nintendo Switch, PS5, iOS, Mac<br>Game Engine: Unreal Engine 5<br>Genre: Action Adventure<br>Outsourcing Project at Blast Edge Games (Jul 2024 – Sep 2024)<br>Role: Gameplay Programmer<br>Responsibilities: Character gameplay programming, debugging, and iOS/Nintendo Switch optimization in a 50-person development team<br>Programming Language: C++",
         btn: { label: "View project", title: "Steam" },
         categories: ["game"]
     },
@@ -66,7 +75,7 @@ var portfolioProjects = [
         img: "images/Apeiron.jpg",
         link: "https://store.steampowered.com/app/3072850/Apeiron/",
         title: "Apeiron",
-        desc: "Platform: Windows<br>Game Engine: Unity<br>Genre: NFT Action RTS Card Battle Game<br>Outsourcing Project in Ember Entertainment (2022-2023)<br>Lead Programmer, Responsible for system design, gameplay programming (Character Skill) in 5-person team<br>Used Language: C#",
+        desc: "Platform: Steam, Epic Game Store<br>Game Engine: Unity<br>Genre: NFT Action RTS Card Battle Game<br>Outsourcing Project in Ember Entertainment (2022-2023)<br>Lead Programmer, Responsible for system design, gameplay programming (Character Skill) in 5-person team<br>Used Language: C#",
         btn: { label: "View project", title: "Video" },
         categories: ["game"]
     },
@@ -93,7 +102,7 @@ var portfolioProjects = [
         img: "images/pic29.png",
         link: "https://store.steampowered.com/app/2514460/GUARDS/",
         title: "GUARDS!",
-        desc: "Platform: Windows<br>Game Engine: Unreal Engine<br>Genre: Action, Hack &amp; Slash, Multiplayer<br>Outsourced QA and Japanese localization (3 months in 2023) for 2-person team",
+        desc: "Platform: Steam<br>Game Engine: Unreal Engine<br>Genre: Action, Hack &amp; Slash, Multiplayer<br>Outsourced QA and Japanese localization (3 months in 2023) for 2-person team",
         btn: { label: "View project", title: "Video" },
         categories: ["game"]
     },
@@ -110,7 +119,7 @@ var portfolioProjects = [
         img: "images/pic24.png",
         link: "https://store.steampowered.com/app/1128750/The_Lost_Strings",
         title: "The Lost Strings",
-        desc: "Platform: Windows / Android / iOS<br>Game Engine: Unity<br>Genre: 2D Platformer, Action, Multiplayer, Puzzle<br>Outsourced Game Programming (3 months in 2019) for a 4-person team<br>Used Language: C#",
+        desc: "Platform: Steam / Android / iOS<br>Game Engine: Unity<br>Genre: 2D Platformer, Action, Multiplayer, Puzzle<br>Outsourced Game Programming (3 months in 2019) for a 4-person team<br>Used Language: C#",
         btn: { label: "View project", title: "STEAM" },
         categories: ["game"]
     },
