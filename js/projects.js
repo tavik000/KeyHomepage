@@ -73,7 +73,7 @@ var portfolioProjects = [
     },
     {
         img: "images/Apeiron.jpg",
-        link: "https://store.steampowered.com/app/3072850/Apeiron/",
+        link: "https://store.epicgames.com/p/apeiron-b83793",
         title: "Apeiron",
         desc: "Platform: Steam, Epic Game Store<br>Game Engine: Unity<br>Genre: NFT Action RTS Card Battle Game<br>Outsourcing Project in Ember Entertainment (2022-2023)<br>Lead Programmer, Responsible for system design, gameplay programming (Character Skill) in 5-person team<br>Used Language: C#",
         btn: { label: "View project", title: "Video" },
