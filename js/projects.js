@@ -8,15 +8,15 @@ var portfolioProjects = [
 
     // ── GAME DEVELOPMENT ─────────────────────────────────────────────────────
 
-    {
-        img: "images/BeastOfReincarnation.jpg",
-        link: "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
-        title: "Beast of Reincarnation",
-        notranslate: true,
-        desc: "Platform: Steam, PS5, Xbox Series X/S<br>Game Engine: Unreal Engine 5<br>Genre: ARPG, Hack and Slash, Action Adventure<br> (Oct 2024 – Jun 2026)<br>Responsible for Event and UI programming<br>Used Language: C++",
-        btn: { label: "View project", title: "Steam" },
-        categories: ["game"]
-    },
+    // {
+    //     img: "images/BeastOfReincarnation.jpg",
+    //     link: "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
+    //     title: "Beast of Reincarnation",
+    //     notranslate: true,
+    //     desc: "Platform: Steam, PS5, Xbox Series X/S<br>Game Engine: Unreal Engine 5<br>Genre: ARPG, Hack and Slash, Action Adventure<br> (Oct 2024 – Jun 2026)<br>Responsible for Event and UI programming<br>Used Language: C++",
+    //     btn: { label: "View project", title: "Steam" },
+    //     categories: ["game"]
+    // },
     {
         img: "images/HookRacer.jpg",
         link: "https://www.youtube.com/watch?v=GqbONar8b5c&time_continue=0&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fhistoria.co.jp%2F",
