@@ -213,10 +213,14 @@
 								' class="view-button btn btn-primary btn-block" title="' + p.btn.title + '"' + dis + '>' +
 								p.btn.label + ' <i class="fa fa-chevron-circle-right fa-align-right"></i></a>';
 						}
+						var coverOpen = p.link
+							? '<a class="img-cover" target="_blank" rel="noopener noreferrer" href="' + p.link + '">'
+							: '<span class="img-cover">';
+						var coverClose = p.link ? '</a>' : '</span>';
 						return '<div class="project-card col-md-4 team-gd img-thumb"' +
 							' data-categories="' + p.categories.join(' ') + '" style="display:none">' +
-							'<a class="img-cover" target="_blank" rel="noopener noreferrer" href="' + p.link + '">' +
-							'<img src="' + p.img + '" alt=""></a>' +
+							coverOpen +
+							'<img src="' + p.img + '" alt=""></img>' + coverClose +
 							'<div class="' + captionCls + '">' +
 							'<' + tag + ' class="' + titleCls.join(' ') + '">' + p.title + '</' + tag + '>' +
 							'<span class="' + descCls + '">' + p.desc + '</span>' +
