@@ -1874,6 +1874,19 @@ ul {
 
 /*-- //awards --*/
 
+/*-- certifications --*/
+#certifications {
+	padding: 5em 0 0 0;
+	background: #08090B;
+}
+
+.certifications .timeline-panel {
+	border-bottom: 5px solid #2E71C2;
+	padding-top: 50px;
+}
+
+/*-- //certifications --*/
+
 /*-- books --*/
 
 
