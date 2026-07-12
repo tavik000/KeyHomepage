@@ -437,7 +437,7 @@
 						if (s.titleClass) h4Cls.push(s.titleClass);
 						return '<div class="' + itemCls + '">' +
 							'<h4' + (h4Cls.length ? ' class="' + h4Cls.join(' ') + '"' : '') + '>' +
-							s.icon + ' ' + s.name +
+							(s.icon ? s.icon + ' ' : '') + s.name +
 							'</h4>' +
 							'<div class="skills-star"><i>' + s.level + '</i></div>' +
 							'<span></span></div>';
