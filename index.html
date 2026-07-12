@@ -213,6 +213,7 @@
 								' class="view-button btn btn-primary btn-block" title="' + p.btn.title + '"' + dis + '>' +
 								p.btn.label + ' <i class="fa fa-chevron-circle-right fa-align-right"></i></a>';
 						}
+						var tagHtml = (p.tags || []).map(function (t) { return '<span class="project-tag">' + t + '</span>'; }).join('');
 						var coverOpen = p.link
 							? '<a class="img-cover" target="_blank" rel="noopener noreferrer" href="' + p.link + '">'
 							: '<span class="img-cover">';
@@ -220,7 +221,8 @@
 						return '<div class="project-card col-md-4 team-gd img-thumb"' +
 							' data-categories="' + p.categories.join(' ') + '" style="display:none">' +
 							coverOpen +
-							'<img src="' + p.img + '" alt=""></img>' + coverClose +
+							'<img src="' + p.img + '" alt=""></img>' +
+							tagHtml + coverClose +
 							'<div class="' + captionCls + '">' +
 							'<' + tag + ' class="' + titleCls.join(' ') + '">' + p.title + '</' + tag + '>' +
 							'<span class="' + descCls + '">' + p.desc + '</span>' +

@@ -24,6 +24,7 @@ var portfolioProjects = [
         link: "https://www.youtube.com/watch?v=GqbONar8b5c&time_continue=0&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fhistoria.co.jp%2F",
         title: "Hook Racer",
         notranslate: true,
+        tags: ["Game Jam"],
         desc: "Platform: Windows<br>Game Engine: Unreal Engine 5<br>Genre: Racing, Action<br><strong>第24回UE5ぷちコン 盛り上がるで賞</strong><br>Self-produced game for Game Jam (7 weeks in 2025)<br>Responsible for game programming and game design and pixel art and music as a solo developer<br>Used Language: C++",
         btn: { label: "View project", title: "Video" },
         categories: ["game"]
@@ -43,6 +44,7 @@ var portfolioProjects = [
         title: "Shadow Bubble: Hide and Seek Chaos",
         titleTag: "h4",
         titleClass: "shadow-bubble-title",
+        tags: ["Game Jam"],
         desc: "Platform: Windows<br>Game Engine: Unreal Engine 5<br>Genre: Asymmetric Multiplayer, Stealth, Action<br><strong>Global Game Jam Hong Kong Audience Choice Winner &amp; Best XR Game Award</strong><br>Self-produced game for Game Jam (7 days in 2025)<br>Responsible for game programming in a 2-person team<br>Used Language: C++",
         btn: { label: "View project", title: "Video" },
         categories: ["game"]
@@ -52,6 +54,7 @@ var portfolioProjects = [
         link: "https://www.youtube.com/watch?v=ENJegabO2dw",
         title: "Nesmy Land: Teacup",
         titleClass: "teacup-title",
+        tags: ["Game Jam"],
         desc: "Platform: Windows<br>Game Engine: Unreal Engine 5<br>Genre: Action, Simulation<br>Self-produced game for Game Jam (5 days in 2024)<br>Responsible for game programming and level design in a 3-person team<br>Used Language: C++",
         btn: { label: "View project", title: "Video" },
         categories: ["game"]
@@ -62,6 +65,7 @@ var portfolioProjects = [
         title: "The Path of Osu",
         notranslate: true,
         captionReverse: true,
+        tags: ["Game Jam"],
         desc: "Platform: Windows<br>Game Engine: Unreal Engine 5<br>Genre: Action Adventure, TPS, Puzzle<br>Self-produced game for Game Jam (7 weeks in 2024)<br>Responsible for game programming and game design as a solo developer<br>Used Language: C++",
         btn: { label: "View project", title: "Video" },
         categories: ["game"]
@@ -70,6 +74,7 @@ var portfolioProjects = [
         img: "images/pic34.png",
         link: "https://www.youtube.com/watch?v=poRWXWZOwcE",
         title: "√Me",
+        tags: ["Game Jam"],
         desc: "Platform: Windows<br>Game Engine: Unity<br>Genre: Puzzle, 2D Platformer<br>Self-produced game for Game Jam (7 days in 2023)<br>Responsible for game programming in a 5-person team<br>Used Language: C#",
         categories: ["game"]
     },
@@ -96,6 +101,7 @@ var portfolioProjects = [
         img: "images/pic27.png",
         link: "https://www.youtube.com/watch?v=YRxEiL2IRiU",
         title: "Blite",
+        tags: ["Game Jam"],
         desc: "Platform: Windows<br>Game Engine: Unity<br>Genre: Puzzle, 2D Platformer<br><strong>Global Game Jam Hong Kong Best Original Game Award</strong><br>Self-produced game for Game Jam (2 days in 2022)<br>Responsible for game programming in a 3-person team<br>Used Language: C#",
         btn: { label: "View project", title: "STEAM" },
         categories: ["game"]
@@ -130,6 +136,7 @@ var portfolioProjects = [
         link: "https://github.com/tavik000/HomeSleepHome",
         title: "Home Sleep Home",
         notranslate: true,
+        tags: ["Game Jam"],
         desc: "Platform: Windows<br>Game Engine: Unity<br>Genre: Action, Simulation<br>Self-produced game for Game Jam (2 days in 2019)<br>Responsible for game programming in a 7-person team<br>Used Language: C#",
         btn: { label: "View project", title: "GITHUB" },
         categories: ["game"]
