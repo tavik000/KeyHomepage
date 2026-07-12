@@ -10,8 +10,8 @@ var portfolioProjects = [
 
     {
         // img: "images/BeastOfReincarnation.jpg",
-        img: "images/ConfidentialPS5.svg",
-        link: "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
+        img: "images/ConfidentialPS5_ARPG.png",
+        // link: "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
         // title: "Beast of Reincarnation",
         title: "Confidential Project",
         notranslate: true,
