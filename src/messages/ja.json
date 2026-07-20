@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "趙海騏　チョウ　カイキ — ゲームエンジニア · Unreal Engine 5 / C++",
+    "title": "趙海騏 — ゲームエンジニア · Unreal Engine 5 / C++",
     "description": "東京在住のゲームエンジニア。Unreal Engine 5 / C++、Unity / C#でPC・コンソール・モバイルゲームの開発に5年以上従事。現在はPS5 / Xbox Series X|S / Steam向け未発表AAAアクションRPGを開発中。"
   },
   "nav": {
@@ -371,7 +371,7 @@
     "location": "東京"
   },
   "footer": {
-    "rights": "© {year} 趙海騏　チョウ　カイキ. All rights reserved.",
+    "rights": "© {year} 趙海騏. All rights reserved.",
     "backToTop": "トップへ戻る"
   },
   "blog": {

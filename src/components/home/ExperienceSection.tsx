@@ -40,7 +40,7 @@ export default function ExperienceSection() {
                         alt=""
                         width={80}
                         height={80}
-                        className="h-auto w-full object-contain"
+                        className="h-auto max-h-full w-auto max-w-full object-contain"
                       />
                     </div>
                   )}
