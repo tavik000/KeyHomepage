@@ -194,6 +194,7 @@
   "skills": {
     "kicker": "Capabilities",
     "title": "技術能力",
+    "years": "{years}年以上",
     "categories": {
       "languages": "程式語言",
       "engines": "遊戲引擎",
@@ -214,7 +215,7 @@
   },
   "awards": {
     "kicker": "Recognition",
-    "title": "獲獎經歷",
+    "title": "獲獎與證照",
     "viewGame": "觀看遊戲",
     "viewEvent": "活動頁面",
     "items": {
@@ -317,6 +318,27 @@
       "react-native-apps": { "title": "React Native小型應用" },
       "facebook-chatbot": { "title": "Facebook聊天機器人" }
     }
+  },
+  "research": {
+    "kicker": "Research",
+    "title": "遊戲設計研究資料庫",
+    "lead": "十多年來，我以開發者的視角系統性地記錄並分析了超過1,000款遊戲，建立了這個個人研究資料庫。每筆條目都是將遊戲拆解為設計元素的分析，而非評論。",
+    "dimensions": [
+      "類型",
+      "遊戲機制",
+      "戰鬥系統",
+      "成長系統",
+      "UI / UX",
+      "關卡設計",
+      "難度設計",
+      "Boss設計"
+    ],
+    "stat": "已記錄超過1,000款遊戲",
+    "cta": "瀏覽資料庫"
+  },
+  "hobbies": {
+    "title": "Off hours",
+    "text": "製作與遊玩遊戲、電吉他、花式滑冰、動畫、逛博物館、學習語言。"
   },
   "resume": {
     "kicker": "Resume",

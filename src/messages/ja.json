@@ -194,6 +194,7 @@
   "skills": {
     "kicker": "Capabilities",
     "title": "技術スキル",
+    "years": "{years}年以上",
     "categories": {
       "languages": "プログラミング言語",
       "engines": "ゲームエンジン",
@@ -214,7 +215,7 @@
   },
   "awards": {
     "kicker": "Recognition",
-    "title": "受賞歴",
+    "title": "受賞歴・資格",
     "viewGame": "ゲームを見る",
     "viewEvent": "イベントページ",
     "items": {
@@ -317,6 +318,27 @@
       "react-native-apps": { "title": "React Nativeミニアプリ" },
       "facebook-chatbot": { "title": "Facebookチャットボット" }
     }
+  },
+  "research": {
+    "kicker": "Research",
+    "title": "ゲームデザイン研究データベース",
+    "lead": "10年以上にわたり、1,000本以上のゲームを開発者の視点から体系的に記録・分析してきた個人研究データベースです。レビューではなく、各タイトルをデザイン要素に分解して記録しています。",
+    "dimensions": [
+      "ジャンル",
+      "ゲームメカニクス",
+      "戦闘システム",
+      "成長システム",
+      "UI / UX",
+      "レベルデザイン",
+      "難易度設計",
+      "ボスデザイン"
+    ],
+    "stat": "記録済みタイトル 1,000本以上",
+    "cta": "データベースを見る"
+  },
+  "hobbies": {
+    "title": "Off hours",
+    "text": "ゲーム制作とプレイ、エレキギター、フィギュアスケート、アニメ、博物館巡り、語学学習。"
   },
   "resume": {
     "kicker": "Resume",

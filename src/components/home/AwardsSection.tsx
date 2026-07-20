@@ -1,75 +1,68 @@
 import { useTranslations } from "next-intl";
 import { awards, certifications } from "@/content/awards";
-import Section from "@/components/ui/Section";
-import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
 
+/**
+ * Compact recognition block — deliberately lighter than the major sections:
+ * small heading, dense two-column list, no large serif title.
+ */
 export default function AwardsSection() {
   const t = useTranslations("awards");
   const tc = useTranslations("certifications");
 
   return (
-    <Section id="awards" className="border-t border-border">
-      <SectionHeading kicker={t("kicker")} title={t("title")} />
-      <ol className="divide-y divide-border border-y border-border">
-        {awards.map((award, i) => (
-          <li key={award.id}>
-            <Reveal delay={i * 0.04}>
-              <div className="grid gap-2 py-6 md:grid-cols-[80px_1fr_auto] md:items-baseline md:gap-6">
-                <span className="font-[family-name:var(--font-mono)] text-sm text-faint">
-                  {award.year}
-                </span>
-                <div>
-                  <p className="text-fg">
-                    {t(`items.${award.id}.award`)}
-                    <span className="text-muted"> — {t(`items.${award.id}.game`)}</span>
-                  </p>
-                  <p className="mt-1 text-sm text-faint">{t(`items.${award.id}.event`)}</p>
-                </div>
-                <div className="flex gap-4 text-sm">
-                  {award.gameLink && (
-                    <a
-                      href={award.gameLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-accent-soft transition-colors hover:text-fg"
-                    >
-                      {t("viewGame")} ↗
-                    </a>
-                  )}
-                  {award.eventLink && (
-                    <a
-                      href={award.eventLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-faint transition-colors hover:text-fg"
-                    >
-                      {t("viewEvent")} ↗
-                    </a>
-                  )}
-                </div>
-              </div>
-            </Reveal>
-          </li>
-        ))}
-      </ol>
-
-      <Reveal className="mt-20">
-        <h3 className="meta-label mb-6">{tc("title")}</h3>
-        <ul className="grid gap-4 md:grid-cols-3">
-          {certifications.map((cert) => (
-            <li key={cert.id} className="rounded-lg border border-border bg-surface p-5">
-              <p className="font-[family-name:var(--font-mono)] text-xs text-faint">
-                {cert.year}
-              </p>
-              <p className="mt-2 text-sm leading-relaxed text-fg">
-                {tc(`items.${cert.id}.name`)}
-              </p>
-              <p className="mt-1 text-xs text-faint">{tc(`items.${cert.id}.issuer`)}</p>
-            </li>
-          ))}
-        </ul>
-      </Reveal>
-    </Section>
+    <section id="awards" className="scroll-mt-20 border-t border-border py-16 md:py-20">
+      <div className="mx-auto max-w-6xl px-6">
+        <Reveal>
+          <h2 className="meta-label mb-8">{t("title")}</h2>
+        </Reveal>
+        <div className="grid gap-x-16 gap-y-10 lg:grid-cols-[3fr_2fr]">
+          <Reveal>
+            <ul className="space-y-5">
+              {awards.map((award) => (
+                <li key={award.id} className="text-sm leading-relaxed">
+                  <span className="mr-3 font-[family-name:var(--font-mono)] text-xs text-faint">
+                    {award.year}
+                  </span>
+                  <span className="text-fg">{t(`items.${award.id}.award`)}</span>
+                  <span className="text-muted"> — {t(`items.${award.id}.game`)}</span>
+                  <span className="block pl-0 text-xs text-faint sm:inline sm:pl-2">
+                    {t(`items.${award.id}.event`)}
+                    {award.gameLink && (
+                      <>
+                        {" · "}
+                        <a
+                          href={award.gameLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-accent-soft transition-colors hover:text-fg"
+                        >
+                          {t("viewGame")} ↗
+                        </a>
+                      </>
+                    )}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <ul className="space-y-5 border-border lg:border-l lg:pl-10">
+              {certifications.map((cert) => (
+                <li key={cert.id} className="text-sm leading-relaxed">
+                  <span className="mr-3 font-[family-name:var(--font-mono)] text-xs text-faint">
+                    {cert.year}
+                  </span>
+                  <span className="text-fg">{tc(`items.${cert.id}.name`)}</span>
+                  <span className="block text-xs text-faint sm:inline sm:pl-2">
+                    {tc(`items.${cert.id}.issuer`)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
+      </div>
+    </section>
   );
 }

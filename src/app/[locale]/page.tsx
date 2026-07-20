@@ -6,6 +6,8 @@ import SkillsSection from "@/components/home/SkillsSection";
 import AwardsSection from "@/components/home/AwardsSection";
 import JamGallery from "@/components/home/JamGallery";
 import OtherProjects from "@/components/home/OtherProjects";
+import ResearchSection from "@/components/home/ResearchSection";
+import HobbiesStrip from "@/components/home/HobbiesStrip";
 import ContactSection from "@/components/home/ContactSection";
 
 export default async function HomePage({
@@ -25,6 +27,8 @@ export default async function HomePage({
       <AwardsSection />
       <JamGallery />
       <OtherProjects />
+      <ResearchSection />
+      <HobbiesStrip />
       <ContactSection />
     </main>
   );

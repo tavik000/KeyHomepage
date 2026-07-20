@@ -3,7 +3,6 @@ import { skillCategories, spokenLanguages } from "@/content/skills";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
-import Tag from "@/components/ui/Tag";
 
 export default function SkillsSection() {
   const t = useTranslations("skills");
@@ -11,14 +10,30 @@ export default function SkillsSection() {
   return (
     <Section id="skills" className="border-t border-border">
       <SectionHeading kicker={t("kicker")} title={t("title")} />
-      <div className="grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-x-14 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {skillCategories.map((cat, i) => (
-          <Reveal key={cat.id} delay={(i % 4) * 0.05}>
-            <h3 className="meta-label mb-4">{t(`categories.${cat.id}`)}</h3>
-            <ul className="flex flex-wrap gap-2">
-              {cat.items.map((item) => (
-                <li key={item}>
-                  <Tag>{item}</Tag>
+          <Reveal key={cat.id} delay={(i % 3) * 0.05}>
+            <h3 className="meta-label mb-4 border-b border-border pb-3">
+              {t(`categories.${cat.id}`)}
+            </h3>
+            <ul className="space-y-2.5">
+              {cat.items.map((skill) => (
+                <li
+                  key={skill.name}
+                  className="flex items-baseline justify-between gap-3 text-sm"
+                >
+                  <span className="text-fg">{skill.name}</span>
+                  {skill.years !== undefined && (
+                    <>
+                      <span
+                        aria-hidden="true"
+                        className="grow border-b border-dotted border-border"
+                      />
+                      <span className="shrink-0 font-[family-name:var(--font-mono)] text-xs tracking-wider text-accent-soft">
+                        {t("years", { years: skill.years })}
+                      </span>
+                    </>
+                  )}
                 </li>
               ))}
             </ul>

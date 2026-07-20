@@ -108,6 +108,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale === "zh-Hant" ? "zh-Hant" : locale}
+      data-scroll-behavior="smooth"
       className={`${inter.variable} ${zenOldMincho.variable} ${plexMono.variable}`}
     >
       <body>

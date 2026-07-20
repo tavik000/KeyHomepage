@@ -194,6 +194,7 @@
   "skills": {
     "kicker": "Capabilities",
     "title": "Technical skills",
+    "years": "{years}+ yrs",
     "categories": {
       "languages": "Languages",
       "engines": "Game Engines",
@@ -214,7 +215,7 @@
   },
   "awards": {
     "kicker": "Recognition",
-    "title": "Awards",
+    "title": "Awards & Certifications",
     "viewGame": "Watch the game",
     "viewEvent": "Event page",
     "items": {
@@ -317,6 +318,27 @@
       "react-native-apps": { "title": "React Native Mini Apps" },
       "facebook-chatbot": { "title": "Facebook Chatbot" }
     }
+  },
+  "research": {
+    "kicker": "Research",
+    "title": "Game Design Research Database",
+    "lead": "For over a decade I have kept a personal research database — 1,000+ games systematically documented and analyzed from a developer's perspective. Each entry breaks a game down into its design components rather than reviewing it.",
+    "dimensions": [
+      "Genre",
+      "Gameplay Mechanics",
+      "Combat Systems",
+      "Progression",
+      "UI / UX",
+      "Level Design",
+      "Difficulty",
+      "Boss Design"
+    ],
+    "stat": "1,000+ games documented",
+    "cta": "Browse the database"
+  },
+  "hobbies": {
+    "title": "Off hours",
+    "text": "Making and playing games, electric guitar, figure skating, anime, museums, language learning."
   },
   "resume": {
     "kicker": "Resume",
