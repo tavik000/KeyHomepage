@@ -24,11 +24,9 @@
     "summary": "我是Key Zhao，一名擁有5年以上經驗的遊戲程式設計師，作品橫跨PC、主機與手機平台。現於東京Blast Edge Games任職，以Unreal Engine 5與C++開發未公開的AAA動作RPG。",
     "ctaProjects": "瀏覽專案",
     "ctaResume": "下載履歷",
-    "scroll": "向下捲動",
     "stats": [
       { "value": "5+", "label": "遊戲開發年資" },
       { "value": "UE5 · C++", "label": "主要技術" },
-      { "value": "6", "label": "已上市平台" },
       { "value": "JLPT N1", "label": "日語能力" }
     ]
   },
@@ -92,6 +90,29 @@
         {
           "challenge": "臨近上市時，角色玩法的缺陷威脅到遊戲穩定性。",
           "solution": "以C++除錯並修正角色與遊戲玩法問題，達到出貨品質。"
+        }
+      ]
+    },
+    "apeiron": {
+      "title": "Apeiron",
+      "tagline": "於Steam與Epic Games Store上市的動作RTS卡牌對戰遊戲",
+      "role": "首席程式設計師",
+      "genre": "動作RTS / 卡牌對戰",
+      "overview": "以Unity開發、於Steam與Epic Games Store上市的動作RTS卡牌對戰遊戲。我在Ember Entertainment的5人遊戲團隊中擔任首席程式設計師，負責系統設計與核心玩法——戰鬥機制、卡牌系統與敵人AI——並實作多人連線同步層。",
+      "contributions": [
+        "以C#開發遊戲系統、戰鬥機制、卡牌系統與敵人AI。",
+        "以Socket.IO實作多人連線同步。",
+        "指導初級程式設計師並參與技術面試。",
+        "協助專案規劃與時程管理。"
+      ],
+      "challenges": [
+        {
+          "challenge": "在即時RTS戰鬥中觸發的卡牌效果，必須在所有連線客戶端之間保持一致。",
+          "solution": "以Socket.IO同步層為核心設計遊戲狀態流程，並針對測試中發現的不同步問題加以強化。"
+        },
+        {
+          "challenge": "持續擴充的深度卡牌系統，必須讓5人團隊能夠長期維護。",
+          "solution": "主導系統設計：以資料驅動的卡牌與技能定義，讓新內容上線時無需修改核心戰鬥程式碼。"
         }
       ]
     },
@@ -305,7 +326,6 @@
       "ai": "AI / ML"
     },
     "items": {
-      "apeiron": { "title": "Apeiron" },
       "guards": { "title": "GUARDS!" },
       "doki-doki-house": { "title": "Doki Doki House（心跳度假屋）" },
       "lost-strings": { "title": "The Lost Strings" },

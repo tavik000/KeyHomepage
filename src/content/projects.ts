@@ -55,6 +55,23 @@ export const featuredProjects: FeaturedProject[] = [
     gallery: []
   },
   {
+    slug: "apeiron",
+    image: "/images/projects/apeiron.jpg",
+    period: "2022 — 2023",
+    platforms: ["Steam", "Epic Games Store"],
+    engine: "Unity",
+    languages: ["C#"],
+    technologies: ["Unity", "C#", "Socket.IO", "Git"],
+    teamSize: "5",
+    links: [
+      {
+        type: "epic",
+        href: "https://store.epicgames.com/p/apeiron-b83793"
+      }
+    ],
+    gallery: []
+  },
+  {
     slug: "every-hero",
     image: "/images/projects/every-hero.png",
     period: "2020 — 2022",
@@ -161,13 +178,6 @@ export interface OtherProject {
 }
 
 export const otherProjects: OtherProject[] = [
-  {
-    id: "apeiron",
-    category: "game",
-    tags: ["Unity", "C#", "Socket.IO", "Lead Programmer"],
-    link: "https://store.epicgames.com/p/apeiron-b83793",
-    year: "2022 — 2023"
-  },
   {
     id: "guards",
     category: "game",

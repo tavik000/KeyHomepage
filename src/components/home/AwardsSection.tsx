@@ -24,7 +24,18 @@ export default function AwardsSection() {
                   <span className="mr-3 font-[family-name:var(--font-mono)] text-xs text-faint">
                     {award.year}
                   </span>
-                  <span className="text-fg">{t(`items.${award.id}.award`)}</span>
+                  {award.eventLink ? (
+                    <a
+                      href={award.eventLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-fg underline decoration-border decoration-1 underline-offset-4 transition-colors hover:text-accent-soft hover:decoration-accent-soft"
+                    >
+                      {t(`items.${award.id}.award`)}
+                    </a>
+                  ) : (
+                    <span className="text-fg">{t(`items.${award.id}.award`)}</span>
+                  )}
                   <span className="text-muted"> — {t(`items.${award.id}.game`)}</span>
                   <span className="block pl-0 text-xs text-faint sm:inline sm:pl-2">
                     {t(`items.${award.id}.event`)}

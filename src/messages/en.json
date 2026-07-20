@@ -24,11 +24,9 @@
     "summary": "I'm Key Zhao, a gameplay programmer with 5+ years of experience shipping PC, console, and mobile games. I currently work at Blast Edge Games in Tokyo on an unannounced AAA action RPG in Unreal Engine 5 and C++.",
     "ctaProjects": "View projects",
     "ctaResume": "Download resume",
-    "scroll": "Scroll",
     "stats": [
       { "value": "5+", "label": "Years in games" },
       { "value": "UE5 · C++", "label": "Primary stack" },
-      { "value": "6", "label": "Platforms shipped" },
       { "value": "JLPT N1", "label": "Japanese" }
     ]
   },
@@ -92,6 +90,29 @@
         {
           "challenge": "Character gameplay defects threatened stability close to release.",
           "solution": "Debugged and fixed character and gameplay issues to shipping quality in C++."
+        }
+      ]
+    },
+    "apeiron": {
+      "title": "Apeiron",
+      "tagline": "Action RTS card battler on Steam & Epic Games Store",
+      "role": "Lead Programmer",
+      "genre": "Action RTS / Card Battle",
+      "overview": "An action RTS card-battle game built in Unity, released on Steam and the Epic Games Store. As lead programmer of a 5-person gameplay team at Ember Entertainment, I owned system design and core gameplay — combat mechanics, card systems, and enemy AI — and implemented the multiplayer synchronization layer.",
+      "contributions": [
+        "Developed gameplay systems, combat mechanics, card systems, and enemy AI in C#.",
+        "Implemented multiplayer synchronization using Socket.IO.",
+        "Mentored junior programmers and participated in technical interviews.",
+        "Assisted with project planning and scheduling."
+      ],
+      "challenges": [
+        {
+          "challenge": "Card effects triggering inside real-time RTS combat had to stay consistent across networked clients.",
+          "solution": "Designed the gameplay state flow around a Socket.IO synchronization layer and hardened it against desyncs surfaced in playtesting."
+        },
+        {
+          "challenge": "A deep, expanding card system had to remain maintainable for a 5-person team.",
+          "solution": "Owned the system design: data-driven card and skill definitions so new content shipped without touching core combat code."
         }
       ]
     },
@@ -305,7 +326,6 @@
       "ai": "AI / ML"
     },
     "items": {
-      "apeiron": { "title": "Apeiron" },
       "guards": { "title": "GUARDS!" },
       "doki-doki-house": { "title": "Doki Doki House" },
       "lost-strings": { "title": "The Lost Strings" },

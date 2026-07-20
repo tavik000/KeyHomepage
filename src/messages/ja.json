@@ -24,11 +24,9 @@
     "summary": "Key Zhao（キー）と申します。PC・コンソール・モバイルゲームの開発に5年以上携わるゲームプレイプログラマーです。現在は東京のBlast Edge Gamesにて、Unreal Engine 5 / C++による未発表AAAアクションRPGの開発に従事しています。",
     "ctaProjects": "プロジェクトを見る",
     "ctaResume": "履歴書をダウンロード",
-    "scroll": "スクロール",
     "stats": [
       { "value": "5+", "label": "ゲーム開発歴（年）" },
       { "value": "UE5 · C++", "label": "メイン技術" },
-      { "value": "6", "label": "リリース済みプラットフォーム" },
       { "value": "JLPT N1", "label": "日本語能力" }
     ]
   },
@@ -92,6 +90,29 @@
         {
           "challenge": "リリース直前にキャラクターゲームプレイの不具合が安定性を脅かしていました。",
           "solution": "C++でキャラクター・ゲームプレイの不具合をデバッグし、出荷品質まで修正しました。"
+        }
+      ]
+    },
+    "apeiron": {
+      "title": "Apeiron",
+      "tagline": "Steam / Epic Games StoreでリリースされたアクションRTSカードバトル",
+      "role": "リードプログラマー",
+      "genre": "アクションRTS / カードバトル",
+      "overview": "Unityで開発され、SteamとEpic Games StoreでリリースされたアクションRTSカードバトルゲーム。Ember Entertainmentの5名のゲームプレイチームでリードプログラマーを務め、システム設計とコアゲームプレイ（戦闘メカニクス、カードシステム、敵AI）を担当し、マルチプレイヤー同期レイヤーを実装しました。",
+      "contributions": [
+        "ゲームプレイシステム、戦闘メカニクス、カードシステム、敵AIをC#で開発。",
+        "Socket.IOによるマルチプレイヤー同期を実装。",
+        "ジュニアプログラマーの指導、技術面接への参加。",
+        "プロジェクト計画・スケジュール管理の支援。"
+      ],
+      "challenges": [
+        {
+          "challenge": "リアルタイムRTS戦闘中に発動するカード効果を、ネットワーク越しの全クライアントで一貫させる必要がありました。",
+          "solution": "Socket.IOによる同期レイヤーを中心にゲームプレイの状態フローを設計し、プレイテストで顕在化したデシンクに対して堅牢化しました。"
+        },
+        {
+          "challenge": "拡張を続ける奥深いカードシステムを、5名のチームで保守可能な形に保つ必要がありました。",
+          "solution": "システム設計を担当し、カード・スキル定義をデータドリブン化。コア戦闘コードに触れずに新コンテンツを追加できるようにしました。"
         }
       ]
     },
@@ -305,7 +326,6 @@
       "ai": "AI / ML"
     },
     "items": {
-      "apeiron": { "title": "Apeiron" },
       "guards": { "title": "GUARDS!" },
       "doki-doki-house": { "title": "Doki Doki House（心跳度假屋）" },
       "lost-strings": { "title": "The Lost Strings" },

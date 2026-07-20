@@ -70,7 +70,7 @@ export default function Hero() {
 
         <motion.dl
           {...fadeUp(0.6)}
-          className="mt-20 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-10 border-t border-border pt-10 sm:grid-cols-4"
+          className="mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-10 border-t border-border pt-10 sm:grid-cols-3"
         >
           {stats.map((s) => (
             <div key={s.label}>
@@ -84,21 +84,6 @@ export default function Hero() {
           ))}
         </motion.dl>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 1 }}
-        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 md:block"
-        aria-hidden="true"
-      >
-        <span className="meta-label">{t("scroll")}</span>
-        <motion.span
-          className="mx-auto mt-3 block h-8 w-px bg-faint"
-          animate={reduceMotion ? undefined : { scaleY: [1, 0.4, 1], originY: 0 }}
-          transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
-        />
-      </motion.div>
     </div>
   );
 }
