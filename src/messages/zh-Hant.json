@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "title": "Key Zhao — 遊戲程式設計師 · Unreal Engine 5 / C++",
+    "description": "現居東京的遊戲程式設計師（Gameplay Programmer），擁有5年以上PC、主機及手機遊戲開發經驗，專精Unreal Engine 5 / C++與Unity / C#。現正開發PS5 / Xbox Series X|S / Steam平台的未公開AAA動作RPG。"
+  },
+  "nav": {
+    "home": "首頁",
+    "projects": "專案",
+    "experience": "經歷",
+    "skills": "技能",
+    "blog": "網誌",
+    "contact": "聯絡",
+    "resume": "履歷",
+    "openMenu": "開啟選單",
+    "closeMenu": "關閉選單",
+    "skipToContent": "跳至主要內容"
+  },
+  "langSwitcher": {
+    "label": "語言"
+  },
+  "hero": {
+    "kicker": "遊戲程式設計師 · 日本東京",
+    "title": "以Unreal Engine 5打造戰鬥、角色與世界。",
+    "summary": "我是Key Zhao，一名擁有5年以上經驗的遊戲程式設計師，作品橫跨PC、主機與手機平台。現於東京Blast Edge Games任職，以Unreal Engine 5與C++開發未公開的AAA動作RPG。",
+    "ctaProjects": "瀏覽專案",
+    "ctaResume": "下載履歷",
+    "scroll": "向下捲動",
+    "stats": [
+      { "value": "5+", "label": "遊戲開發年資" },
+      { "value": "UE5 · C++", "label": "主要技術" },
+      { "value": "6", "label": "已上市平台" },
+      { "value": "JLPT N1", "label": "日語能力" }
+    ]
+  },
+  "featured": {
+    "kicker": "Selected Work",
+    "title": "主要商業專案",
+    "readMore": "閱讀更多",
+    "confidential": "受NDA保密",
+    "labels": {
+      "role": "職責",
+      "platforms": "平台",
+      "engine": "引擎",
+      "period": "期間",
+      "team": "團隊",
+      "technologies": "使用技術",
+      "genre": "類型"
+    }
+  },
+  "projects": {
+    "unannounced-arpg": {
+      "title": "未公開AAA動作RPG",
+      "tagline": "於東京Blast Edge Games開發中",
+      "role": "遊戲程式設計師",
+      "genre": "動作RPG",
+      "overview": "Blast Edge Games開發中的未公開AAA動作RPG，目標平台為Steam、PlayStation 5與Xbox Series X|S。我以Unreal Engine 5與C++負責遊戲事件、過場演出與UI相關的遊戲玩法實作。作品名稱與細節受NDA保密。",
+      "confidentialNote": "本作尚未公開，圖片僅為示意，內容僅限於履歷中已載明的範圍。",
+      "contributions": [
+        "開發並打磨遊戲事件、過場演出與互動式遊戲系統。",
+        "實作UI功能並修正遊戲相關錯誤。",
+        "改善角色行為、動畫與鏡頭表現。",
+        "實作並調校音效、環境特效與互動物件。",
+        "處理卡關問題、碰撞問題與遊戲測試回饋。"
+      ],
+      "challenges": [
+        {
+          "challenge": "過場演出與互動遊戲之間必須順暢交接操控權，且不能破壞玩家狀態。",
+          "solution": "實作並強化演出與玩家操控之間的事件流程，修正遊戲測試中發現的狀態轉換邊界情況。"
+        },
+        {
+          "challenge": "在廣大且高密度的遊戲世界中，遊戲測試回報了大量卡關與碰撞問題。",
+          "solution": "系統性重現問題報告，從遊戲邏輯與碰撞程式碼的根源修正，並透過測試回饋循環驗證修正結果。"
+        }
+      ]
+    },
+    "hyke": {
+      "title": "HYKE: Northern Light(s)",
+      "tagline": "於五大平台上市的動作冒險遊戲",
+      "role": "遊戲程式設計師",
+      "genre": "動作冒險",
+      "overview": "以Unreal Engine 5開發的動作冒險遊戲，已於Steam、PlayStation 5、Nintendo Switch、iOS與Android上市。我以遊戲程式設計師身分加入Blast Edge Games約50人的開發團隊，負責遊戲品質與平台效能最佳化。",
+      "contributions": [
+        "解決遊戲玩法與角色相關問題，提升品質與穩定性。",
+        "最佳化iOS的記憶體用量。",
+        "最佳化Nintendo Switch的Game Thread效能。"
+      ],
+      "challenges": [
+        {
+          "challenge": "單一UE5程式碼庫必須同時在PlayStation 5到Nintendo Switch與手機等硬體上出貨。",
+          "solution": "針對各平台進行效能分析，降低Switch的Game Thread負載、壓縮iOS記憶體佔用，以滿足各平台限制。"
+        },
+        {
+          "challenge": "臨近上市時，角色玩法的缺陷威脅到遊戲穩定性。",
+          "solution": "以C++除錯並修正角色與遊戲玩法問題，達到出貨品質。"
+        }
+      ]
+    },
+    "every-hero": {
+      "title": "Every Hero",
+      "tagline": "突破100萬玩家 · App Store動作遊戲排行第2名",
+      "role": "遊戲程式設計師",
+      "genre": "Rogue-lite動作RPG",
+      "overview": "於Feeling Game Company以5人團隊使用Unity開發的iOS / Android Rogue-lite砍殺動作RPG。遊戲累計超過100萬名玩家，並登上App Store動作遊戲排行榜第2名。",
+      "contributions": [
+        "開發遊戲系統、戰鬥機制、裝備系統與UI。",
+        "針對各種行動裝置進行效能最佳化。",
+        "執行QA、日文在地化與廣告SDK整合。"
+      ],
+      "challenges": [
+        {
+          "challenge": "僅有五名開發者，卻要維護深度的裝備與技能系統。",
+          "solution": "以C#建立資料驅動的道具、裝備與技能系統，讓企劃可自行擴充內容而無需工程師介入。"
+        },
+        {
+          "challenge": "大量實體同時運作的動作玩法，必須在低階手機上維持流暢幀率。",
+          "solution": "分析並最佳化遊戲邏輯與UI程式路徑，確保跨裝置的穩定效能。"
+        }
+      ]
+    }
+  },
+  "projectPage": {
+    "backToProjects": "所有專案",
+    "overview": "概要",
+    "contributions": "我的職責",
+    "challenges": "技術挑戰",
+    "challenge": "挑戰",
+    "solution": "解決方案",
+    "gallery": "圖庫",
+    "video": "遊戲影片",
+    "nextProject": "下一個專案",
+    "links": {
+      "steam": "在Steam查看",
+      "appstore": "在App Store查看",
+      "youtube": "觀看遊戲影片",
+      "github": "在GitHub查看",
+      "epic": "在Epic Games Store查看",
+      "web": "前往網站"
+    }
+  },
+  "experience": {
+    "kicker": "Career",
+    "title": "工作經歷",
+    "present": "至今",
+    "items": {
+      "blast-edge": {
+        "position": "遊戲程式設計師（UE5）",
+        "bullets": [
+          "以Unreal Engine 5 / C++開發未公開AAA動作RPG（Steam / PS5 / Xbox Series X|S）的遊戲事件、過場演出、UI與互動系統。",
+          "改善角色行為、動畫與鏡頭表現，處理卡關問題與遊戲測試回饋。",
+          "於《HYKE: Northern Light(s)》負責iOS記憶體最佳化與Nintendo Switch Game Thread效能最佳化。",
+          "在大型多團隊程式碼庫中使用Perforce協作。"
+        ]
+      },
+      "freelance": {
+        "position": "自由接案遊戲開發者",
+        "bullets": [
+          "《GUARDS!》（Steam）：於4人多人連線獨立團隊負責遊戲QA、除錯與日文在地化（UE / C++）。",
+          "彈幕射擊遊戲：以Unity / C#開發遊戲系統、戰鬥、敵人AI與UI。",
+          "《Doki Doki House》（iOS / Steam）：開發將Excel腳本轉換為Ren'Py程式碼的工具，該作品iOS玩家超過5萬人。"
+        ]
+      },
+      "ember": {
+        "position": "遊戲程式設計師（Unity）",
+        "bullets": [
+          "《Apeiron》（Steam / Epic）：以C#開發遊戲系統、戰鬥機制、卡牌系統與敵人AI。",
+          "以Socket.IO實作多人連線同步。",
+          "指導初級程式設計師、參與技術面試並協助專案規劃。"
+        ]
+      },
+      "feeling-game": {
+        "position": "遊戲程式設計師（Unity）",
+        "bullets": [
+          "《Every Hero》（iOS / Android）：以C#開發遊戲玩法、戰鬥、裝備系統與UI。",
+          "負責效能最佳化、QA、日文在地化與廣告整合。",
+          "該作品累計超過100萬名玩家，並登上App Store動作遊戲排行第2名。"
+        ]
+      }
+    }
+  },
+  "education": {
+    "kicker": "Education",
+    "title": "學歷",
+    "items": {
+      "polyu": {
+        "degree": "資訊科技碩士（MSc in Information Technology）",
+        "detail": "主修AI與機器學習，並修習遊戲設計與遊戲開發課程。"
+      },
+      "chuhai": {
+        "degree": "電腦科學榮譽學士（BSc (Hons) in Computer Science）",
+        "detail": "修習演算法、資料結構、物件導向、資料庫與軟體工程。"
+      }
+    }
+  },
+  "skills": {
+    "kicker": "Capabilities",
+    "title": "技術能力",
+    "categories": {
+      "languages": "程式語言",
+      "engines": "遊戲引擎",
+      "gameplay": "遊戲玩法",
+      "graphics": "圖形",
+      "ui": "UI",
+      "tools": "工具",
+      "versionControl": "版本控制",
+      "platforms": "平台"
+    },
+    "spokenTitle": "語言能力",
+    "spoken": {
+      "cantonese": { "name": "廣東話", "level": "母語" },
+      "mandarin": { "name": "普通話", "level": "母語" },
+      "japanese": { "name": "日語", "level": "JLPT N1" },
+      "english": { "name": "英語", "level": "商務程度" }
+    }
+  },
+  "awards": {
+    "kicker": "Recognition",
+    "title": "獲獎經歷",
+    "viewGame": "觀看遊戲",
+    "viewEvent": "活動頁面",
+    "items": {
+      "petitcon": {
+        "game": "Hook Racer",
+        "award": "盛り上がるで賞（最炒熱氣氛獎）",
+        "event": "第24回UE5ぷちコン"
+      },
+      "ggj2025": {
+        "game": "Shadow Bubble: Hide and Seek Chaos",
+        "award": "觀眾票選獎 & 最佳XR遊戲",
+        "event": "Global Game Jam香港2025"
+      },
+      "ggj2022": {
+        "game": "Blite",
+        "award": "最佳原創遊戲",
+        "event": "Global Game Jam香港2022"
+      },
+      "cityu": {
+        "game": "發展協調障礙評估與訓練App",
+        "award": "銅獎",
+        "event": "城大App創新大賽"
+      }
+    }
+  },
+  "certifications": {
+    "title": "證照",
+    "items": {
+      "fe": {
+        "name": "基本情報技術者試驗（FE）",
+        "issuer": "IPA（日本）"
+      },
+      "sg": {
+        "name": "情報安全管理試驗（SG）",
+        "issuer": "IPA（日本）"
+      },
+      "jlpt-n1": {
+        "name": "日本語能力試驗 N1",
+        "issuer": "JLPT"
+      }
+    }
+  },
+  "jams": {
+    "kicker": "Prototypes & Jams",
+    "title": "Game Jam作品",
+    "description": "獨自或與小型團隊在數天至數週內完成設計、開發與發布的快速原型作品。",
+    "awardBadge": "獲獎作品",
+    "items": {
+      "hook-racer": {
+        "title": "Hook Racer",
+        "desc": "以鉤索疾馳的競速動作遊戲。7週獨自完成，包辦遊戲程式、像素美術與音樂。第24回UE5ぷちコン獲獎作品。"
+      },
+      "shadow-bubble": {
+        "title": "Shadow Bubble: Hide and Seek Chaos",
+        "desc": "7天完成的雙人非對稱匿蹤遊戲。獲GGJ香港2025觀眾票選獎與最佳XR遊戲獎。"
+      },
+      "teacup": {
+        "title": "Nesmy Land: Teacup",
+        "desc": "3人團隊5天完成的動作模擬遊戲，負責遊戲程式與關卡設計。"
+      },
+      "path-of-osu": {
+        "title": "The Path of Osu",
+        "desc": "具戰鬥與解謎要素的第三人稱動作冒險原型，7週獨自開發。"
+      },
+      "root-me": {
+        "title": "√Me",
+        "desc": "5人團隊7天完成的解謎平台遊戲。"
+      },
+      "blite": {
+        "title": "Blite",
+        "desc": "2天完成的解謎平台遊戲。獲GGJ香港2022最佳原創遊戲獎。"
+      },
+      "home-sleep-home": {
+        "title": "Home Sleep Home",
+        "desc": "7人團隊2天完成的動作模擬遊戲。"
+      }
+    }
+  },
+  "other": {
+    "kicker": "More Work",
+    "title": "其他專案",
+    "description": "主要作品以外的商業接案、工具開發與實驗性專案。",
+    "categories": {
+      "game": "遊戲",
+      "web": "網頁",
+      "mobile": "行動裝置",
+      "ai": "AI / ML"
+    },
+    "items": {
+      "apeiron": { "title": "Apeiron" },
+      "guards": { "title": "GUARDS!" },
+      "doki-doki-house": { "title": "Doki Doki House（心跳度假屋）" },
+      "lost-strings": { "title": "The Lost Strings" },
+      "hero-race": { "title": "Hero Race（魔獸爭霸III）" },
+      "color-picking": { "title": "Color Picking" },
+      "maze-game-ai": { "title": "Maze Game AI" },
+      "blog-remake": { "title": "個人網誌（Next.js）" },
+      "angular-blog": { "title": "個人網誌（Angular）" },
+      "dcd-app": { "title": "DCD評估與訓練App" },
+      "react-native-apps": { "title": "React Native小型應用" },
+      "facebook-chatbot": { "title": "Facebook聊天機器人" }
+    }
+  },
+  "resume": {
+    "kicker": "Resume",
+    "title": "履歷",
+    "description": "完整工作經歷、專案細節與證照，提供PDF格式下載。",
+    "en": "英文履歷（PDF）",
+    "ja": "日文履歷書（PDF）"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "聯絡我",
+    "lead": "歡迎討論遊戲程式設計師的工作機會，或任何關於遊戲開發的交流。電郵是聯絡我最快的方式。",
+    "email": "電郵",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "blog": "網誌",
+    "location": "日本東京"
+  },
+  "footer": {
+    "rights": "© {year} Key Zhao. All rights reserved.",
+    "backToTop": "回到頂部"
+  },
+  "blog": {
+    "kicker": "Writing",
+    "title": "網誌",
+    "description": "關於Unreal Engine 5、遊戲程式設計與圖形技術的筆記。",
+    "empty": "此語言暫無文章。",
+    "back": "所有文章",
+    "externalNote": "較舊的文章請見我的舊網誌："
+  },
+  "notFound": {
+    "title": "找不到頁面",
+    "description": "您所尋找的頁面不存在。",
+    "back": "回到首頁"
+  }
+}

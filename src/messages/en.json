@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "title": "Key Zhao — Gameplay Programmer · Unreal Engine 5 / C++",
+    "description": "Gameplay programmer in Tokyo with 5+ years shipping PC, console, and mobile games in Unreal Engine 5 / C++ and Unity / C#. Currently developing an unannounced AAA action RPG for PS5, Xbox Series X|S, and Steam."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "blog": "Blog",
+    "contact": "Contact",
+    "resume": "Resume",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content"
+  },
+  "langSwitcher": {
+    "label": "Language"
+  },
+  "hero": {
+    "kicker": "Gameplay Programmer · Tokyo, Japan",
+    "title": "Building combat, characters, and worlds in Unreal Engine 5.",
+    "summary": "I'm Key Zhao, a gameplay programmer with 5+ years of experience shipping PC, console, and mobile games. I currently work at Blast Edge Games in Tokyo on an unannounced AAA action RPG in Unreal Engine 5 and C++.",
+    "ctaProjects": "View projects",
+    "ctaResume": "Download resume",
+    "scroll": "Scroll",
+    "stats": [
+      { "value": "5+", "label": "Years in games" },
+      { "value": "UE5 · C++", "label": "Primary stack" },
+      { "value": "6", "label": "Platforms shipped" },
+      { "value": "JLPT N1", "label": "Japanese" }
+    ]
+  },
+  "featured": {
+    "kicker": "Selected Work",
+    "title": "Featured commercial projects",
+    "readMore": "Read more",
+    "confidential": "Under NDA",
+    "labels": {
+      "role": "Role",
+      "platforms": "Platforms",
+      "engine": "Engine",
+      "period": "Period",
+      "team": "Team",
+      "technologies": "Technologies",
+      "genre": "Genre"
+    }
+  },
+  "projects": {
+    "unannounced-arpg": {
+      "title": "Unannounced AAA Action RPG",
+      "tagline": "In development at Blast Edge Games, Tokyo",
+      "role": "Gameplay Programmer",
+      "genre": "Action RPG",
+      "overview": "An unannounced AAA action RPG in development at Blast Edge Games for Steam, PlayStation 5, and Xbox Series X|S. I work across the event, cinematic, and UI layers of the game in Unreal Engine 5 and C++. Title and details are under NDA.",
+      "confidentialNote": "This title has not been announced. Artwork is a placeholder and project details are limited to what my resume already states.",
+      "contributions": [
+        "Developed and polished gameplay events, cinematic sequences, and interactive gameplay systems.",
+        "Implemented UI features and fixed gameplay-related bugs.",
+        "Improved character behaviors, animations, and camera presentation.",
+        "Implemented and tuned audio, environmental effects, and interactive objects.",
+        "Addressed progression blockers, collision issues, and playtest feedback."
+      ],
+      "challenges": [
+        {
+          "challenge": "Cinematic sequences must hand control back and forth with interactive gameplay without ever stranding the player.",
+          "solution": "Implemented and hardened event flows that transition between cinematic presentation and player control, fixing state edge cases surfaced by playtests."
+        },
+        {
+          "challenge": "Playtests surfaced progression blockers and collision issues across a large, dense game world.",
+          "solution": "Reproduced reports systematically, fixed root causes in gameplay and collision code, and verified fixes against playtest feedback loops."
+        }
+      ]
+    },
+    "hyke": {
+      "title": "HYKE: Northern Light(s)",
+      "tagline": "Action adventure shipped on five platforms",
+      "role": "Gameplay Programmer",
+      "genre": "Action Adventure",
+      "overview": "A shipped action-adventure title built in Unreal Engine 5, released on Steam, PlayStation 5, Nintendo Switch, iOS, and Android. I joined the ~50-person team at Blast Edge Games as a gameplay programmer, focusing on gameplay quality and platform performance.",
+      "contributions": [
+        "Resolved gameplay and character-related issues to improve quality and stability.",
+        "Optimized memory usage on iOS.",
+        "Optimized Game Thread performance on Nintendo Switch."
+      ],
+      "challenges": [
+        {
+          "challenge": "One UE5 codebase had to ship from PlayStation 5 all the way down to Nintendo Switch and mobile hardware.",
+          "solution": "Profiled per-platform bottlenecks, cut Game Thread cost on Switch, and reduced memory footprint on iOS to meet each platform's constraints."
+        },
+        {
+          "challenge": "Character gameplay defects threatened stability close to release.",
+          "solution": "Debugged and fixed character and gameplay issues to shipping quality in C++."
+        }
+      ]
+    },
+    "every-hero": {
+      "title": "Every Hero",
+      "tagline": "1M+ players · App Store Action Games #2",
+      "role": "Gameplay Programmer",
+      "genre": "Rogue-lite Action RPG",
+      "overview": "A rogue-lite hack-and-slash action RPG for iOS and Android, built in Unity with a 5-person team at Feeling Game Company. The game reached over one million players and ranked #2 in App Store Action Games.",
+      "contributions": [
+        "Developed gameplay systems, combat mechanics, equipment systems, and UI.",
+        "Optimized game performance across a wide range of mobile devices.",
+        "Performed QA, Japanese localization, and advertisement integration."
+      ],
+      "challenges": [
+        {
+          "challenge": "A deep equipment and skill system had to stay maintainable with only five developers.",
+          "solution": "Built data-driven inventory, equipment, and skill systems in C# so designers could extend content without engineering time."
+        },
+        {
+          "challenge": "Action gameplay with many entities had to hold frame rate on low-spec phones.",
+          "solution": "Profiled and optimized gameplay and UI code paths to keep performance stable across devices."
+        }
+      ]
+    }
+  },
+  "projectPage": {
+    "backToProjects": "All projects",
+    "overview": "Overview",
+    "contributions": "My contributions",
+    "challenges": "Technical challenges",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "gallery": "Gallery",
+    "video": "Gameplay video",
+    "nextProject": "Next project",
+    "links": {
+      "steam": "View on Steam",
+      "appstore": "View on the App Store",
+      "youtube": "Watch gameplay",
+      "github": "View on GitHub",
+      "epic": "View on Epic Games Store",
+      "web": "Visit website"
+    }
+  },
+  "experience": {
+    "kicker": "Career",
+    "title": "Professional experience",
+    "present": "Present",
+    "items": {
+      "blast-edge": {
+        "position": "Gameplay Programmer (UE5)",
+        "bullets": [
+          "Developing gameplay events, cinematics, UI, and interactive systems for an unannounced AAA action RPG (Steam / PS5 / Xbox Series X|S) in Unreal Engine 5 and C++.",
+          "Improved character behaviors, animations, and camera presentation; fixed progression blockers and playtest findings.",
+          "Optimized HYKE: Northern Light(s) — memory usage on iOS and Game Thread performance on Nintendo Switch.",
+          "Working with Perforce in a large multi-team codebase."
+        ]
+      },
+      "freelance": {
+        "position": "Freelance Game Developer",
+        "bullets": [
+          "GUARDS! (Steam): gameplay QA, debugging, and Japanese localization in a 4-person multiplayer indie team (UE, C++).",
+          "Danmaku shooting game: developed gameplay systems, combat, enemy AI, and UI in Unity / C#.",
+          "Doki Doki House (iOS / Steam): built a pipeline tool converting Excel scripts to Ren'Py code for a title with 50,000+ iOS players."
+        ]
+      },
+      "ember": {
+        "position": "Gameplay Programmer (Unity)",
+        "bullets": [
+          "Apeiron (Steam / Epic): developed gameplay systems, combat mechanics, card systems, and enemy AI in C#.",
+          "Implemented multiplayer synchronization using Socket.IO.",
+          "Mentored junior programmers, joined technical interviews, and assisted project planning."
+        ]
+      },
+      "feeling-game": {
+        "position": "Gameplay Programmer (Unity)",
+        "bullets": [
+          "Every Hero (iOS / Android): developed gameplay, combat, equipment systems, and UI in C#.",
+          "Optimized performance; performed QA, Japanese localization, and ad integration.",
+          "Contributed to a title with 1M+ players and an App Store Action Games #2 ranking."
+        ]
+      }
+    }
+  },
+  "education": {
+    "kicker": "Education",
+    "title": "Education",
+    "items": {
+      "polyu": {
+        "degree": "MSc in Information Technology",
+        "detail": "Specialized in AI and machine learning; coursework in game design and game development."
+      },
+      "chuhai": {
+        "degree": "BSc (Hons) in Computer Science",
+        "detail": "Algorithms, data structures, OOP, databases, and software engineering."
+      }
+    }
+  },
+  "skills": {
+    "kicker": "Capabilities",
+    "title": "Technical skills",
+    "categories": {
+      "languages": "Languages",
+      "engines": "Game Engines",
+      "gameplay": "Gameplay",
+      "graphics": "Graphics",
+      "ui": "UI",
+      "tools": "Tools",
+      "versionControl": "Version Control",
+      "platforms": "Platforms"
+    },
+    "spokenTitle": "Spoken languages",
+    "spoken": {
+      "cantonese": { "name": "Cantonese", "level": "Native" },
+      "mandarin": { "name": "Mandarin", "level": "Native" },
+      "japanese": { "name": "Japanese", "level": "JLPT N1" },
+      "english": { "name": "English", "level": "Business level" }
+    }
+  },
+  "awards": {
+    "kicker": "Recognition",
+    "title": "Awards",
+    "viewGame": "Watch the game",
+    "viewEvent": "Event page",
+    "items": {
+      "petitcon": {
+        "game": "Hook Racer",
+        "award": "盛り上がるで賞 (Crowd Excitement Award)",
+        "event": "24th Unreal Engine 5 Petit Contest (UE5ぷちコン)"
+      },
+      "ggj2025": {
+        "game": "Shadow Bubble: Hide and Seek Chaos",
+        "award": "Audience Choice Winner & Best XR Game",
+        "event": "Global Game Jam Hong Kong 2025"
+      },
+      "ggj2022": {
+        "game": "Blite",
+        "award": "Best Original Game",
+        "event": "Global Game Jam Hong Kong 2022"
+      },
+      "cityu": {
+        "game": "DCD Evaluation and Training App",
+        "award": "Bronze Award",
+        "event": "CityU App Innovation Contest"
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": {
+      "fe": {
+        "name": "Fundamental Information Technology Engineer Examination (FE)",
+        "issuer": "IPA, Japan"
+      },
+      "sg": {
+        "name": "Information Security Management Examination (SG)",
+        "issuer": "IPA, Japan"
+      },
+      "jlpt-n1": {
+        "name": "Japanese-Language Proficiency Test N1",
+        "issuer": "JLPT"
+      }
+    }
+  },
+  "jams": {
+    "kicker": "Prototypes & Jams",
+    "title": "Game jam projects",
+    "description": "Rapid prototypes built solo or in small teams — each one designed, programmed, and shipped in days to weeks.",
+    "awardBadge": "Award winner",
+    "items": {
+      "hook-racer": {
+        "title": "Hook Racer",
+        "desc": "Grappling-hook racing action. 7-week solo project — all gameplay, pixel art, and music. Award winner at the 24th UE5ぷちコン."
+      },
+      "shadow-bubble": {
+        "title": "Shadow Bubble: Hide and Seek Chaos",
+        "desc": "Two-player asymmetric stealth in 7 days. Audience Choice & Best XR Game, GGJ Hong Kong 2025."
+      },
+      "teacup": {
+        "title": "Nesmy Land: Teacup",
+        "desc": "Action-simulation built in 5 days in a 3-person team — gameplay programming and level design."
+      },
+      "path-of-osu": {
+        "title": "The Path of Osu",
+        "desc": "Third-person action-adventure prototype with combat and puzzles, solo-developed over 7 weeks."
+      },
+      "root-me": {
+        "title": "√Me",
+        "desc": "Puzzle platformer built in 7 days in a 5-person team."
+      },
+      "blite": {
+        "title": "Blite",
+        "desc": "Puzzle platformer built in 2 days. Best Original Game, GGJ Hong Kong 2022."
+      },
+      "home-sleep-home": {
+        "title": "Home Sleep Home",
+        "desc": "Action-simulation jam game built in 2 days in a 7-person team."
+      }
+    }
+  },
+  "other": {
+    "kicker": "More Work",
+    "title": "Other projects",
+    "description": "Commercial contract work, tools, and experiments beyond the featured titles.",
+    "categories": {
+      "game": "Games",
+      "web": "Web",
+      "mobile": "Mobile",
+      "ai": "AI / ML"
+    },
+    "items": {
+      "apeiron": { "title": "Apeiron" },
+      "guards": { "title": "GUARDS!" },
+      "doki-doki-house": { "title": "Doki Doki House" },
+      "lost-strings": { "title": "The Lost Strings" },
+      "hero-race": { "title": "Hero Race (Warcraft III)" },
+      "color-picking": { "title": "Color Picking" },
+      "maze-game-ai": { "title": "Maze Game AI" },
+      "blog-remake": { "title": "Personal Blog (Next.js)" },
+      "angular-blog": { "title": "Personal Blog (Angular)" },
+      "dcd-app": { "title": "DCD Evaluation & Training App" },
+      "react-native-apps": { "title": "React Native Mini Apps" },
+      "facebook-chatbot": { "title": "Facebook Chatbot" }
+    }
+  },
+  "resume": {
+    "kicker": "Resume",
+    "title": "Resume",
+    "description": "Full work history, project details, and certifications in PDF format.",
+    "en": "English resume (PDF)",
+    "ja": "Japanese resume · 履歴書 (PDF)"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Let's talk",
+    "lead": "Open to gameplay programming opportunities and interesting conversations about game development. The fastest way to reach me is email.",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "blog": "Blog",
+    "location": "Tokyo, Japan"
+  },
+  "footer": {
+    "rights": "© {year} Key Zhao. All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "blog": {
+    "kicker": "Writing",
+    "title": "Blog",
+    "description": "Technical notes on Unreal Engine 5, gameplay programming, and graphics.",
+    "empty": "No articles in this language yet.",
+    "back": "All articles",
+    "externalNote": "Older articles live on my previous blog:"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist.",
+    "back": "Back to home"
+  }
+}

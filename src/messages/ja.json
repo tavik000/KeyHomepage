@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "title": "Key Zhao — ゲームプレイプログラマー · Unreal Engine 5 / C++",
+    "description": "東京在住のゲームプレイプログラマー。Unreal Engine 5 / C++、Unity / C#でPC・コンソール・モバイルゲームの開発に5年以上従事。現在はPS5 / Xbox Series X|S / Steam向け未発表AAAアクションRPGを開発中。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "projects": "プロジェクト",
+    "experience": "経歴",
+    "skills": "スキル",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "resume": "履歴書",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "skipToContent": "本文へスキップ"
+  },
+  "langSwitcher": {
+    "label": "言語"
+  },
+  "hero": {
+    "kicker": "ゲームプレイプログラマー · 東京",
+    "title": "Unreal Engine 5で、戦闘を、キャラクターを、世界をつくる。",
+    "summary": "Key Zhao（キー）と申します。PC・コンソール・モバイルゲームの開発に5年以上携わるゲームプレイプログラマーです。現在は東京のBlast Edge Gamesにて、Unreal Engine 5 / C++による未発表AAAアクションRPGの開発に従事しています。",
+    "ctaProjects": "プロジェクトを見る",
+    "ctaResume": "履歴書をダウンロード",
+    "scroll": "スクロール",
+    "stats": [
+      { "value": "5+", "label": "ゲーム開発歴（年）" },
+      { "value": "UE5 · C++", "label": "メイン技術" },
+      { "value": "6", "label": "リリース済みプラットフォーム" },
+      { "value": "JLPT N1", "label": "日本語能力" }
+    ]
+  },
+  "featured": {
+    "kicker": "Selected Work",
+    "title": "主な商業プロジェクト",
+    "readMore": "詳細を見る",
+    "confidential": "NDA対象",
+    "labels": {
+      "role": "担当",
+      "platforms": "プラットフォーム",
+      "engine": "エンジン",
+      "period": "期間",
+      "team": "チーム",
+      "technologies": "使用技術",
+      "genre": "ジャンル"
+    }
+  },
+  "projects": {
+    "unannounced-arpg": {
+      "title": "未発表AAAアクションRPG",
+      "tagline": "Blast Edge Games（東京）にて開発中",
+      "role": "ゲームプレイプログラマー",
+      "genre": "アクションRPG",
+      "overview": "Blast Edge Gamesにて開発中の未発表AAAアクションRPG（Steam / PlayStation 5 / Xbox Series X|S向け）。Unreal Engine 5とC++を用いて、イベント・カットシーン・UIまわりのゲームプレイ実装を担当しています。タイトルおよび詳細はNDAのため非公開です。",
+      "confidentialNote": "本タイトルは未発表のため、画像はプレースホルダーであり、記載内容は履歴書に記載済みの範囲に限定しています。",
+      "contributions": [
+        "ゲームプレイイベント、カットシーン、インタラクティブなゲームプレイシステムの実装とポリッシュ。",
+        "UI機能の実装およびゲームプレイ関連バグの修正。",
+        "キャラクター挙動・アニメーション・カメラ演出の改善。",
+        "サウンド、環境エフェクト、インタラクティブオブジェクトの実装と調整。",
+        "進行不能バグ・コリジョン問題・プレイテストのフィードバックへの対応。"
+      ],
+      "challenges": [
+        {
+          "challenge": "カットシーンとインタラクティブなゲームプレイの間で、プレイヤーの状態を壊さずに制御を受け渡す必要がありました。",
+          "solution": "演出とプレイヤー操作を遷移させるイベントフローを実装・堅牢化し、プレイテストで顕在化した状態遷移のエッジケースを修正しました。"
+        },
+        {
+          "challenge": "広大で密度の高いゲーム世界において、プレイテストで進行不能バグやコリジョン問題が多数報告されました。",
+          "solution": "報告を体系的に再現し、ゲームプレイおよびコリジョンコードの根本原因を修正。プレイテストのフィードバックループで修正を検証しました。"
+        }
+      ]
+    },
+    "hyke": {
+      "title": "HYKE: Northern Light(s)",
+      "tagline": "5プラットフォームでリリースされたアクションアドベンチャー",
+      "role": "ゲームプレイプログラマー",
+      "genre": "アクションアドベンチャー",
+      "overview": "Unreal Engine 5で開発され、Steam / PlayStation 5 / Nintendo Switch / iOS / Androidでリリースされたアクションアドベンチャー。約50名規模の開発チームにゲームプレイプログラマーとして参加し、ゲームプレイ品質とプラットフォーム最適化を担当しました。",
+      "contributions": [
+        "ゲームプレイおよびキャラクター関連の不具合を解決し、品質と安定性を向上。",
+        "iOSにおけるメモリ使用量の最適化。",
+        "Nintendo SwitchにおけるGame Threadパフォーマンスの最適化。"
+      ],
+      "challenges": [
+        {
+          "challenge": "単一のUE5コードベースを、PlayStation 5からNintendo Switch・モバイルまで幅広いハードウェアでリリースする必要がありました。",
+          "solution": "プラットフォームごとのボトルネックをプロファイリングし、SwitchのGame Thread負荷を削減、iOSのメモリフットプリントを圧縮して各プラットフォームの制約を満たしました。"
+        },
+        {
+          "challenge": "リリース直前にキャラクターゲームプレイの不具合が安定性を脅かしていました。",
+          "solution": "C++でキャラクター・ゲームプレイの不具合をデバッグし、出荷品質まで修正しました。"
+        }
+      ]
+    },
+    "every-hero": {
+      "title": "Every Hero",
+      "tagline": "100万プレイヤー突破 · App Storeアクションランキング2位",
+      "role": "ゲームプレイプログラマー",
+      "genre": "ローグライトアクションRPG",
+      "overview": "Feeling Game Companyの5名チームでUnityにより開発した、iOS / Android向けローグライト・ハックアンドスラッシュARPG。100万人以上のプレイヤーを獲得し、App Storeアクションゲームランキングで2位を記録しました。",
+      "contributions": [
+        "ゲームプレイシステム、戦闘メカニクス、装備システム、UIの開発。",
+        "幅広いモバイル端末に対するパフォーマンス最適化。",
+        "QA、日本語ローカライズ、広告SDKの組み込み。"
+      ],
+      "challenges": [
+        {
+          "challenge": "5名の開発体制で、奥深い装備・スキルシステムを保守可能な形で実現する必要がありました。",
+          "solution": "C#でデータドリブンなインベントリ・装備・スキルシステムを構築し、エンジニアの工数なしでデザイナーがコンテンツを拡張できるようにしました。"
+        },
+        {
+          "challenge": "多数のエンティティが動くアクションゲームプレイを、低スペック端末でもフレームレートを維持する必要がありました。",
+          "solution": "ゲームプレイとUIのコードパスをプロファイリング・最適化し、端末を問わず安定した動作を実現しました。"
+        }
+      ]
+    }
+  },
+  "projectPage": {
+    "backToProjects": "プロジェクト一覧",
+    "overview": "概要",
+    "contributions": "担当業務",
+    "challenges": "技術的な課題",
+    "challenge": "課題",
+    "solution": "解決策",
+    "gallery": "ギャラリー",
+    "video": "ゲームプレイ動画",
+    "nextProject": "次のプロジェクト",
+    "links": {
+      "steam": "Steamで見る",
+      "appstore": "App Storeで見る",
+      "youtube": "ゲームプレイを見る",
+      "github": "GitHubで見る",
+      "epic": "Epic Games Storeで見る",
+      "web": "ウェブサイトを見る"
+    }
+  },
+  "experience": {
+    "kicker": "Career",
+    "title": "職務経歴",
+    "present": "現在",
+    "items": {
+      "blast-edge": {
+        "position": "ゲームプレイプログラマー（UE5）",
+        "bullets": [
+          "未発表AAAアクションRPG（Steam / PS5 / Xbox Series X|S）のゲームプレイイベント、カットシーン、UI、インタラクティブシステムをUnreal Engine 5 / C++で開発。",
+          "キャラクター挙動・アニメーション・カメラ演出を改善し、進行不能バグやプレイテストの指摘事項に対応。",
+          "『HYKE: Northern Light(s)』にてiOSのメモリ最適化、Nintendo SwitchのGame Thread最適化を担当。",
+          "Perforceを用いた大規模マルチチーム開発。"
+        ]
+      },
+      "freelance": {
+        "position": "フリーランス ゲーム開発者",
+        "bullets": [
+          "『GUARDS!』（Steam）：4名のマルチプレイヤーインディーチームにて、ゲームプレイQA・デバッグ・日本語ローカライズを担当（UE / C++）。",
+          "弾幕シューティングゲーム：Unity / C#でゲームプレイシステム、戦闘、敵AI、UIを開発。",
+          "『Doki Doki House』（iOS / Steam）：ExcelスクリプトをRen'Pyコードへ変換するパイプラインツールを開発。iOSで5万人以上のプレイヤーを持つタイトルに貢献。"
+        ]
+      },
+      "ember": {
+        "position": "ゲームプレイプログラマー（Unity）",
+        "bullets": [
+          "『Apeiron』（Steam / Epic）：ゲームプレイシステム、戦闘メカニクス、カードシステム、敵AIをC#で開発。",
+          "Socket.IOによるマルチプレイヤー同期を実装。",
+          "ジュニアプログラマーの指導、技術面接への参加、プロジェクト計画の支援。"
+        ]
+      },
+      "feeling-game": {
+        "position": "ゲームプレイプログラマー（Unity）",
+        "bullets": [
+          "『Every Hero』（iOS / Android）：ゲームプレイ、戦闘、装備システム、UIをC#で開発。",
+          "パフォーマンス最適化、QA、日本語ローカライズ、広告組み込みを担当。",
+          "100万人以上のプレイヤーを獲得し、App Storeアクションランキング2位を記録したタイトルに貢献。"
+        ]
+      }
+    }
+  },
+  "education": {
+    "kicker": "Education",
+    "title": "学歴",
+    "items": {
+      "polyu": {
+        "degree": "情報技術学 修士（MSc in Information Technology）",
+        "detail": "AI・機械学習を専攻。ゲームデザイン・ゲーム開発の科目を履修。"
+      },
+      "chuhai": {
+        "degree": "計算機科学 学士（BSc (Hons) in Computer Science）",
+        "detail": "アルゴリズム、データ構造、オブジェクト指向、データベース、ソフトウェア工学を学ぶ。"
+      }
+    }
+  },
+  "skills": {
+    "kicker": "Capabilities",
+    "title": "技術スキル",
+    "categories": {
+      "languages": "プログラミング言語",
+      "engines": "ゲームエンジン",
+      "gameplay": "ゲームプレイ",
+      "graphics": "グラフィックス",
+      "ui": "UI",
+      "tools": "ツール",
+      "versionControl": "バージョン管理",
+      "platforms": "プラットフォーム"
+    },
+    "spokenTitle": "語学",
+    "spoken": {
+      "cantonese": { "name": "広東語", "level": "ネイティブ" },
+      "mandarin": { "name": "中国語（普通話）", "level": "ネイティブ" },
+      "japanese": { "name": "日本語", "level": "JLPT N1" },
+      "english": { "name": "英語", "level": "ビジネスレベル" }
+    }
+  },
+  "awards": {
+    "kicker": "Recognition",
+    "title": "受賞歴",
+    "viewGame": "ゲームを見る",
+    "viewEvent": "イベントページ",
+    "items": {
+      "petitcon": {
+        "game": "Hook Racer",
+        "award": "盛り上がるで賞",
+        "event": "第24回UE5ぷちコン"
+      },
+      "ggj2025": {
+        "game": "Shadow Bubble: Hide and Seek Chaos",
+        "award": "Audience Choice Winner & Best XR Game",
+        "event": "Global Game Jam Hong Kong 2025"
+      },
+      "ggj2022": {
+        "game": "Blite",
+        "award": "Best Original Game",
+        "event": "Global Game Jam Hong Kong 2022"
+      },
+      "cityu": {
+        "game": "発達性協調運動障害の評価・訓練アプリ",
+        "award": "銅賞",
+        "event": "CityU App Innovation Contest"
+      }
+    }
+  },
+  "certifications": {
+    "title": "資格",
+    "items": {
+      "fe": {
+        "name": "基本情報技術者試験（FE）",
+        "issuer": "IPA（日本）"
+      },
+      "sg": {
+        "name": "情報セキュリティマネジメント試験（SG）",
+        "issuer": "IPA（日本）"
+      },
+      "jlpt-n1": {
+        "name": "日本語能力試験 N1",
+        "issuer": "JLPT"
+      }
+    }
+  },
+  "jams": {
+    "kicker": "Prototypes & Jams",
+    "title": "ゲームジャム作品",
+    "description": "数日から数週間で設計・実装・完成まで行った、ソロまたは少人数チームによるプロトタイプです。",
+    "awardBadge": "受賞作品",
+    "items": {
+      "hook-racer": {
+        "title": "Hook Racer",
+        "desc": "グラップリングフックで駆け抜けるレースアクション。7週間のソロ制作で、ゲームプレイ・ドット絵・音楽をすべて担当。第24回UE5ぷちコン受賞作。"
+      },
+      "shadow-bubble": {
+        "title": "Shadow Bubble: Hide and Seek Chaos",
+        "desc": "7日間で制作した2人対戦の非対称ステルス。GGJ香港2025でAudience Choice賞とBest XR Game賞を受賞。"
+      },
+      "teacup": {
+        "title": "Nesmy Land: Teacup",
+        "desc": "3名チームで5日間で制作したアクションシミュレーション。ゲームプレイプログラミングとレベルデザインを担当。"
+      },
+      "path-of-osu": {
+        "title": "The Path of Osu",
+        "desc": "戦闘とパズルを備えた三人称アクションアドベンチャーのプロトタイプ。7週間でソロ開発。"
+      },
+      "root-me": {
+        "title": "√Me",
+        "desc": "5名チームで7日間で制作したパズルプラットフォーマー。"
+      },
+      "blite": {
+        "title": "Blite",
+        "desc": "2日間で制作したパズルプラットフォーマー。GGJ香港2022でBest Original Game賞を受賞。"
+      },
+      "home-sleep-home": {
+        "title": "Home Sleep Home",
+        "desc": "7名チームで2日間で制作したアクションシミュレーション。"
+      }
+    }
+  },
+  "other": {
+    "kicker": "More Work",
+    "title": "その他のプロジェクト",
+    "description": "主要タイトル以外の商業案件、ツール開発、実験的プロジェクト。",
+    "categories": {
+      "game": "ゲーム",
+      "web": "ウェブ",
+      "mobile": "モバイル",
+      "ai": "AI / ML"
+    },
+    "items": {
+      "apeiron": { "title": "Apeiron" },
+      "guards": { "title": "GUARDS!" },
+      "doki-doki-house": { "title": "Doki Doki House（心跳度假屋）" },
+      "lost-strings": { "title": "The Lost Strings" },
+      "hero-race": { "title": "Hero Race（Warcraft III）" },
+      "color-picking": { "title": "Color Picking" },
+      "maze-game-ai": { "title": "Maze Game AI" },
+      "blog-remake": { "title": "個人ブログ（Next.js）" },
+      "angular-blog": { "title": "個人ブログ（Angular）" },
+      "dcd-app": { "title": "DCD評価・訓練アプリ" },
+      "react-native-apps": { "title": "React Nativeミニアプリ" },
+      "facebook-chatbot": { "title": "Facebookチャットボット" }
+    }
+  },
+  "resume": {
+    "kicker": "Resume",
+    "title": "履歴書・職務経歴書",
+    "description": "職務経歴の詳細、プロジェクト実績、資格をPDFでご覧いただけます。",
+    "en": "英文レジュメ（PDF）",
+    "ja": "履歴書・職務経歴書（PDF）"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "お問い合わせ",
+    "lead": "ゲームプレイプログラマーとしての機会や、ゲーム開発に関するご相談を歓迎します。メールでのご連絡が最も確実です。",
+    "email": "メール",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "blog": "ブログ",
+    "location": "東京"
+  },
+  "footer": {
+    "rights": "© {year} Key Zhao. All rights reserved.",
+    "backToTop": "トップへ戻る"
+  },
+  "blog": {
+    "kicker": "Writing",
+    "title": "ブログ",
+    "description": "Unreal Engine 5、ゲームプレイプログラミング、グラフィックスに関する技術ノート。",
+    "empty": "この言語の記事はまだありません。",
+    "back": "記事一覧",
+    "externalNote": "過去の記事は旧ブログにあります："
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しません。",
+    "back": "ホームへ戻る"
+  }
+}
