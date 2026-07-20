@@ -9,6 +9,8 @@ export interface ExperienceItem {
   period: string;
   current?: boolean;
   bulletCount: number;
+  /** Company logo shown next to the entry; omitted for freelance work. */
+  logo?: string;
 }
 
 export const experience: ExperienceItem[] = [
@@ -18,7 +20,8 @@ export const experience: ExperienceItem[] = [
     location: "Tokyo, Japan",
     period: "Jul 2024 —",
     current: true,
-    bulletCount: 4
+    bulletCount: 4,
+    logo: "/images/companies/blast-edge-games.png"
   },
   {
     id: "freelance",
@@ -32,14 +35,16 @@ export const experience: ExperienceItem[] = [
     company: "Realm of Alters (Ember Entertainment)",
     location: "Hong Kong",
     period: "Mar 2022 — Feb 2023",
-    bulletCount: 3
+    bulletCount: 3,
+    logo: "/images/companies/ember-entertainment.jpg"
   },
   {
     id: "feeling-game",
     company: "Feeling Game Company",
     location: "Hong Kong",
     period: "Jun 2020 — Feb 2022",
-    bulletCount: 3
+    bulletCount: 3,
+    logo: "/images/companies/feeling-game.png"
   }
 ];
 

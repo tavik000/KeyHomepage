@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Key Zhao — ゲームプレイプログラマー · Unreal Engine 5 / C++",
-    "description": "東京在住のゲームプレイプログラマー。Unreal Engine 5 / C++、Unity / C#でPC・コンソール・モバイルゲームの開発に5年以上従事。現在はPS5 / Xbox Series X|S / Steam向け未発表AAAアクションRPGを開発中。"
+    "title": "趙海騏　チョウ　カイキ — ゲームエンジニア · Unreal Engine 5 / C++",
+    "description": "東京在住のゲームエンジニア。Unreal Engine 5 / C++、Unity / C#でPC・コンソール・モバイルゲームの開発に5年以上従事。現在はPS5 / Xbox Series X|S / Steam向け未発表AAAアクションRPGを開発中。"
   },
   "nav": {
     "home": "ホーム",
@@ -19,14 +19,20 @@
     "label": "言語"
   },
   "hero": {
-    "kicker": "ゲームプレイプログラマー · 東京",
-    "title": "Unreal Engine 5で、戦闘を、キャラクターを、世界をつくる。",
-    "summary": "Key Zhao（キー）と申します。PC・コンソール・モバイルゲームの開発に5年以上携わるゲームプレイプログラマーです。現在は東京のBlast Edge Gamesにて、Unreal Engine 5 / C++による未発表AAAアクションRPGの開発に従事しています。",
+    "nameParts": [
+      { "text": "趙", "reading": "チョウ" },
+      { "text": "海", "reading": "カイ", "gapBefore": true },
+      { "text": "騏", "reading": "キ" }
+    ],
+    "nameAlias": "（Key）",
+    "role": "ゲームエンジニア",
+    "intro": "ゲームエンジニアとして、Unreal Engine 5を中心に、Unityを含むゲームエンジンを用いたゲーム開発経験が5年以上あります。ゲームプレイ実装、システム設計、UI、最適化、マルチプラットフォーム対応など、ゲームクライアント開発全般に携わっています。",
     "ctaProjects": "プロジェクトを見る",
     "ctaResume": "履歴書をダウンロード",
+    "ctaGithub": "GitHub",
     "stats": [
-      { "value": "5+", "label": "ゲーム開発歴（年）" },
-      { "value": "UE5 · C++", "label": "メイン技術" },
+      { "value": "5年以上", "label": "実務経験" },
+      { "value": "UE5 · C++", "label": "メインエンジン・言語" },
       { "value": "JLPT N1", "label": "日本語能力" }
     ]
   },
@@ -48,8 +54,9 @@
   "projects": {
     "unannounced-arpg": {
       "title": "未発表AAAアクションRPG",
+      "period": "2024年7月 —",
       "tagline": "Blast Edge Games（東京）にて開発中",
-      "role": "ゲームプレイプログラマー",
+      "role": "ゲームエンジニア",
       "genre": "アクションRPG",
       "overview": "Blast Edge Gamesにて開発中の未発表AAAアクションRPG（Steam / PlayStation 5 / Xbox Series X|S向け）。Unreal Engine 5とC++を用いて、イベント・カットシーン・UIまわりのゲームプレイ実装を担当しています。タイトルおよび詳細はNDAのため非公開です。",
       "confidentialNote": "本タイトルは未発表のため、画像はプレースホルダーであり、記載内容は履歴書に記載済みの範囲に限定しています。",
@@ -73,10 +80,11 @@
     },
     "hyke": {
       "title": "HYKE: Northern Light(s)",
+      "period": "2024年7月 — 2024年9月",
       "tagline": "5プラットフォームでリリースされたアクションアドベンチャー",
-      "role": "ゲームプレイプログラマー",
+      "role": "ゲームエンジニア",
       "genre": "アクションアドベンチャー",
-      "overview": "Unreal Engine 5で開発され、Steam / PlayStation 5 / Nintendo Switch / iOS / Androidでリリースされたアクションアドベンチャー。約50名規模の開発チームにゲームプレイプログラマーとして参加し、ゲームプレイ品質とプラットフォーム最適化を担当しました。",
+      "overview": "Unreal Engine 5で開発され、Steam / PlayStation 5 / Nintendo Switch / iOS / Androidでリリースされたアクションアドベンチャー。約50名規模の開発チームにゲームエンジニアとして参加し、ゲームプレイ品質とプラットフォーム最適化を担当しました。",
       "contributions": [
         "ゲームプレイおよびキャラクター関連の不具合を解決し、品質と安定性を向上。",
         "iOSにおけるメモリ使用量の最適化。",
@@ -95,6 +103,7 @@
     },
     "apeiron": {
       "title": "Apeiron",
+      "period": "2022年3月 — 2023年2月",
       "tagline": "Steam / Epic Games StoreでリリースされたアクションRTSカードバトル",
       "role": "リードプログラマー",
       "genre": "アクションRTS / カードバトル",
@@ -118,8 +127,9 @@
     },
     "every-hero": {
       "title": "Every Hero",
+      "period": "2020年6月 — 2022年2月",
       "tagline": "100万プレイヤー突破 · App Storeアクションランキング2位",
-      "role": "ゲームプレイプログラマー",
+      "role": "ゲームエンジニア",
       "genre": "ローグライトアクションRPG",
       "overview": "Feeling Game Companyの5名チームでUnityにより開発した、iOS / Android向けローグライト・ハックアンドスラッシュARPG。100万人以上のプレイヤーを獲得し、App Storeアクションゲームランキングで2位を記録しました。",
       "contributions": [
@@ -164,7 +174,7 @@
     "present": "現在",
     "items": {
       "blast-edge": {
-        "position": "ゲームプレイプログラマー（UE5）",
+        "position": "ゲームエンジニア（UE5）",
         "bullets": [
           "未発表AAAアクションRPG（Steam / PS5 / Xbox Series X|S）のゲームプレイイベント、カットシーン、UI、インタラクティブシステムをUnreal Engine 5 / C++で開発。",
           "キャラクター挙動・アニメーション・カメラ演出を改善し、進行不能バグやプレイテストの指摘事項に対応。",
@@ -181,7 +191,7 @@
         ]
       },
       "ember": {
-        "position": "ゲームプレイプログラマー（Unity）",
+        "position": "ゲームエンジニア（Unity）",
         "bullets": [
           "『Apeiron』（Steam / Epic）：ゲームプレイシステム、戦闘メカニクス、カードシステム、敵AIをC#で開発。",
           "Socket.IOによるマルチプレイヤー同期を実装。",
@@ -189,7 +199,7 @@
         ]
       },
       "feeling-game": {
-        "position": "ゲームプレイプログラマー（Unity）",
+        "position": "ゲームエンジニア（Unity）",
         "bullets": [
           "『Every Hero』（iOS / Android）：ゲームプレイ、戦闘、装備システム、UIをC#で開発。",
           "パフォーマンス最適化、QA、日本語ローカライズ、広告組み込みを担当。",
@@ -301,63 +311,46 @@
         "title": "The Path of Osu",
         "desc": "戦闘とパズルを備えた三人称アクションアドベンチャーのプロトタイプ。7週間でソロ開発。"
       },
-      "root-me": {
-        "title": "√Me",
-        "desc": "5名チームで7日間で制作したパズルプラットフォーマー。"
-      },
       "blite": {
         "title": "Blite",
         "desc": "2日間で制作したパズルプラットフォーマー。GGJ香港2022でBest Original Game賞を受賞。"
-      },
-      "home-sleep-home": {
-        "title": "Home Sleep Home",
-        "desc": "7名チームで2日間で制作したアクションシミュレーション。"
       }
     }
   },
-  "other": {
-    "kicker": "More Work",
-    "title": "その他のプロジェクト",
-    "description": "主要タイトル以外の商業案件、ツール開発、実験的プロジェクト。",
-    "categories": {
-      "game": "ゲーム",
-      "web": "ウェブ",
-      "mobile": "モバイル",
-      "ai": "AI / ML"
-    },
+  "independent": {
+    "kicker": "Independent Work",
+    "title": "個人プロジェクト",
+    "description": "スタジオ勤務の傍らで続けている個人・フリーランスのゲーム開発。作らずにはいられない性分から生まれたプロジェクトです。",
     "items": {
-      "guards": { "title": "GUARDS!" },
-      "doki-doki-house": { "title": "Doki Doki House（心跳度假屋）" },
-      "lost-strings": { "title": "The Lost Strings" },
-      "hero-race": { "title": "Hero Race（Warcraft III）" },
-      "color-picking": { "title": "Color Picking" },
-      "maze-game-ai": { "title": "Maze Game AI" },
-      "blog-remake": { "title": "個人ブログ（Next.js）" },
-      "angular-blog": { "title": "個人ブログ（Angular）" },
-      "dcd-app": { "title": "DCD評価・訓練アプリ" },
-      "react-native-apps": { "title": "React Nativeミニアプリ" },
-      "facebook-chatbot": { "title": "Facebookチャットボット" }
+      "guards": {
+        "title": "GUARDS!",
+        "desc": "Steamでリリースされた Unreal Engine タイトルのQAテストと日本語ローカライズを担当。"
+      },
+      "doki-doki-house": {
+        "title": "Doki Doki House（心跳度假屋）",
+        "desc": "リリース済みモバイル向けビジュアルノベルのツール開発とナラティブシステムを担当。"
+      },
+      "hero-race": {
+        "title": "Hero Race（Warcraft III）",
+        "desc": "2011年から作り続けているWarcraft IIIカスタムマップ。15年にわたる独学のレベルデザインとスクリプティングの積み重ね。"
+      }
     }
   },
-  "research": {
-    "kicker": "Research",
-    "title": "ゲームデザイン研究データベース",
-    "lead": "10年以上にわたり、1,000本以上のゲームを開発者の視点から体系的に記録・分析してきた個人研究データベースです。レビューではなく、各タイトルをデザイン要素に分解して記録しています。",
-    "dimensions": [
-      "ジャンル",
-      "ゲームメカニクス",
-      "戦闘システム",
-      "成長システム",
-      "UI / UX",
-      "レベルデザイン",
-      "難易度設計",
-      "ボスデザイン"
-    ],
-    "stat": "記録済みタイトル 1,000本以上",
-    "cta": "データベースを見る"
+  "gameJournal": {
+    "kicker": "個人アーカイブ",
+    "title": "ゲームジャーナル",
+    "lead": "10年以上にわたり、ほぼ1,000本のゲームを記録してきた個人アーカイブです。正式なレビューではなく、開発者とプレイヤー双方の視点から書き留めた観察記録です。多くの作品について、ジャンル・開発元・販売元・使用エンジン（判明している場合）・プラットフォーム・クリア状況・個人評価を記録し、あわせて良かった点、悪かった点、開発者としての所感を書き残しています。",
+    "stat": "約1,000本・10年以上の記録",
+    "cta": "ジャーナルを見る"
+  },
+  "blogTeaser": {
+    "kicker": "執筆活動",
+    "title": "Unreal Engine・ゲーム開発の技術ブログ",
+    "lead": "Unreal Engine 5、C++、ゲームプレイプログラミングに関する技術記事を執筆しています。ゲームをリリースする上で実際に使っている仕組みや手法について解説しています。",
+    "cta": "ブログを読む"
   },
   "hobbies": {
-    "title": "Off hours",
+    "title": "趣味",
     "text": "ゲーム制作とプレイ、エレキギター、フィギュアスケート、アニメ、博物館巡り、語学学習。"
   },
   "resume": {
@@ -370,7 +363,7 @@
   "contact": {
     "kicker": "Contact",
     "title": "お問い合わせ",
-    "lead": "ゲームプレイプログラマーとしての機会や、ゲーム開発に関するご相談を歓迎します。メールでのご連絡が最も確実です。",
+    "lead": "ゲームエンジニアとしての機会や、ゲーム開発に関するご相談を歓迎します。メールでのご連絡が最も確実です。",
     "email": "メール",
     "github": "GitHub",
     "linkedin": "LinkedIn",
@@ -378,7 +371,7 @@
     "location": "東京"
   },
   "footer": {
-    "rights": "© {year} Key Zhao. All rights reserved.",
+    "rights": "© {year} 趙海騏　チョウ　カイキ. All rights reserved.",
     "backToTop": "トップへ戻る"
   },
   "blog": {

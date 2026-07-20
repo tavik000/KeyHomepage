@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { experience, education } from "@/content/experience";
 import Section from "@/components/ui/Section";
@@ -31,12 +32,27 @@ export default function ExperienceSection() {
                     <span className="ml-2 text-accent-soft">· {t("present")}</span>
                   )}
                 </p>
-                <h3 className="mt-2 text-lg text-fg md:text-xl">
-                  {t(`items.${item.id}.position`)}
-                </h3>
-                <p className="mt-0.5 text-sm text-muted">
-                  {item.company} — {item.location}
-                </p>
+                <div className="mt-2 flex items-center gap-4">
+                  {item.logo && (
+                    <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg bg-white p-1 sm:h-20 sm:w-20">
+                      <Image
+                        src={item.logo}
+                        alt=""
+                        width={80}
+                        height={80}
+                        className="h-auto w-full object-contain"
+                      />
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="text-lg text-fg md:text-xl">
+                      {t(`items.${item.id}.position`)}
+                    </h3>
+                    <p className="mt-0.5 text-sm text-muted">
+                      {item.company} — {item.location}
+                    </p>
+                  </div>
+                </div>
                 <ul className="mt-4 max-w-2xl space-y-2 text-sm leading-relaxed text-muted">
                   {bullets.map((b) => (
                     <li key={b} className="flex gap-3">

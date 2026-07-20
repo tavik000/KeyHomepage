@@ -45,7 +45,7 @@ export async function generateMetadata({
     metadataBase: new URL(site.url),
     title: {
       default: t("title"),
-      template: `%s · Key Zhao`
+      template: `%s · Key`
     },
     description: t("description"),
     alternates: {
@@ -59,7 +59,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      siteName: "Key Zhao — Gameplay Programmer",
+      siteName: "Key — Gameplay Programmer",
       title: t("title"),
       description: t("description"),
       locale: locale.replace("-", "_"),
@@ -77,7 +77,7 @@ export async function generateMetadata({
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Key Zhao",
+  name: "Key",
   alternateName: "Haiqi Zhao",
   jobTitle: "Gameplay Programmer",
   email: `mailto:${site.email}`,

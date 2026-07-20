@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Key Zhao — 遊戲程式設計師 · Unreal Engine 5 / C++",
+    "title": "Key — 遊戲程式設計師 · Unreal Engine 5 / C++",
     "description": "現居東京的遊戲程式設計師（Gameplay Programmer），擁有5年以上PC、主機及手機遊戲開發經驗，專精Unreal Engine 5 / C++與Unity / C#。現正開發PS5 / Xbox Series X|S / Steam平台的未公開AAA動作RPG。"
   },
   "nav": {
@@ -19,14 +19,16 @@
     "label": "語言"
   },
   "hero": {
-    "kicker": "遊戲程式設計師 · 日本東京",
-    "title": "以Unreal Engine 5打造戰鬥、角色與世界。",
-    "summary": "我是Key Zhao，一名擁有5年以上經驗的遊戲程式設計師，作品橫跨PC、主機與手機平台。現於東京Blast Edge Games任職，以Unreal Engine 5與C++開發未公開的AAA動作RPG。",
+    "nameParts": [{ "text": "Key", "reading": "" }],
+    "nameAlias": "",
+    "role": "遊戲程式設計師",
+    "intro": "擁有5年以上經驗的遊戲程式設計師，使用Unreal Engine 5、C++、Unity與C#開發PC、主機與行動裝置遊戲。專精遊戲系統、多人連線、UI、效能優化與跨平台開發。",
     "ctaProjects": "瀏覽專案",
     "ctaResume": "下載履歷",
+    "ctaGithub": "GitHub",
     "stats": [
-      { "value": "5+", "label": "遊戲開發年資" },
-      { "value": "UE5 · C++", "label": "主要技術" },
+      { "value": "5年以上", "label": "專業經驗" },
+      { "value": "UE5 · C++", "label": "主要引擎與語言" },
       { "value": "JLPT N1", "label": "日語能力" }
     ]
   },
@@ -48,6 +50,7 @@
   "projects": {
     "unannounced-arpg": {
       "title": "未公開AAA動作RPG",
+      "period": "2024年7月 —",
       "tagline": "於東京Blast Edge Games開發中",
       "role": "遊戲程式設計師",
       "genre": "動作RPG",
@@ -73,6 +76,7 @@
     },
     "hyke": {
       "title": "HYKE: Northern Light(s)",
+      "period": "2024年7月 — 2024年9月",
       "tagline": "於五大平台上市的動作冒險遊戲",
       "role": "遊戲程式設計師",
       "genre": "動作冒險",
@@ -95,6 +99,7 @@
     },
     "apeiron": {
       "title": "Apeiron",
+      "period": "2022年3月 — 2023年2月",
       "tagline": "於Steam與Epic Games Store上市的動作RTS卡牌對戰遊戲",
       "role": "首席程式設計師",
       "genre": "動作RTS / 卡牌對戰",
@@ -118,6 +123,7 @@
     },
     "every-hero": {
       "title": "Every Hero",
+      "period": "2020年6月 — 2022年2月",
       "tagline": "突破100萬玩家 · App Store動作遊戲排行第2名",
       "role": "遊戲程式設計師",
       "genre": "Rogue-lite動作RPG",
@@ -301,60 +307,43 @@
         "title": "The Path of Osu",
         "desc": "具戰鬥與解謎要素的第三人稱動作冒險原型，7週獨自開發。"
       },
-      "root-me": {
-        "title": "√Me",
-        "desc": "5人團隊7天完成的解謎平台遊戲。"
-      },
       "blite": {
         "title": "Blite",
         "desc": "2天完成的解謎平台遊戲。獲GGJ香港2022最佳原創遊戲獎。"
-      },
-      "home-sleep-home": {
-        "title": "Home Sleep Home",
-        "desc": "7人團隊2天完成的動作模擬遊戲。"
       }
     }
   },
-  "other": {
-    "kicker": "More Work",
-    "title": "其他專案",
-    "description": "主要作品以外的商業接案、工具開發與實驗性專案。",
-    "categories": {
-      "game": "遊戲",
-      "web": "網頁",
-      "mobile": "行動裝置",
-      "ai": "AI / ML"
-    },
+  "independent": {
+    "kicker": "Independent Work",
+    "title": "個人專案",
+    "description": "工作室職務之外持續進行的個人與接案遊戲開發——因為停不下來而做的專案。",
     "items": {
-      "guards": { "title": "GUARDS!" },
-      "doki-doki-house": { "title": "Doki Doki House（心跳度假屋）" },
-      "lost-strings": { "title": "The Lost Strings" },
-      "hero-race": { "title": "Hero Race（魔獸爭霸III）" },
-      "color-picking": { "title": "Color Picking" },
-      "maze-game-ai": { "title": "Maze Game AI" },
-      "blog-remake": { "title": "個人網誌（Next.js）" },
-      "angular-blog": { "title": "個人網誌（Angular）" },
-      "dcd-app": { "title": "DCD評估與訓練App" },
-      "react-native-apps": { "title": "React Native小型應用" },
-      "facebook-chatbot": { "title": "Facebook聊天機器人" }
+      "guards": {
+        "title": "GUARDS!",
+        "desc": "為一款已在Steam上架的Unreal Engine作品負責QA測試與日文在地化。"
+      },
+      "doki-doki-house": {
+        "title": "Doki Doki House（心跳度假屋）",
+        "desc": "為一款已上架的手機視覺小說負責工具開發與敘事系統。"
+      },
+      "hero-race": {
+        "title": "Hero Race（魔獸爭霸III）",
+        "desc": "自2011年持續開發至今的魔獸爭霸III自訂地圖——15年自學關卡設計與腳本撰寫的累積。"
+      }
     }
   },
-  "research": {
-    "kicker": "Research",
-    "title": "遊戲設計研究資料庫",
-    "lead": "十多年來，我以開發者的視角系統性地記錄並分析了超過1,000款遊戲，建立了這個個人研究資料庫。每筆條目都是將遊戲拆解為設計元素的分析，而非評論。",
-    "dimensions": [
-      "類型",
-      "遊戲機制",
-      "戰鬥系統",
-      "成長系統",
-      "UI / UX",
-      "關卡設計",
-      "難度設計",
-      "Boss設計"
-    ],
-    "stat": "已記錄超過1,000款遊戲",
-    "cta": "瀏覽資料庫"
+  "gameJournal": {
+    "kicker": "個人存檔",
+    "title": "遊戲筆記",
+    "lead": "十多年來，我持續記錄了將近1,000款遊戲的個人存檔。這並非正式評論，而是我以遊戲程式設計師與玩家雙重視角所做的觀察筆記。針對大多數作品，我會記錄類型、開發商、發行商、使用引擎（若已知）、平台、破關狀態與個人評分，並附上設計上的優點、缺點，以及開發者角度的觀察心得。",
+    "stat": "近1,000款遊戲・10年以上記錄",
+    "cta": "瀏覽筆記"
+  },
+  "blogTeaser": {
+    "kicker": "寫作",
+    "title": "Unreal Engine 與遊戲開發技術部落格",
+    "lead": "我撰寫關於Unreal Engine 5、C++與遊戲程式設計的深度技術文章，分享遊戲上線背後實際運用的系統與技巧。",
+    "cta": "閱讀部落格"
   },
   "hobbies": {
     "title": "Off hours",
@@ -378,7 +367,7 @@
     "location": "日本東京"
   },
   "footer": {
-    "rights": "© {year} Key Zhao. All rights reserved.",
+    "rights": "© {year} Key. All rights reserved.",
     "backToTop": "回到頂部"
   },
   "blog": {

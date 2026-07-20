@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Key Zhao — Gameplay Programmer · Unreal Engine 5 / C++",
+    "title": "Key — Gameplay Programmer · Unreal Engine 5 / C++",
     "description": "Gameplay programmer in Tokyo with 5+ years shipping PC, console, and mobile games in Unreal Engine 5 / C++ and Unity / C#. Currently developing an unannounced AAA action RPG for PS5, Xbox Series X|S, and Steam."
   },
   "nav": {
@@ -19,15 +19,17 @@
     "label": "Language"
   },
   "hero": {
-    "kicker": "Gameplay Programmer · Tokyo, Japan",
-    "title": "Building combat, characters, and worlds in Unreal Engine 5.",
-    "summary": "I'm Key Zhao, a gameplay programmer with 5+ years of experience shipping PC, console, and mobile games. I currently work at Blast Edge Games in Tokyo on an unannounced AAA action RPG in Unreal Engine 5 and C++.",
-    "ctaProjects": "View projects",
-    "ctaResume": "Download resume",
+    "nameParts": [{ "text": "Key", "reading": "" }],
+    "nameAlias": "",
+    "role": "Gameplay Programmer",
+    "intro": "Gameplay Programmer with 5+ years of experience developing PC, console, and mobile games using Unreal Engine 5, C++, Unity, and C#. Experienced in gameplay systems, multiplayer, UI, optimization, and cross-platform development.",
+    "ctaProjects": "View Projects",
+    "ctaResume": "Download Resume",
+    "ctaGithub": "GitHub",
     "stats": [
-      { "value": "5+", "label": "Years in games" },
-      { "value": "UE5 · C++", "label": "Primary stack" },
-      { "value": "JLPT N1", "label": "Japanese" }
+      { "value": "5+ Years", "label": "Professional Experience" },
+      { "value": "UE5 · C++", "label": "Primary Engine & Language" },
+      { "value": "JLPT N1", "label": "Japanese Proficiency" }
     ]
   },
   "featured": {
@@ -48,6 +50,7 @@
   "projects": {
     "unannounced-arpg": {
       "title": "Unannounced AAA Action RPG",
+      "period": "Jul 2024 —",
       "tagline": "In development at Blast Edge Games, Tokyo",
       "role": "Gameplay Programmer",
       "genre": "Action RPG",
@@ -73,6 +76,7 @@
     },
     "hyke": {
       "title": "HYKE: Northern Light(s)",
+      "period": "Jul 2024 — Sep 2024",
       "tagline": "Action adventure shipped on five platforms",
       "role": "Gameplay Programmer",
       "genre": "Action Adventure",
@@ -95,6 +99,7 @@
     },
     "apeiron": {
       "title": "Apeiron",
+      "period": "Mar 2022 — Feb 2023",
       "tagline": "Action RTS card battler on Steam & Epic Games Store",
       "role": "Lead Programmer",
       "genre": "Action RTS / Card Battle",
@@ -118,6 +123,7 @@
     },
     "every-hero": {
       "title": "Every Hero",
+      "period": "Jun 2020 — Feb 2022",
       "tagline": "1M+ players · App Store Action Games #2",
       "role": "Gameplay Programmer",
       "genre": "Rogue-lite Action RPG",
@@ -301,60 +307,43 @@
         "title": "The Path of Osu",
         "desc": "Third-person action-adventure prototype with combat and puzzles, solo-developed over 7 weeks."
       },
-      "root-me": {
-        "title": "√Me",
-        "desc": "Puzzle platformer built in 7 days in a 5-person team."
-      },
       "blite": {
         "title": "Blite",
         "desc": "Puzzle platformer built in 2 days. Best Original Game, GGJ Hong Kong 2022."
-      },
-      "home-sleep-home": {
-        "title": "Home Sleep Home",
-        "desc": "Action-simulation jam game built in 2 days in a 7-person team."
       }
     }
   },
-  "other": {
-    "kicker": "More Work",
-    "title": "Other projects",
-    "description": "Commercial contract work, tools, and experiments beyond the featured titles.",
-    "categories": {
-      "game": "Games",
-      "web": "Web",
-      "mobile": "Mobile",
-      "ai": "AI / ML"
-    },
+  "independent": {
+    "kicker": "Independent Work",
+    "title": "Independent projects",
+    "description": "Personal and freelance game development outside of studio work — the projects I build because I can't stop making games.",
     "items": {
-      "guards": { "title": "GUARDS!" },
-      "doki-doki-house": { "title": "Doki Doki House" },
-      "lost-strings": { "title": "The Lost Strings" },
-      "hero-race": { "title": "Hero Race (Warcraft III)" },
-      "color-picking": { "title": "Color Picking" },
-      "maze-game-ai": { "title": "Maze Game AI" },
-      "blog-remake": { "title": "Personal Blog (Next.js)" },
-      "angular-blog": { "title": "Personal Blog (Angular)" },
-      "dcd-app": { "title": "DCD Evaluation & Training App" },
-      "react-native-apps": { "title": "React Native Mini Apps" },
-      "facebook-chatbot": { "title": "Facebook Chatbot" }
+      "guards": {
+        "title": "GUARDS!",
+        "desc": "QA testing and Japanese localization for a released Unreal Engine title on Steam."
+      },
+      "doki-doki-house": {
+        "title": "Doki Doki House",
+        "desc": "Tooling and narrative systems for a released mobile visual novel."
+      },
+      "hero-race": {
+        "title": "Hero Race (Warcraft III)",
+        "desc": "A custom Warcraft III map I've designed and iterated on since 2011 — 15 years of self-taught level design and scripting."
+      }
     }
   },
-  "research": {
-    "kicker": "Research",
-    "title": "Game Design Research Database",
-    "lead": "For over a decade I have kept a personal research database — 1,000+ games systematically documented and analyzed from a developer's perspective. Each entry breaks a game down into its design components rather than reviewing it.",
-    "dimensions": [
-      "Genre",
-      "Gameplay Mechanics",
-      "Combat Systems",
-      "Progression",
-      "UI / UX",
-      "Level Design",
-      "Difficulty",
-      "Boss Design"
-    ],
-    "stat": "1,000+ games documented",
-    "cta": "Browse the database"
+  "gameJournal": {
+    "kicker": "Personal Archive",
+    "title": "Game Journal",
+    "lead": "For over 10 years I've kept a personal archive of nearly 1,000 games — not formal reviews, but notes from both a gameplay programmer's and a player's perspective. For most entries I record genre, developer, publisher, engine (when known), platform, completion status, and a personal rating, along with what I liked about the design, its weak points, and general development notes.",
+    "stat": "~1,000 games, 10+ years of notes",
+    "cta": "Browse the journal"
+  },
+  "blogTeaser": {
+    "kicker": "Writing",
+    "title": "Technical blog on Unreal Engine & game development",
+    "lead": "I write in-depth articles on Unreal Engine 5, C++, and gameplay programming — the practical systems and techniques behind shipping games.",
+    "cta": "Read the blog"
   },
   "hobbies": {
     "title": "Off hours",
@@ -378,7 +367,7 @@
     "location": "Tokyo, Japan"
   },
   "footer": {
-    "rights": "© {year} Key Zhao. All rights reserved.",
+    "rights": "© {year} Key. All rights reserved.",
     "backToTop": "Back to top"
   },
   "blog": {

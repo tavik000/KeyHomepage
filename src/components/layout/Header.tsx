@@ -7,13 +7,13 @@ import { Link } from "@/i18n/navigation";
 import { site } from "@/content/site";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const SECTION_LINKS = [
+const SECTION_LINKS: { key: string; href: string; external?: boolean }[] = [
   { key: "projects", href: "/#projects" },
   { key: "experience", href: "/#experience" },
   { key: "skills", href: "/#skills" },
-  { key: "blog", href: "/blog" },
+  { key: "blog", href: site.blogExternal, external: true },
   { key: "contact", href: "/#contact" }
-] as const;
+];
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -54,25 +54,31 @@ export default function Header() {
           className="font-[family-name:var(--font-display)] text-lg tracking-[0.18em] text-fg"
           aria-label={t("home")}
         >
-          KEY ZHAO
+          KEY
         </Link>
 
         {/* Desktop nav */}
         <nav aria-label="Main" className="hidden items-center gap-8 md:flex">
-          {SECTION_LINKS.map(({ key, href }) => (
-            <Link
-              key={key}
-              href={href}
-              className="text-sm text-muted transition-colors hover:text-fg"
-            >
-              {t(key)}
-            </Link>
-          ))}
+          {SECTION_LINKS.map(({ key, href, external }) => {
+            const className =
+              key === "projects"
+                ? "text-sm font-medium text-fg transition-colors hover:text-accent-soft"
+                : "text-sm text-muted transition-colors hover:text-fg";
+            return external ? (
+              <a key={key} href={href} target="_blank" rel="noopener noreferrer" className={className}>
+                {t(key)}
+              </a>
+            ) : (
+              <Link key={key} href={href} className={className}>
+                {t(key)}
+              </Link>
+            );
+          })}
           <a
             href={resumeHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded border border-accent/60 px-3.5 py-1.5 text-sm text-accent-soft transition-colors hover:bg-accent hover:text-white"
+            className="text-sm text-muted transition-colors hover:text-fg"
           >
             {t("resume")}
           </a>
@@ -114,15 +120,27 @@ export default function Header() {
             className="overflow-hidden border-b border-border bg-bg/95 backdrop-blur-md md:hidden"
           >
             <ul className="space-y-1 px-6 py-4">
-              {SECTION_LINKS.map(({ key, href }) => (
+              {SECTION_LINKS.map(({ key, href, external }) => (
                 <li key={key}>
-                  <Link
-                    href={href}
-                    onClick={close}
-                    className="block rounded px-2 py-3 text-lg text-fg transition-colors hover:bg-surface"
-                  >
-                    {t(key)}
-                  </Link>
+                  {external ? (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={close}
+                      className="block rounded px-2 py-3 text-lg text-fg transition-colors hover:bg-surface"
+                    >
+                      {t(key)}
+                    </a>
+                  ) : (
+                    <Link
+                      href={href}
+                      onClick={close}
+                      className="block rounded px-2 py-3 text-lg text-fg transition-colors hover:bg-surface"
+                    >
+                      {t(key)}
+                    </Link>
+                  )}
                 </li>
               ))}
               <li>

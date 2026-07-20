@@ -69,7 +69,7 @@ export default async function ProjectPage({
     name: t(`${slug}.title`),
     description: t(`${slug}.overview`),
     gamePlatform: project.platforms,
-    author: { "@type": "Person", name: "Key Zhao" }
+    author: { "@type": "Person", name: "Key" }
   };
 
   return (
@@ -125,7 +125,7 @@ export default async function ProjectPage({
             </div>
             <div>
               <dt className="meta-label !text-[10px]">{tf("labels.period")}</dt>
-              <dd className="mt-1.5 text-fg">{project.period}</dd>
+              <dd className="mt-1.5 text-fg">{t(`${slug}.period`)}</dd>
             </div>
             <div className="col-span-2">
               <dt className="meta-label !text-[10px]">{tf("labels.platforms")}</dt>

@@ -38,6 +38,9 @@ body {
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  /* Full-bleed showcase images (FeaturedProjects) use 100vw breakouts; clip the
+     sub-pixel/scrollbar overhang instead of introducing a horizontal scrollbar. */
+  overflow-x: clip;
 }
 
 ::selection {

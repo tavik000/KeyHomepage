@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { site } from "@/content/site";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -7,14 +7,13 @@ import Reveal from "@/components/ui/Reveal";
 export default function ContactSection() {
   const t = useTranslations("contact");
   const tr = useTranslations("resume");
-  const locale = useLocale();
 
   const links: { label: string; href: string; external?: boolean }[] = [
     { label: t("github"), href: site.github, external: true },
     ...(site.linkedin
       ? [{ label: t("linkedin"), href: site.linkedin, external: true }]
       : []),
-    { label: t("blog"), href: locale === "en" ? "/blog" : `/${locale}/blog` }
+    { label: t("blog"), href: site.blogExternal, external: true }
   ];
 
   return (
@@ -28,7 +27,19 @@ export default function ContactSection() {
         >
           {site.email}
         </a>
-        <p className="mt-4 font-[family-name:var(--font-mono)] text-xs tracking-wider text-faint">
+        <p className="mt-4 flex items-center gap-1.5 text-sm text-muted">
+          <svg
+            aria-hidden="true"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          >
+            <path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z" />
+            <circle cx="12" cy="9.5" r="2.5" />
+          </svg>
           {t("location")}
         </p>
       </Reveal>

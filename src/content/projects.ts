@@ -13,7 +13,6 @@ export interface FeaturedProject {
   image: string;
   /** YouTube video id for an embedded gameplay video (omit for confidential titles) */
   youtubeId?: string;
-  period: string;
   platforms: string[];
   engine: string;
   languages: string[];
@@ -22,25 +21,26 @@ export interface FeaturedProject {
   links: ProjectLink[];
   gallery: string[];
   confidential?: boolean;
+  /** Temporarily excluded from the homepage listing (route still renders if linked directly). */
+  hidden?: boolean;
 }
 
 export const featuredProjects: FeaturedProject[] = [
   {
     slug: "unannounced-arpg",
     image: "/images/projects/unannounced-arpg.png",
-    period: "2024 —",
     platforms: ["Steam", "PlayStation 5", "Xbox Series X|S"],
     engine: "Unreal Engine 5",
     languages: ["C++"],
     technologies: ["Unreal Engine 5", "C++", "Hexa", "Perforce"],
     links: [],
     gallery: [],
-    confidential: true
+    confidential: true,
+    hidden: true
   },
   {
     slug: "hyke",
     image: "/images/projects/hyke.jpg",
-    period: "2024",
     platforms: ["Steam", "PlayStation 5", "Nintendo Switch", "iOS", "Android"],
     engine: "Unreal Engine 5",
     languages: ["C++"],
@@ -57,7 +57,6 @@ export const featuredProjects: FeaturedProject[] = [
   {
     slug: "apeiron",
     image: "/images/projects/apeiron.jpg",
-    period: "2022 — 2023",
     platforms: ["Steam", "Epic Games Store"],
     engine: "Unity",
     languages: ["C#"],
@@ -74,7 +73,6 @@ export const featuredProjects: FeaturedProject[] = [
   {
     slug: "every-hero",
     image: "/images/projects/every-hero.png",
-    period: "2020 — 2022",
     platforms: ["iOS", "Android"],
     engine: "Unity",
     languages: ["C#"],
@@ -125,6 +123,15 @@ export const jamProjects: JamProject[] = [
     hasAward: true
   },
   {
+    id: "blite",
+    image: "/images/projects/blite.png",
+    year: "2022",
+    engine: "Unity",
+    tags: ["Unity", "C#"],
+    link: "https://www.youtube.com/watch?v=YRxEiL2IRiU",
+    hasAward: true
+  },
+  {
     id: "teacup",
     image: "/images/projects/teacup.png",
     year: "2024",
@@ -139,115 +146,39 @@ export const jamProjects: JamProject[] = [
     engine: "Unreal Engine 5",
     tags: ["UE5", "C++", "Solo"],
     link: "https://www.youtube.com/watch?v=ikTBFtA-7Po"
-  },
-  {
-    id: "root-me",
-    image: "/images/projects/root-me.png",
-    year: "2023",
-    engine: "Unity",
-    tags: ["Unity", "C#"],
-    link: "https://www.youtube.com/watch?v=poRWXWZOwcE"
-  },
-  {
-    id: "blite",
-    image: "/images/projects/blite.png",
-    year: "2022",
-    engine: "Unity",
-    tags: ["Unity", "C#"],
-    link: "https://www.youtube.com/watch?v=YRxEiL2IRiU",
-    hasAward: true
-  },
-  {
-    id: "home-sleep-home",
-    image: "/images/projects/home-sleep-home.jpg",
-    year: "2019",
-    engine: "Unity",
-    tags: ["Unity", "C#"],
-    link: "https://github.com/tavik000/HomeSleepHome"
   }
 ];
 
-export type OtherCategory = "game" | "web" | "mobile" | "ai";
-
-export interface OtherProject {
+export interface IndependentProject {
   id: string;
-  category: OtherCategory;
+  /** Optional key art; falls back to a stylized placeholder when omitted. */
+  image?: string;
   tags: string[];
   link?: string;
   year?: string;
 }
 
-export const otherProjects: OtherProject[] = [
+/** Non-commercial game development: personal, freelance, and long-term side projects. */
+export const independentProjects: IndependentProject[] = [
   {
     id: "guards",
-    category: "game",
+    image: "/images/projects/guards.png",
     tags: ["Unreal Engine", "QA", "Japanese Localization"],
     link: "https://store.steampowered.com/app/2514460/GUARDS/",
     year: "2023"
   },
   {
     id: "doki-doki-house",
-    category: "game",
+    image: "/images/projects/doki-doki-house.png",
     tags: ["Python", "Ren'Py", "Tooling"],
     link: "https://apps.apple.com/hk/app/心跳度假屋/id1604558574",
     year: "2023"
   },
   {
-    id: "lost-strings",
-    category: "game",
-    tags: ["Unity", "C#"],
-    link: "https://store.steampowered.com/app/1128750/The_Lost_Strings",
-    year: "2019"
-  },
-  {
     id: "hero-race",
-    category: "game",
+    image: "/images/projects/hero-race.png",
     tags: ["Warcraft III", "JASS", "Level Design"],
     link: "https://github.com/tavik000/HeroRace",
-    year: "2011 — 2022"
-  },
-  {
-    id: "color-picking",
-    category: "game",
-    tags: ["Unity", "C#", "iOS"],
-    link: "https://github.com/tavik000/ColorPicking",
-    year: "2018"
-  },
-  {
-    id: "maze-game-ai",
-    category: "ai",
-    tags: ["Unity", "C#", "Python", "ML"],
-    link: "https://github.com/tavik000/MazeGameAI",
-    year: "2018"
-  },
-  {
-    id: "blog-remake",
-    category: "web",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://github.com/tavik000/ReactKeyBlogRemake"
-  },
-  {
-    id: "angular-blog",
-    category: "web",
-    tags: ["Angular", "Firebase", "TypeScript"],
-    link: "https://github.com/tavik000/AngularFireBlog"
-  },
-  {
-    id: "dcd-app",
-    category: "mobile",
-    tags: ["Swift", "iOS", "Bronze Award"],
-    link: "https://www.youtube.com/watch?v=uNtz0VSzEhI"
-  },
-  {
-    id: "react-native-apps",
-    category: "mobile",
-    tags: ["React Native", "iOS", "Android"],
-    link: "https://github.com/tavik000?tab=repositories&q=React_Native"
-  },
-  {
-    id: "facebook-chatbot",
-    category: "ai",
-    tags: ["Python", "Seq2Seq", "NLP"],
-    link: "https://github.com/tavik000/python-key-chatbot"
+    year: "2011 — 2026"
   }
 ];

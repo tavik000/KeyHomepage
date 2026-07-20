@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     "",
     "/blog",
-    ...featuredProjects.map((p) => `/projects/${p.slug}`),
+    ...featuredProjects.filter((p) => !p.hidden).map((p) => `/projects/${p.slug}`),
     ...getAllSlugs().map((slug) => `/blog/${slug}`)
   ];
 

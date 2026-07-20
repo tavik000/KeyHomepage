@@ -1,19 +1,17 @@
 import { useTranslations } from "next-intl";
 import { site } from "@/content/site";
 import Reveal from "@/components/ui/Reveal";
-import Tag from "@/components/ui/Tag";
 
 /**
- * Low-priority "long-term passion" section: the personal game design research
- * database. Intentionally quiet — small heading, no imagery — so it never
- * competes with commercial work.
+ * Low-priority "long-term passion" section: a personal archive of games
+ * observed from a player's and gameplay programmer's perspective. Intentionally
+ * quiet — small heading, no imagery — so it never competes with commercial work.
  */
-export default function ResearchSection() {
-  const t = useTranslations("research");
-  const dimensions = t.raw("dimensions") as string[];
+export default function GameJournalSection() {
+  const t = useTranslations("gameJournal");
 
   return (
-    <section id="research" className="scroll-mt-20 border-t border-border py-16 md:py-20">
+    <section id="game-journal" className="scroll-mt-20 border-t border-border py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
           <h2 className="meta-label mb-6">{t("kicker")}</h2>
@@ -25,11 +23,6 @@ export default function ResearchSection() {
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
                 {t("lead")}
               </p>
-              <div className="mt-6 flex flex-wrap gap-1.5">
-                {dimensions.map((d) => (
-                  <Tag key={d}>{d}</Tag>
-                ))}
-              </div>
             </div>
             <div className="flex flex-col items-start justify-center gap-4 border-border lg:border-l lg:pl-10">
               <p className="font-[family-name:var(--font-mono)] text-xs uppercase tracking-[0.18em] text-accent-soft">

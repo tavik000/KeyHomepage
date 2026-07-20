@@ -50,7 +50,7 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    author: { "@type": "Person", name: "Key Zhao" },
+    author: { "@type": "Person", name: "Key" },
     inLanguage: post.locale
   };
 
