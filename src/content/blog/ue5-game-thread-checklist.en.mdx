@@ -1,0 +1,45 @@
+---
+title: "A practical Game Thread optimization checklist for UE5"
+description: "The profiling workflow I reach for when a UE5 project misses frame budget on weaker hardware like Nintendo Switch."
+date: "2026-07-20"
+tags: ["UE5", "Performance", "C++"]
+---
+
+When a UE5 title targets everything from PS5 down to Switch-class hardware, the
+Game Thread is usually the first budget you blow. This is the checklist I work
+through before touching any code.
+
+## 1. Measure before guessing
+
+- `stat unit` — confirm the Game Thread (not Draw or GPU) is actually the bottleneck.
+- `stat game` — break down tick, animation, and physics cost.
+- Unreal Insights with `-trace=default,task` — find the exact frames that spike and what ran in them.
+
+If the spike only happens on device, profile on device. Editor numbers lie.
+
+## 2. The usual suspects
+
+1. **Too many ticking actors.** Search for components that tick every frame but
+   only need event-driven updates. `PrimaryActorTick.bCanEverTick = false` is
+   the cheapest optimization in the engine.
+2. **Tick frequency.** For things that must tick, `SetTickInterval` at 10–15 Hz
+   is often indistinguishable from 60 Hz for non-player-facing logic.
+3. **Blueprint hot paths.** A Blueprint tick doing per-frame math is an easy
+   nativization candidate — move the inner loop to C++ and keep the Blueprint
+   as configuration.
+4. **Spawning during gameplay.** Pool projectiles, VFX actors, and UI widgets.
+   `SpawnActor` mid-combat is a frame-time grenade.
+5. **Overlap and trace volume.** Collapse per-frame traces into batched or
+   asynchronous queries (`AsyncLineTraceByChannel`) where the result can arrive
+   a frame late.
+
+## 3. Verify on the weakest target
+
+A change that wins 0.3 ms on PC can be noise on Switch, and vice versa — CPU
+cache behavior and core counts differ completely. Re-run the same Insights
+capture on the weakest platform after every batch of changes, and keep a
+before/after table in the PR description so the win is verifiable.
+
+The pattern behind all of this: make the frame do less work, make remaining
+work event-driven, and never trust a number you didn't measure on target
+hardware.
