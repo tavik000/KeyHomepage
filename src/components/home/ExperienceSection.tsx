@@ -27,7 +27,7 @@ export default function ExperienceSection() {
               />
               <Reveal delay={i * 0.05}>
                 <p className="font-[family-name:var(--font-mono)] text-xs tracking-wider text-faint">
-                  {item.period}
+                  {t(`items.${item.id}.period`)}
                   {item.current && (
                     <span className="ml-2 text-accent-soft">· {t("present")}</span>
                   )}

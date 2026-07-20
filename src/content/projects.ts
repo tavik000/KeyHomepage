@@ -11,8 +11,13 @@ export interface ProjectLink {
 export interface FeaturedProject {
   slug: string;
   image: string;
+  /** Square app icon shown as a badge on the hero banner for mobile releases. */
+  appIcon?: string;
   /** YouTube video id for an embedded gameplay video (omit for confidential titles) */
   youtubeId?: string;
+  /** Muted looping gameplay clip that plays on hover/focus over the hero image. */
+  previewVideo?: string;
+  company: string;
   platforms: string[];
   engine: string;
   languages: string[];
@@ -29,6 +34,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     slug: "unannounced-arpg",
     image: "/images/projects/unannounced-arpg.png",
+    company: "Blast Edge Games",
     platforms: ["Steam", "PlayStation 5", "Xbox Series X|S"],
     engine: "Unreal Engine 5",
     languages: ["C++"],
@@ -41,7 +47,8 @@ export const featuredProjects: FeaturedProject[] = [
   {
     slug: "hyke",
     image: "/images/projects/hyke.jpg",
-    platforms: ["Steam", "PlayStation 5", "Nintendo Switch", "iOS", "Android"],
+    company: "Blast Edge Games",
+    platforms: ["Steam", "PlayStation 5", "Nintendo Switch", "iOS", "Mac"],
     engine: "Unreal Engine 5",
     languages: ["C++"],
     technologies: ["Unreal Engine 5", "C++", "Perforce"],
@@ -57,7 +64,9 @@ export const featuredProjects: FeaturedProject[] = [
   {
     slug: "apeiron",
     image: "/images/projects/apeiron.jpg",
-    platforms: ["Steam", "Epic Games Store"],
+    previewVideo: "/videos/apeiron-preview.mp4",
+    company: "Realm of Alters (Ember Entertainment)",
+    platforms: ["Steam", "Epic Games Store", "iOS", "Android"],
     engine: "Unity",
     languages: ["C#"],
     technologies: ["Unity", "C#", "Socket.IO", "Git"],
@@ -72,7 +81,10 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     slug: "every-hero",
-    image: "/images/projects/every-hero.png",
+    image: "/images/projects/every-hero.jpg",
+    appIcon: "/images/projects/every-hero-icon.png",
+    previewVideo: "/videos/every-hero-preview.mp4",
+    company: "Feeling Game Company",
     platforms: ["iOS", "Android"],
     engine: "Unity",
     languages: ["C#"],
@@ -96,6 +108,11 @@ export interface JamProject {
    * When absent the card simply keeps its thumbnail on hover.
    */
   previewVideo?: string;
+  /** Optional YouTube video id used for hover preview when no local clip exists. */
+  previewYoutubeId?: string;
+  /** Start/end seconds trimming the YouTube preview to a short 15-20s looping clip instead of full playback. */
+  previewYoutubeStart?: number;
+  previewYoutubeEnd?: number;
   year: string;
   engine: string;
   tags: string[];
@@ -107,6 +124,7 @@ export const jamProjects: JamProject[] = [
   {
     id: "hook-racer",
     image: "/images/projects/hook-racer.jpg",
+    previewVideo: "/videos/hook-racer-preview.mp4",
     year: "2025",
     engine: "Unreal Engine 5",
     tags: ["UE5", "C++", "Solo"],
@@ -116,6 +134,7 @@ export const jamProjects: JamProject[] = [
   {
     id: "shadow-bubble",
     image: "/images/projects/shadow-bubble.png",
+    previewYoutubeId: "U_8e_a2troo",
     year: "2025",
     engine: "Unreal Engine 5",
     tags: ["UE5", "C++", "Multiplayer", "XR"],
@@ -125,6 +144,9 @@ export const jamProjects: JamProject[] = [
   {
     id: "blite",
     image: "/images/projects/blite.png",
+    previewYoutubeId: "YRxEiL2IRiU",
+    previewYoutubeStart: 0,
+    previewYoutubeEnd: 18,
     year: "2022",
     engine: "Unity",
     tags: ["Unity", "C#"],
@@ -134,6 +156,7 @@ export const jamProjects: JamProject[] = [
   {
     id: "teacup",
     image: "/images/projects/teacup.png",
+    previewVideo: "/videos/teacup-preview.mp4",
     year: "2024",
     engine: "Unreal Engine 5",
     tags: ["UE5", "C++", "Level Design"],
@@ -153,6 +176,8 @@ export interface IndependentProject {
   id: string;
   /** Optional key art; falls back to a stylized placeholder when omitted. */
   image?: string;
+  /** Optional muted looping preview clip (mp4/webm under /public/videos), played on hover/focus. */
+  previewVideo?: string;
   tags: string[];
   link?: string;
   year?: string;
@@ -163,15 +188,17 @@ export const independentProjects: IndependentProject[] = [
   {
     id: "guards",
     image: "/images/projects/guards.png",
+    previewVideo: "/videos/guards-preview.mp4",
     tags: ["Unreal Engine", "QA", "Japanese Localization"],
     link: "https://store.steampowered.com/app/2514460/GUARDS/",
     year: "2023"
   },
   {
     id: "doki-doki-house",
-    image: "/images/projects/doki-doki-house.png",
+    image: "/images/projects/doki-doki-house.jpg",
+    previewVideo: "/videos/doki-doki-house-preview.mp4",
     tags: ["Python", "Ren'Py", "Tooling"],
-    link: "https://apps.apple.com/hk/app/心跳度假屋/id1604558574",
+    link: "https://store.steampowered.com/app/1895950/Doki_Doki_House/",
     year: "2023"
   },
   {

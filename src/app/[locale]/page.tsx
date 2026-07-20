@@ -27,9 +27,9 @@ export default async function HomePage({
       <JamGallery />
       <ExperienceSection />
       <SkillsSection />
+      <BlogTeaserSection />
       <AwardsSection />
       <GameJournalSection />
-      <BlogTeaserSection />
       <HobbiesStrip />
       <ContactSection />
     </main>

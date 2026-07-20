@@ -38,6 +38,7 @@
     "readMore": "Read more",
     "confidential": "Under NDA",
     "labels": {
+      "company": "Company",
       "role": "Role",
       "platforms": "Platforms",
       "engine": "Engine",
@@ -80,20 +81,32 @@
       "tagline": "Action adventure shipped on five platforms",
       "role": "Gameplay Programmer",
       "genre": "Action Adventure",
-      "overview": "A shipped action-adventure title built in Unreal Engine 5, released on Steam, PlayStation 5, Nintendo Switch, iOS, and Android. I joined the ~50-person team at Blast Edge Games as a gameplay programmer, focusing on gameplay quality and platform performance.",
+      "overview": "A shipped action-adventure title built in Unreal Engine 5, released on Steam, PlayStation 5, Nintendo Switch, iOS, and Mac. I joined the ~50-person team at Blast Edge Games as a gameplay programmer, focusing on character implementation, debugging, and Game Thread and memory optimization.",
       "contributions": [
-        "Resolved gameplay and character-related issues to improve quality and stability.",
+        "Fixed ~60 player-related bugs.",
         "Optimized memory usage on iOS.",
         "Optimized Game Thread performance on Nintendo Switch."
       ],
       "challenges": [
         {
-          "challenge": "One UE5 codebase had to ship from PlayStation 5 all the way down to Nintendo Switch and mobile hardware.",
-          "solution": "Profiled per-platform bottlenecks, cut Game Thread cost on Switch, and reduced memory footprint on iOS to meet each platform's constraints."
+          "challenge": "The iOS build was crashing due to insufficient memory.",
+          "solution": "Investigated and optimized memory usage to resolve the crashes. I wrote up the process as a technical blog post on UE5 memory optimization.",
+          "links": [
+            {
+              "label": "[UE5] Useful Tools, Commands, and Methods for Memory Optimization",
+              "href": "https://www.reactkeyblog.com/en/posts/[ue5]-list-of-useful-tools,-commands,-and-optimization-methods-for-memory-optimization/9a34c809-cc5e-4b3f-8c53-b988bc26a7ee"
+            }
+          ]
         },
         {
-          "challenge": "Character gameplay defects threatened stability close to release.",
-          "solution": "Debugged and fixed character and gameplay issues to shipping quality in C++."
+          "challenge": "Game Thread load on Nintendo Switch was too high, causing unstable performance.",
+          "solution": "Profiled the game and reduced Game Thread cost on Switch. I also compiled a set of notes while learning UE5 optimization more broadly.",
+          "links": [
+            {
+              "label": "[UE5] Unreal Engine 5 Optimization Learning Materials",
+              "href": "https://www.reactkeyblog.com/en/posts/[ue5]-unreal-engine-5-optimization-learning-materials/7693ef87-ef96-4e77-bfb8-842470320260"
+            }
+          ]
         }
       ]
     },
@@ -170,6 +183,7 @@
     "present": "Present",
     "items": {
       "blast-edge": {
+        "period": "Jul 2024 —",
         "position": "Gameplay Programmer (UE5)",
         "bullets": [
           "Developing gameplay events, cinematics, UI, and interactive systems for an unannounced AAA action RPG (Steam / PS5 / Xbox Series X|S) in Unreal Engine 5 and C++.",
@@ -179,6 +193,7 @@
         ]
       },
       "freelance": {
+        "period": "Mar 2023 — Jun 2024",
         "position": "Freelance Game Developer",
         "bullets": [
           "GUARDS! (Steam): gameplay QA, debugging, and Japanese localization in a 4-person multiplayer indie team (UE, C++).",
@@ -187,6 +202,7 @@
         ]
       },
       "ember": {
+        "period": "Mar 2022 — Feb 2023",
         "position": "Gameplay Programmer (Unity)",
         "bullets": [
           "Apeiron (Steam / Epic): developed gameplay systems, combat mechanics, card systems, and enemy AI in C#.",
@@ -195,6 +211,7 @@
         ]
       },
       "feeling-game": {
+        "period": "Jun 2020 — Feb 2022",
         "position": "Gameplay Programmer (Unity)",
         "bullets": [
           "Every Hero (iOS / Android): developed gameplay, combat, equipment systems, and UI in C#.",

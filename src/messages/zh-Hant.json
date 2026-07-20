@@ -38,6 +38,7 @@
     "readMore": "閱讀更多",
     "confidential": "受NDA保密",
     "labels": {
+      "company": "公司",
       "role": "職責",
       "platforms": "平台",
       "engine": "引擎",
@@ -80,20 +81,32 @@
       "tagline": "於五大平台上市的動作冒險遊戲",
       "role": "遊戲程式設計師",
       "genre": "動作冒險",
-      "overview": "以Unreal Engine 5開發的動作冒險遊戲，已於Steam、PlayStation 5、Nintendo Switch、iOS與Android上市。我以遊戲程式設計師身分加入Blast Edge Games約50人的開發團隊，負責遊戲品質與平台效能最佳化。",
+      "overview": "以Unreal Engine 5開發的動作冒險遊戲，已於Steam、PlayStation 5、Nintendo Switch、iOS與Mac上市。我以遊戲程式設計師身分加入Blast Edge Games約50人的開發團隊，負責角色實作、除錯，以及Game Thread與記憶體最佳化。",
       "contributions": [
-        "解決遊戲玩法與角色相關問題，提升品質與穩定性。",
+        "修復約60個玩家相關問題。",
         "最佳化iOS的記憶體用量。",
         "最佳化Nintendo Switch的Game Thread效能。"
       ],
       "challenges": [
         {
-          "challenge": "單一UE5程式碼庫必須同時在PlayStation 5到Nintendo Switch與手機等硬體上出貨。",
-          "solution": "針對各平台進行效能分析，降低Switch的Game Thread負載、壓縮iOS記憶體佔用，以滿足各平台限制。"
+          "challenge": "iOS版因記憶體不足而發生當機。",
+          "solution": "調查並最佳化記憶體使用量，解決了當機問題。我將這段經歷整理成一篇關於UE5記憶體最佳化的技術部落格文章。",
+          "links": [
+            {
+              "label": "[UE5] メモリ最適化に役立つツール・コマンド・手法まとめ",
+              "href": "https://www.reactkeyblog.com/ja/posts/[ue5]-list-of-useful-tools,-commands,-and-optimization-methods-for-memory-optimization/9a34c809-cc5e-4b3f-8c53-b988bc26a7ee"
+            }
+          ]
         },
         {
-          "challenge": "臨近上市時，角色玩法的缺陷威脅到遊戲穩定性。",
-          "solution": "以C++除錯並修正角色與遊戲玩法問題，達到出貨品質。"
+          "challenge": "Nintendo Switch版的Game Thread負載過高，導致效能不穩定。",
+          "solution": "透過效能分析降低了Switch上的Game Thread負載。我也公開了在學習UE5最佳化過程中整理的學習資料。",
+          "links": [
+            {
+              "label": "[UE5] Unreal Engine 5 最適化学習資料まとめ",
+              "href": "https://www.reactkeyblog.com/ja/posts/[ue5]-unreal-engine-5-optimization-learning-materials/7693ef87-ef96-4e77-bfb8-842470320260"
+            }
+          ]
         }
       ]
     },
@@ -170,6 +183,7 @@
     "present": "至今",
     "items": {
       "blast-edge": {
+        "period": "2024年7月 —",
         "position": "遊戲程式設計師（UE5）",
         "bullets": [
           "以Unreal Engine 5 / C++開發未公開AAA動作RPG（Steam / PS5 / Xbox Series X|S）的遊戲事件、過場演出、UI與互動系統。",
@@ -179,6 +193,7 @@
         ]
       },
       "freelance": {
+        "period": "2023年3月 — 2024年6月",
         "position": "自由接案遊戲開發者",
         "bullets": [
           "《GUARDS!》（Steam）：於4人多人連線獨立團隊負責遊戲QA、除錯與日文在地化（UE / C++）。",
@@ -187,6 +202,7 @@
         ]
       },
       "ember": {
+        "period": "2022年3月 — 2023年2月",
         "position": "遊戲程式設計師（Unity）",
         "bullets": [
           "《Apeiron》（Steam / Epic）：以C#開發遊戲系統、戰鬥機制、卡牌系統與敵人AI。",
@@ -195,6 +211,7 @@
         ]
       },
       "feeling-game": {
+        "period": "2020年6月 — 2022年2月",
         "position": "遊戲程式設計師（Unity）",
         "bullets": [
           "《Every Hero》（iOS / Android）：以C#開發遊戲玩法、戰鬥、裝備系統與UI。",

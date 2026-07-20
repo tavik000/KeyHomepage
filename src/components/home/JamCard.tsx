@@ -23,6 +23,7 @@ export default function JamCard({ project, title, desc, awardLabel }: JamCardPro
   const videoRef = useRef<HTMLVideoElement>(null);
   const reduceMotion = useReducedMotion();
   const showVideo = Boolean(project.previewVideo) && !reduceMotion;
+  const showYoutube = !project.previewVideo && Boolean(project.previewYoutubeId) && !reduceMotion;
 
   const onEnter = () => {
     setHovered(true);
@@ -72,6 +73,17 @@ export default function JamCard({ project, title, desc, awardLabel }: JamCardPro
             className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
               hovered ? "opacity-100" : "opacity-0"
             }`}
+          />
+        )}
+        {showYoutube && hovered && (
+          <iframe
+            src={`https://www.youtube.com/embed/${project.previewYoutubeId}?autoplay=1&mute=1&loop=1&playlist=${project.previewYoutubeId}&controls=0&modestbranding=1&rel=0&playsinline=1${
+              project.previewYoutubeStart !== undefined ? `&start=${project.previewYoutubeStart}` : ""
+            }${project.previewYoutubeEnd !== undefined ? `&end=${project.previewYoutubeEnd}` : ""}`}
+            title={`${title} preview`}
+            allow="autoplay; encrypted-media"
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 h-full w-full border-0"
           />
         )}
         {project.hasAward && (

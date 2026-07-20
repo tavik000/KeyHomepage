@@ -42,6 +42,7 @@
     "readMore": "詳細を見る",
     "confidential": "NDA対象",
     "labels": {
+      "company": "会社",
       "role": "担当",
       "platforms": "プラットフォーム",
       "engine": "エンジン",
@@ -81,33 +82,45 @@
     "hyke": {
       "title": "HYKE: Northern Light(s)",
       "period": "2024年7月 — 2024年9月",
-      "tagline": "5プラットフォームでリリースされたアクションアドベンチャー",
+      "tagline": "見下ろし型アクションアドベンチャー",
       "role": "ゲームエンジニア",
       "genre": "アクションアドベンチャー",
-      "overview": "Unreal Engine 5で開発され、Steam / PlayStation 5 / Nintendo Switch / iOS / Androidでリリースされたアクションアドベンチャー。約50名規模の開発チームにゲームエンジニアとして参加し、ゲームプレイ品質とプラットフォーム最適化を担当しました。",
+      "overview": "Unreal Engine 5で開発され、Steam / PlayStation 5 / Nintendo Switch / iOS / Macでリリースされたアクションアドベンチャー。約50名規模の開発チームにゲームエンジニアとして参加し、キャラクター実装とデバッグ、ゲームスレッドとメモリの最適化を担当しました。",
       "contributions": [
-        "ゲームプレイおよびキャラクター関連の不具合を解決し、品質と安定性を向上。",
+        "キャラクター実装とキャラクター関連不具合を約60件修正。",
         "iOSにおけるメモリ使用量の最適化。",
         "Nintendo SwitchにおけるGame Threadパフォーマンスの最適化。"
       ],
       "challenges": [
         {
-          "challenge": "単一のUE5コードベースを、PlayStation 5からNintendo Switch・モバイルまで幅広いハードウェアでリリースする必要がありました。",
-          "solution": "プラットフォームごとのボトルネックをプロファイリングし、SwitchのGame Thread負荷を削減、iOSのメモリフットプリントを圧縮して各プラットフォームの制約を満たしました。"
+          "challenge": "iOS版でメモリ不足によるクラッシュが発生しました。",
+          "solution": "メモリ使用量を調査・最適化してクラッシュを解消しました。この経験をもとに、UE5のメモリ最適化に関する技術ブログを執筆しました。",
+          "links": [
+            {
+              "label": "[UE5] メモリ最適化に役立つツール・コマンド・手法まとめ",
+              "href": "https://www.reactkeyblog.com/ja/posts/[ue5]-list-of-useful-tools,-commands,-and-optimization-methods-for-memory-optimization/9a34c809-cc5e-4b3f-8c53-b988bc26a7ee"
+            }
+          ]
         },
         {
-          "challenge": "リリース直前にキャラクターゲームプレイの不具合が安定性を脅かしていました。",
-          "solution": "C++でキャラクター・ゲームプレイの不具合をデバッグし、出荷品質まで修正しました。"
+          "challenge": "Nintendo Switch版でGame Threadの負荷が高く、パフォーマンスが安定しませんでした。",
+          "solution": "プロファイリングを行いGame Threadの負荷を削減しました。最適化を学ぶ過程でまとめた学習資料も公開しています。",
+          "links": [
+            {
+              "label": "[UE5] Unreal Engine 5 最適化学習資料まとめ",
+              "href": "https://www.reactkeyblog.com/ja/posts/[ue5]-unreal-engine-5-optimization-learning-materials/7693ef87-ef96-4e77-bfb8-842470320260"
+            }
+          ]
         }
       ]
     },
     "apeiron": {
       "title": "Apeiron",
       "period": "2022年3月 — 2023年2月",
-      "tagline": "Steam / Epic Games StoreでリリースされたアクションRTSカードバトル",
+      "tagline": "アクションRTSカードバトル",
       "role": "リードプログラマー",
       "genre": "アクションRTS / カードバトル",
-      "overview": "Unityで開発され、SteamとEpic Games StoreでリリースされたアクションRTSカードバトルゲーム。Ember Entertainmentの5名のゲームプレイチームでリードプログラマーを務め、システム設計とコアゲームプレイ（戦闘メカニクス、カードシステム、敵AI）を担当し、マルチプレイヤー同期レイヤーを実装しました。",
+      "overview": "Unityで開発され、Steam、Epic Games Store、iOS、AndroidでリリースされたアクションRTSカードバトルゲーム。Ember Entertainmentの5名のゲームプレイチームでリードプログラマーを務め、システム設計とコアゲームプレイ（戦闘メカニクス、カードシステム、敵AI）を担当し、マルチプレイヤー同期レイヤーを実装しました。",
       "contributions": [
         "ゲームプレイシステム、戦闘メカニクス、カードシステム、敵AIをC#で開発。",
         "Socket.IOによるマルチプレイヤー同期を実装。",
@@ -174,6 +187,7 @@
     "present": "現在",
     "items": {
       "blast-edge": {
+        "period": "2024年7月 —",
         "position": "ゲームエンジニア（UE5）",
         "bullets": [
           "未発表AAAアクションRPG（Steam / PS5 / Xbox Series X|S）のゲームプレイイベント、カットシーン、UI、インタラクティブシステムをUnreal Engine 5 / C++で開発。",
@@ -183,6 +197,7 @@
         ]
       },
       "freelance": {
+        "period": "2023年3月 — 2024年6月",
         "position": "フリーランス ゲーム開発者",
         "bullets": [
           "『GUARDS!』（Steam）：4名のマルチプレイヤーインディーチームにて、ゲームプレイQA・デバッグ・日本語ローカライズを担当（UE / C++）。",
@@ -191,6 +206,7 @@
         ]
       },
       "ember": {
+        "period": "2022年3月 — 2023年2月",
         "position": "ゲームエンジニア（Unity）",
         "bullets": [
           "『Apeiron』（Steam / Epic）：ゲームプレイシステム、戦闘メカニクス、カードシステム、敵AIをC#で開発。",
@@ -199,6 +215,7 @@
         ]
       },
       "feeling-game": {
+        "period": "2020年6月 — 2022年2月",
         "position": "ゲームエンジニア（Unity）",
         "bullets": [
           "『Every Hero』（iOS / Android）：ゲームプレイ、戦闘、装備システム、UIをC#で開発。",

@@ -51,7 +51,13 @@ export default async function ProjectPage({
   const index = featuredProjects.findIndex((p) => p.slug === slug);
   if (index === -1) notFound();
   const project = featuredProjects[index];
-  const next = featuredProjects[(index + 1) % featuredProjects.length];
+
+  const visibleProjects = featuredProjects.filter((p) => !p.hidden);
+  const visibleIndex = visibleProjects.findIndex((p) => p.slug === slug);
+  const next =
+    visibleIndex === -1
+      ? undefined
+      : visibleProjects[(visibleIndex + 1) % visibleProjects.length];
 
   const t = await getTranslations("projects");
   const tf = await getTranslations("featured");
@@ -60,6 +66,7 @@ export default async function ProjectPage({
   const challenges = t.raw(`${slug}.challenges`) as {
     challenge: string;
     solution: string;
+    links?: { label: string; href: string }[];
   }[];
   const contributions = t.raw(`${slug}.contributions`) as string[];
 
@@ -80,7 +87,7 @@ export default async function ProjectPage({
       />
 
       {/* Hero art */}
-      <div className="relative aspect-[21/9] max-h-[70vh] w-full overflow-hidden">
+      <div className="relative aspect-[21/9] w-full overflow-hidden">
         <Image
           src={project.image}
           alt={t(`${slug}.title`)}
@@ -110,7 +117,11 @@ export default async function ProjectPage({
 
         {/* Meta strip */}
         <Reveal className="mt-10">
-          <dl className="grid grid-cols-2 gap-6 rounded-lg border border-border bg-surface p-6 text-sm md:grid-cols-4">
+          <dl className="grid grid-cols-2 gap-6 rounded-lg border border-border bg-surface p-6 text-sm md:grid-cols-5">
+            <div>
+              <dt className="meta-label !text-[10px]">{tf("labels.company")}</dt>
+              <dd className="mt-1.5 text-fg">{project.company}</dd>
+            </div>
             <div>
               <dt className="meta-label !text-[10px]">{tf("labels.role")}</dt>
               <dd className="mt-1.5 text-fg">{t(`${slug}.role`)}</dd>
@@ -188,6 +199,21 @@ export default async function ProjectPage({
                   {tp("solution")}
                 </p>
                 <p className="mt-2 leading-relaxed text-muted">{item.solution}</p>
+                {item.links && item.links.length > 0 && (
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    {item.links.map((link) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-accent-soft transition-colors hover:text-fg"
+                      >
+                        {link.label} ↗
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -248,15 +274,17 @@ export default async function ProjectPage({
         )}
 
         {/* Next project */}
-        <Reveal className="mt-24 border-t border-border pt-10">
-          <p className="meta-label mb-3">{tp("nextProject")}</p>
-          <Link
-            href={`/projects/${next.slug}`}
-            className="font-[family-name:var(--font-display)] text-2xl text-fg transition-colors hover:text-accent-soft md:text-3xl"
-          >
-            {t(`${next.slug}.title`)} →
-          </Link>
-        </Reveal>
+        {next && (
+          <Reveal className="mt-24 border-t border-border pt-10">
+            <p className="meta-label mb-3">{tp("nextProject")}</p>
+            <Link
+              href={`/projects/${next.slug}`}
+              className="font-[family-name:var(--font-display)] text-2xl text-fg transition-colors hover:text-accent-soft md:text-3xl"
+            >
+              {t(`${next.slug}.title`)} →
+            </Link>
+          </Reveal>
+        )}
       </div>
     </main>
   );
