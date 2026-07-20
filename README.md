@@ -1,69 +1,69 @@
-<p align="center">
-  <h1 align="center">Key Personal Homepage</h1>
-  <p align="center">A Static HTML+CSS+JavaScript webpage</p>
-</p> 
+# Key Zhao — Portfolio
 
+Professional portfolio for a Gameplay Programmer (Unreal Engine 5 / C++), targeting
+AAA game studios. Built with Next.js 15 (App Router), TypeScript, Tailwind CSS v4,
+Framer Motion, and next-intl.
 
+Live: https://master.d2qyb13wnib5il.amplifyapp.com/
 
+## Stack
 
-## Contents 
-<!-- toc -->
-* [Introduction](#introduction)
-* [Contact](#contact)
-* [License](#license)
+- **Next.js 15** App Router, fully statically generated
+- **next-intl** — English (default), 日本語 (`/ja`), 繁體中文 (`/zh-Hant`)
+- **Tailwind CSS v4** — design tokens in `src/app/globals.css` (`@theme`)
+- **Framer Motion** — subtle reveal/hover animations, `prefers-reduced-motion` aware
+- **MDX blog** — `next-mdx-remote` + `gray-matter`
 
-<!-- toc stop -->
+## Commands
 
+```bash
+npm run dev     # dev server on :3000
+npm run build   # production build (SSG)
+npm start       # serve production build
+```
 
-## Introduction
+## Editing content
 
+| What | Where |
+|---|---|
+| All translated copy (every locale) | `src/messages/{en,ja,zh-Hant}.json` |
+| Featured projects (platforms, links, media) | `src/content/projects.ts` |
+| Game jam / other projects | `src/content/projects.ts` |
+| Experience & education dates/companies | `src/content/experience.ts` |
+| Skills | `src/content/skills.ts` |
+| Awards & certifications | `src/content/awards.ts` |
+| Email / GitHub / LinkedIn / resume paths | `src/content/site.ts` |
+| Blog articles | `src/content/blog/<slug>.<locale>.mdx` |
+| Images | `public/images/projects/` |
+| Resume PDFs | `public/assets/` |
 
+### Adding a blog post
 
-Check my homgpage here: <b>[Key Personal Homepage](https://key-personal-homepage.herokuapp.com/index.html)</b>
+Create `src/content/blog/my-post.en.mdx` with frontmatter:
 
-Deploy on [Heroku](https://devcenter.heroku.com)
+```yaml
+---
+title: "Post title"
+description: "One-line summary"
+date: "2026-07-20"
+tags: ["UE5", "C++"]
+---
+```
 
+Add `my-post.ja.mdx` / `my-post.zh-Hant.mdx` for translations; locales without a
+translation fall back to the English version automatically.
 
+### Game jam hover videos
 
+Drop a short muted clip in `public/videos/` and set `previewVideo` on the project
+in `src/content/projects.ts` — the card will crossfade to the looping video on hover.
 
+## Legacy site
 
+The previous static HTML site is preserved on the `master` branch, the
+`backup/pre-redesign-2026-07-20` branch, and in
+`KeyHomepage-backup-2026-07-20.zip` (sibling directory).
 
-**If you like this, please leave a star.**
-
------
-
-
-## Contact
-
-
-
-Email:  Key <tavik002@gmail.com>
-
------
 ## License
-MIT License
 
-Copyright (c) 2018 key
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
-[⬆ Back to top](#contents)
-
-**All Copyright Reserved**
+MIT License — Copyright (c) 2018–2026 Key Zhao
