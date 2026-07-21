@@ -71,6 +71,7 @@ export const skillCategories: SkillCategory[] = [
     id: "platforms",
     items: [
       { name: "Windows" },
+      { name: "Mac" },
       { name: "PlayStation 5" },
       { name: "Xbox Series X|S" },
       { name: "Nintendo Switch" },
