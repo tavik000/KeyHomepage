@@ -306,15 +306,21 @@
     "kicker": "Prototypes & Jams",
     "title": "Game Jam作品",
     "description": "獨自或與小型團隊在數天至數週內完成設計、開發與發布的快速原型作品。",
-    "awardBadge": "獲獎作品",
+    "source": "原始碼",
     "items": {
+      "danmaku": {
+        "title": "Project Danmaku",
+        "desc": "將B站影片的真實彈幕留言化為迎面而來的敵人的射擊遊戲原型。3人團隊製作。"
+      },
       "hook-racer": {
         "title": "Hook Racer",
-        "desc": "以鉤索疾馳的競速動作遊戲。7週獨自完成，包辦遊戲程式、像素美術與音樂。第24回UE5ぷちコン獲獎作品。"
+        "desc": "以鉤索疾馳的競速動作遊戲。7週獨自完成，包辦遊戲程式、像素美術與音樂。第24回UE5ぷちコン獲獎作品。",
+        "award": { "name": "盛り上がるで賞", "event": "第24回UE5ぷちコン" }
       },
       "shadow-bubble": {
         "title": "Shadow Bubble: Hide and Seek Chaos",
-        "desc": "7天完成的雙人非對稱匿蹤遊戲。獲GGJ香港2025觀眾票選獎與最佳XR遊戲獎。"
+        "desc": "7天完成的雙人非對稱匿蹤遊戲。獲GGJ香港2025觀眾票選獎與最佳XR遊戲獎。",
+        "award": { "name": "觀眾票選獎・最佳XR遊戲獎", "event": "GGJ香港2025" }
       },
       "teacup": {
         "title": "Nesmy Land: Teacup",
@@ -326,7 +332,8 @@
       },
       "blite": {
         "title": "Blite",
-        "desc": "2天完成的解謎平台遊戲。獲GGJ香港2022最佳原創遊戲獎。"
+        "desc": "2天完成的解謎平台遊戲。獲GGJ香港2022最佳原創遊戲獎。",
+        "award": { "name": "最佳原創遊戲獎", "event": "GGJ香港2022" }
       }
     }
   },

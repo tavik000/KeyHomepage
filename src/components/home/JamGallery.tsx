@@ -16,16 +16,22 @@ export default function JamGallery() {
         description={t("description")}
       />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {jamProjects.map((project, i) => (
-          <Reveal key={project.id} delay={(i % 3) * 0.06}>
-            <JamCard
-              project={project}
-              title={t(`items.${project.id}.title`)}
-              desc={t(`items.${project.id}.desc`)}
-              awardLabel={t("awardBadge")}
-            />
-          </Reveal>
-        ))}
+        {jamProjects.map((project, i) => {
+          const award = project.hasAward
+            ? (t.raw(`items.${project.id}.award`) as { name: string; event: string })
+            : undefined;
+          return (
+            <Reveal key={project.id} delay={(i % 3) * 0.06} className="h-full">
+              <JamCard
+                project={project}
+                title={t(`items.${project.id}.title`)}
+                desc={t(`items.${project.id}.desc`)}
+                award={award}
+                sourceLabel={t("source")}
+              />
+            </Reveal>
+          );
+        })}
       </div>
     </Section>
   );

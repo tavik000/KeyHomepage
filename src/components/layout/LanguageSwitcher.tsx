@@ -44,7 +44,7 @@ export default function LanguageSwitcher() {
   const switchTo = (next: Locale) => {
     setOpen(false);
     if (next !== locale) {
-      router.replace(pathname, { locale: next });
+      router.replace(pathname, { locale: next, scroll: false });
     }
   };
 

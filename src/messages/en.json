@@ -306,15 +306,21 @@
     "kicker": "Prototypes & Jams",
     "title": "Game jam projects",
     "description": "Rapid prototypes built solo or in small teams — each one designed, programmed, and shipped in days to weeks.",
-    "awardBadge": "Award winner",
+    "source": "Source Code",
     "items": {
+      "danmaku": {
+        "title": "Project Danmaku",
+        "desc": "Shoot-'em-up prototype turning real Bilibili video comments (danmaku) into oncoming enemies. Built in a 3-person team."
+      },
       "hook-racer": {
         "title": "Hook Racer",
-        "desc": "Grappling-hook racing action. 7-week solo project — all gameplay, pixel art, and music. Award winner at the 24th UE5ぷちコン."
+        "desc": "Grappling-hook racing action. 7-week solo project — all gameplay, pixel art, and music. Award winner at the 24th UE5ぷちコン.",
+        "award": { "name": "Crowd Excitement Award", "event": "24th UE5 Petit Con" }
       },
       "shadow-bubble": {
         "title": "Shadow Bubble: Hide and Seek Chaos",
-        "desc": "Two-player asymmetric stealth in 7 days. Audience Choice & Best XR Game, GGJ Hong Kong 2025."
+        "desc": "Two-player asymmetric stealth in 7 days. Audience Choice & Best XR Game, GGJ Hong Kong 2025.",
+        "award": { "name": "Audience Choice & Best XR Game", "event": "GGJ Hong Kong 2025" }
       },
       "teacup": {
         "title": "Nesmy Land: Teacup",
@@ -326,7 +332,8 @@
       },
       "blite": {
         "title": "Blite",
-        "desc": "Puzzle platformer built in 2 days. Best Original Game, GGJ Hong Kong 2022."
+        "desc": "Puzzle platformer built in 2 days. Best Original Game, GGJ Hong Kong 2022.",
+        "award": { "name": "Best Original Game", "event": "GGJ Hong Kong 2022" }
       }
     }
   },

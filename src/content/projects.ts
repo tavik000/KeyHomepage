@@ -108,15 +108,12 @@ export interface JamProject {
    * When absent the card simply keeps its thumbnail on hover.
    */
   previewVideo?: string;
-  /** Optional YouTube video id used for hover preview when no local clip exists. */
-  previewYoutubeId?: string;
-  /** Start/end seconds trimming the YouTube preview to a short 15-20s looping clip instead of full playback. */
-  previewYoutubeStart?: number;
-  previewYoutubeEnd?: number;
   year: string;
   engine: string;
   tags: string[];
   link?: string;
+  /** Optional GitHub repo link, shown as a small icon button on the card. */
+  sourceLink?: string;
   hasAward?: boolean;
 }
 
@@ -127,26 +124,26 @@ export const jamProjects: JamProject[] = [
     previewVideo: "/videos/hook-racer-preview.mp4",
     year: "2025",
     engine: "Unreal Engine 5",
-    tags: ["UE5", "C++", "Solo"],
+    tags: ["UE5", "C++"],
     link: "https://www.youtube.com/watch?v=GqbONar8b5c",
+    sourceLink: "https://github.com/tavik000/HookRacer",
     hasAward: true
   },
   {
     id: "shadow-bubble",
     image: "/images/projects/shadow-bubble.png",
-    previewYoutubeId: "U_8e_a2troo",
+    previewVideo: "/videos/shadow-bubble-preview.mp4",
     year: "2025",
     engine: "Unreal Engine 5",
-    tags: ["UE5", "C++", "Multiplayer", "XR"],
+    tags: ["UE5", "C++", "Multiplayer"],
     link: "https://www.youtube.com/watch?v=U_8e_a2troo",
+    sourceLink: "https://github.com/tavik000/Paw",
     hasAward: true
   },
   {
     id: "blite",
     image: "/images/projects/blite.png",
-    previewYoutubeId: "YRxEiL2IRiU",
-    previewYoutubeStart: 0,
-    previewYoutubeEnd: 18,
+    previewVideo: "/videos/blite-preview.mp4",
     year: "2022",
     engine: "Unity",
     tags: ["Unity", "C#"],
@@ -159,16 +156,28 @@ export const jamProjects: JamProject[] = [
     previewVideo: "/videos/teacup-preview.mp4",
     year: "2024",
     engine: "Unreal Engine 5",
-    tags: ["UE5", "C++", "Level Design"],
-    link: "https://www.youtube.com/watch?v=ENJegabO2dw"
+    tags: ["UE5", "C++"],
+    link: "https://www.youtube.com/watch?v=ENJegabO2dw",
+    sourceLink: "https://github.com/tavik000/NesmyLandTeacup"
   },
   {
     id: "path-of-osu",
     image: "/images/projects/path-of-osu.png",
+    previewVideo: "/videos/path-of-osu-preview.mp4",
     year: "2024",
     engine: "Unreal Engine 5",
-    tags: ["UE5", "C++", "Solo"],
-    link: "https://www.youtube.com/watch?v=ikTBFtA-7Po"
+    tags: ["UE5", "C++"],
+    link: "https://www.youtube.com/watch?v=ikTBFtA-7Po",
+    sourceLink: "https://github.com/tavik000/ThePathOfOsu"
+  },
+  {
+    id: "danmaku",
+    image: "/images/projects/danmaku.png",
+    previewVideo: "/videos/danmaku-preview.mp4",
+    year: "2022",
+    engine: "Unity",
+    tags: ["Unity", "C#"],
+    link: "/videos/danmaku-full.mp4"
   }
 ];
 
@@ -204,6 +213,7 @@ export const independentProjects: IndependentProject[] = [
   {
     id: "hero-race",
     image: "/images/projects/hero-race.png",
+    previewVideo: "/videos/hero-race-preview.mp4",
     tags: ["Warcraft III", "JASS", "Level Design"],
     link: "https://github.com/tavik000/HeroRace",
     year: "2011 — 2026"

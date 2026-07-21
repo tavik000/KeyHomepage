@@ -141,7 +141,7 @@
     "every-hero": {
       "title": "Every Hero",
       "period": "2020年6月 — 2022年2月",
-      "tagline": "100万プレイヤー突破 · App Storeアクションランキング2位",
+      "tagline": "ローグライト・アクションRPG",
       "role": "ゲームエンジニア",
       "genre": "ローグライトアクションRPG",
       "overview": "Feeling Game Companyの5名チームでUnityにより開発した、iOS / Android向けローグライト・ハックアンドスラッシュARPG。100万人以上のプレイヤーを獲得し、App Storeアクションゲームランキングで2位を記録しました。",
@@ -310,15 +310,21 @@
     "kicker": "Prototypes & Jams",
     "title": "ゲームジャム作品",
     "description": "数日から数週間で設計・実装・完成まで行った、ソロまたは少人数チームによるプロトタイプです。",
-    "awardBadge": "受賞作品",
+    "source": "ソースコード",
     "items": {
+      "danmaku": {
+        "title": "Project Danmaku",
+        "desc": "ビリビリ動画の実際の弾幕コメントを敵として飛来させるシューティングプロトタイプ。3人チームで制作。"
+      },
       "hook-racer": {
         "title": "Hook Racer",
-        "desc": "グラップリングフックで駆け抜けるレースアクション。7週間のソロ制作で、ゲームプレイ・ドット絵・音楽をすべて担当。第24回UE5ぷちコン受賞作。"
+        "desc": "グラップリングフックで駆け抜けるレースアクション。7週間のソロ制作で、ゲームプレイ・ドット絵・音楽をすべて担当。第24回UE5ぷちコン受賞作。",
+        "award": { "name": "盛り上がるで賞", "event": "第24回UE5ぷちコン" }
       },
       "shadow-bubble": {
         "title": "Shadow Bubble: Hide and Seek Chaos",
-        "desc": "7日間で制作した2人対戦の非対称ステルス。GGJ香港2025でAudience Choice賞とBest XR Game賞を受賞。"
+        "desc": "7日間で制作した2人対戦の非対称ステルス。GGJ香港2025でAudience Choice賞とBest XR Game賞を受賞。",
+        "award": { "name": "Audience Choice賞・Best XR Game賞", "event": "GGJ香港2025" }
       },
       "teacup": {
         "title": "Nesmy Land: Teacup",
@@ -330,7 +336,8 @@
       },
       "blite": {
         "title": "Blite",
-        "desc": "2日間で制作したパズルプラットフォーマー。GGJ香港2022でBest Original Game賞を受賞。"
+        "desc": "2日間で制作したパズルプラットフォーマー。GGJ香港2022でBest Original Game賞を受賞。",
+        "award": { "name": "Best Original Game賞", "event": "GGJ香港2022" }
       }
     }
   },

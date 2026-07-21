@@ -78,16 +78,18 @@ export default function IndependentProjectCard({ project, title, desc, gradient 
             }`}
           />
         )}
-        {project.year && (
-          <span className="absolute right-3 top-3 rounded bg-bg/80 px-2 py-1 font-[family-name:var(--font-mono)] text-[10px] tracking-widest text-faint backdrop-blur-sm">
-            {project.year}
-          </span>
-        )}
       </div>
       <div className="p-6">
-        <h3 className="font-[family-name:var(--font-display)] text-xl text-fg transition-colors group-hover:text-accent-soft">
-          {title}
-        </h3>
+        <div className="flex items-baseline justify-between gap-3">
+          <h3 className="font-[family-name:var(--font-display)] text-xl text-fg transition-colors group-hover:text-accent-soft">
+            {title}
+          </h3>
+          {project.year && (
+            <span className="shrink-0 font-[family-name:var(--font-mono)] text-xs text-faint">
+              {project.year}
+            </span>
+          )}
+        </div>
         <p className="mt-3 text-sm leading-relaxed text-muted">{desc}</p>
         <div className="mt-4 flex flex-wrap gap-1.5">
           {project.tags.map((tag) => (
