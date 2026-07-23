@@ -189,11 +189,30 @@ export interface IndependentProject {
   previewVideo?: string;
   tags: string[];
   link?: string;
+  /** Internal case-study route (e.g. "/hero-race"). Takes priority over `link` for the card's click target. */
+  detailHref?: string;
   year?: string;
 }
 
 /** Non-commercial game development: personal, freelance, and long-term side projects. */
 export const independentProjects: IndependentProject[] = [
+  {
+    id: "hero-race",
+    image: "/images/projects/hero-race.png",
+    previewVideo: "/videos/hero-race-preview.mp4",
+    tags: ["Warcraft III", "JASS", "Gameplay Design", "Scripting", "Multiplayer"],
+    link: "https://github.com/tavik000/HeroRace",
+    detailHref: "/hero-race",
+    year: "2011 — 2026"
+  },
+  {
+    id: "doki-doki-house",
+    image: "/images/projects/doki-doki-house.jpg",
+    previewVideo: "/videos/doki-doki-house-preview.mp4",
+    tags: ["Python", "Ren'Py", "Narrative Systems", "Tool Development"],
+    link: "https://store.steampowered.com/app/1895950/Doki_Doki_House/",
+    year: "2023"
+  },
   {
     id: "guards",
     image: "/images/projects/guards.png",
@@ -201,21 +220,5 @@ export const independentProjects: IndependentProject[] = [
     tags: ["Unreal Engine", "QA", "Japanese Localization"],
     link: "https://store.steampowered.com/app/2514460/GUARDS/",
     year: "2023"
-  },
-  {
-    id: "doki-doki-house",
-    image: "/images/projects/doki-doki-house.jpg",
-    previewVideo: "/videos/doki-doki-house-preview.mp4",
-    tags: ["Python", "Ren'Py", "Tooling"],
-    link: "https://store.steampowered.com/app/1895950/Doki_Doki_House/",
-    year: "2023"
-  },
-  {
-    id: "hero-race",
-    image: "/images/projects/hero-race.png",
-    previewVideo: "/videos/hero-race-preview.mp4",
-    tags: ["Warcraft III", "JASS", "Level Design"],
-    link: "https://github.com/tavik000/HeroRace",
-    year: "2011 — 2026"
   }
 ];

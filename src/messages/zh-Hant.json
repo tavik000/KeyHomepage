@@ -22,7 +22,8 @@
     "nameParts": [{ "text": "Key", "reading": "" }],
     "nameAlias": "",
     "role": "遊戲程式設計師",
-    "intro": "擁有5年以上經驗的遊戲程式設計師，使用Unreal Engine 5、C++、Unity與C#開發PC、主機與行動裝置遊戲。專精遊戲系統、多人連線、UI、效能優化與跨平台開發。",
+    "intro1": "使用Unreal Engine 5、C++、Unity與C#，為PC、主機與行動裝置遊戲打造遊戲系統。",
+    "intro2": "在遊戲系統、多人連線、UI、效能優化與跨平台開發方面，擁有5年以上專業經驗。",
     "ctaProjects": "瀏覽專案",
     "ctaResume": "下載履歷",
     "ctaGithub": "GitHub",
@@ -52,7 +53,7 @@
     "unannounced-arpg": {
       "title": "未公開AAA動作RPG",
       "period": "2024年7月 —",
-      "tagline": "於東京Blast Edge Games開發中",
+      "tagline": "動作RPG",
       "role": "遊戲程式設計師",
       "genre": "動作RPG",
       "overview": "Blast Edge Games開發中的未公開AAA動作RPG，目標平台為Steam、PlayStation 5與Xbox Series X|S。我以Unreal Engine 5與C++負責遊戲事件、過場演出與UI相關的遊戲玩法實作。作品名稱與細節受NDA保密。",
@@ -78,10 +79,10 @@
     "hyke": {
       "title": "HYKE: Northern Light(s)",
       "period": "2024年7月 — 2024年9月",
-      "tagline": "於五大平台上市的動作冒險遊戲",
+      "tagline": "俯視角動作冒險",
       "role": "遊戲程式設計師",
       "genre": "動作冒險",
-      "overview": "以Unreal Engine 5開發的動作冒險遊戲，已於Steam、PlayStation 5、Nintendo Switch、iOS與Mac上市。我以遊戲程式設計師身分加入Blast Edge Games約50人的開發團隊，負責角色實作、除錯，以及Game Thread與記憶體最佳化。",
+      "overview": "作為Blast Edge Games的遊戲程式設計師，我參與了《HYKE: Northern Light(s)》的開發，負責實作遊戲功能與角色功能、除錯遊戲相關問題，並在多個平台上最佳化記憶體與Game Thread效能。",
       "contributions": [
         "修復約60個玩家相關問題。",
         "最佳化iOS的記憶體用量。",
@@ -113,10 +114,10 @@
     "apeiron": {
       "title": "Apeiron",
       "period": "2022年3月 — 2023年2月",
-      "tagline": "於Steam與Epic Games Store上市的動作RTS卡牌對戰遊戲",
+      "tagline": "動作RTS卡牌對戰",
       "role": "首席程式設計師",
       "genre": "動作RTS / 卡牌對戰",
-      "overview": "以Unity開發、於Steam與Epic Games Store上市的動作RTS卡牌對戰遊戲。我在Ember Entertainment的5人遊戲團隊中擔任首席程式設計師，負責系統設計與核心玩法——戰鬥機制、卡牌系統與敵人AI——並實作多人連線同步層。",
+      "overview": "身為5人遊戲團隊的首席程式設計師，我設計並實作了這款動作RTS卡牌對戰遊戲的核心遊戲系統，包括戰鬥機制、卡牌系統、敵人AI與多人連線同步。",
       "contributions": [
         "以C#開發遊戲系統、戰鬥機制、卡牌系統與敵人AI。",
         "以Socket.IO實作多人連線同步。",
@@ -137,10 +138,10 @@
     "every-hero": {
       "title": "Every Hero",
       "period": "2020年6月 — 2022年2月",
-      "tagline": "突破100萬玩家 · App Store動作遊戲排行第2名",
+      "tagline": "Rogue-lite動作RPG",
       "role": "遊戲程式設計師",
       "genre": "Rogue-lite動作RPG",
-      "overview": "於Feeling Game Company以5人團隊使用Unity開發的iOS / Android Rogue-lite砍殺動作RPG。遊戲累計超過100萬名玩家，並登上App Store動作遊戲排行榜第2名。",
+      "overview": "作為Feeling Game Company的遊戲程式設計師，我為以Unity開發的手機Rogue-lite動作RPG《Every Hero》開發了裝備系統、角色技能系統與主選單UI。該作品累計超過100萬名玩家，並在App Store動作遊戲類別中排名第2。",
       "contributions": [
         "開發遊戲系統、戰鬥機制、裝備系統與UI。",
         "針對各種行動裝置進行效能最佳化。",
@@ -340,7 +341,8 @@
   "independent": {
     "kicker": "Independent Work",
     "title": "個人專案",
-    "description": "工作室職務之外持續進行的個人與接案遊戲開發——因為停不下來而做的專案。",
+    "description": "在正職工作之外獨立開發的專案，用以探索遊戲玩法構想、工具開發與技術實驗。",
+    "source": "原始碼",
     "items": {
       "guards": {
         "title": "GUARDS!",
@@ -348,11 +350,11 @@
       },
       "doki-doki-house": {
         "title": "Doki Doki House（心跳度假屋）",
-        "desc": "為一款已上架的手機視覺小說負責工具開發與敘事系統。"
+        "desc": "為一款Ren'Py視覺小說遊戲開發Python工具並實作敘事系統。"
       },
       "hero-race": {
         "title": "Hero Race（魔獸爭霸III）",
-        "desc": "自2011年持續開發至今的魔獸爭霸III自訂地圖——15年自學關卡設計與腳本撰寫的累積。"
+        "desc": "自2011年起持續設計、調整平衡並實作的原創魔獸爭霸III自訂地圖，是我在遊戲玩法程式設計、腳本撰寫與多人遊戲設計上的起點。"
       }
     }
   },
@@ -406,5 +408,93 @@
     "title": "找不到頁面",
     "description": "您所尋找的頁面不存在。",
     "back": "回到首頁"
+  },
+  "heroRace": {
+    "meta": {
+      "title": "Hero Race——15年獨立遊戲設計案例研究",
+      "description": "自2011年起持續設計、實作與調整平衡的魔獸爭霸III多人連線競速遊戲《Hero Race》案例研究。"
+    },
+    "back": "所有專案",
+    "kicker": "個人專案 · 案例研究",
+    "title": "Hero Race（魔獸爭霸III）",
+    "type": "多人連線競速遊戲",
+    "period": "2011年 – 至今",
+    "lede": [
+      "一款我持續設計、實作、調整平衡並維護超過15年的多人連線競速遊戲。",
+      "與一次性的興趣專案不同，Hero Race在多年玩家回饋、玩法反覆迭代與技術改進中不斷演進，成為我個人在遊戲玩法程式設計與遊戲設計上的實驗場。"
+    ],
+    "ctaSource": "原始碼",
+    "ctaVideo": "遊戲實況影片",
+    "quickFacts": {
+      "kicker": "專案概況",
+      "role": { "label": "角色", "lines": ["獨立遊戲玩法程式設計師", "遊戲設計師"] },
+      "engine": { "label": "引擎", "value": "魔獸爭霸III世界編輯器" },
+      "language": { "label": "程式語言", "value": "JASS" },
+      "development": { "label": "開發期間", "value": "2011年 – 至今" },
+      "focus": { "label": "專注領域", "tags": ["遊戲玩法系統", "多人連線", "遊戲設計", "AI", "即時平衡調整"] }
+    },
+    "overview": {
+      "kicker": "專案概述",
+      "text": "Hero Race始於2011年，是我個人作品中持續時間最長的專案。自那以後，我持續設計、實作並調整平衡，將它作為我在遊戲玩法程式設計與遊戲設計上的實驗場。"
+    },
+    "philosophy": {
+      "kicker": "設計理念",
+      "principles": [
+        {
+          "title": "每場皆有變數",
+          "desc": "隨機道具與動態機制讓每一場比賽都獨一無二。"
+        },
+        {
+          "title": "玩家間的互動",
+          "desc": "技能製造的是持續的互動，而非各自為政的競速。"
+        },
+        {
+          "title": "高技術上限",
+          "desc": "走位、時機與位置判斷，讓實力差距清楚可見。"
+        },
+        {
+          "title": "高風險、高回報",
+          "desc": "強力技能需要豪賭般的覺悟，也創造出最精彩的瞬間。"
+        },
+        {
+          "title": "持續的逆轉可能",
+          "desc": "地圖機制與道具，讓勝負不會過早被決定。"
+        }
+      ]
+    },
+    "technical": {
+      "kicker": "技術亮點",
+      "groups": [
+        {
+          "title": "遊戲玩法系統",
+          "desc": "英雄技能、競速機制、道具與多人連線玩法。"
+        },
+        {
+          "title": "電腦玩家",
+          "desc": "基於狀態機的電腦玩家，用於單人遊玩、練習與填補空缺。"
+        },
+        {
+          "title": "程式設計",
+          "desc": "JASS腳本撰寫、觸發器系統與遊戲玩法架構。"
+        },
+        {
+          "title": "遊戲設計",
+          "desc": "15年來的平衡調整與反覆迭代的玩法改良。"
+        }
+      ]
+    },
+    "community": {
+      "kicker": "社群驅動的迭代",
+      "text": "我親自經營玩家社群、收集回饋、觀察玩家的遊玩行為，並持續改良這款遊戲。每一次更新，都會用同一個問題來檢驗。",
+      "question": "這項改動是否仍然保留了我當初想要的遊戲玩法體驗？"
+    },
+    "gallery": {
+      "kicker": "圖庫"
+    },
+    "sourceCode": {
+      "kicker": "原始碼",
+      "text": "GitHub程式碼庫公開的是以JASS撰寫的狀態機電腦玩家AI。其餘的遊戲系統則封裝在編譯後的.w3x地圖檔案中，需要使用魔獸爭霸III世界編輯器才能開啟，無法在GitHub上瀏覽。",
+      "cta": "查看原始碼"
+    }
   }
 }

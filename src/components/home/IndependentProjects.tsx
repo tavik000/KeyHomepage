@@ -24,12 +24,13 @@ export default function IndependentProjects() {
       />
       <div className="grid gap-8 sm:grid-cols-2">
         {independentProjects.map((project, i) => (
-          <Reveal key={project.id} delay={(i % 2) * 0.08}>
+          <Reveal key={project.id} delay={(i % 2) * 0.08} className="h-full">
             <IndependentProjectCard
               project={project}
               title={t(`items.${project.id}.title`)}
               desc={t(`items.${project.id}.desc`)}
               gradient={PLACEHOLDER_GRADIENTS[i % PLACEHOLDER_GRADIENTS.length]}
+              sourceLabel={t("source")}
             />
           </Reveal>
         ))}

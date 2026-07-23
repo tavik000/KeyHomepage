@@ -22,7 +22,8 @@
     "nameParts": [{ "text": "Key", "reading": "" }],
     "nameAlias": "",
     "role": "Gameplay Programmer",
-    "intro": "Gameplay Programmer with 5+ years of experience developing PC, console, and mobile games using Unreal Engine 5, C++, Unity, and C#. Experienced in gameplay systems, multiplayer, UI, optimization, and cross-platform development.",
+    "intro1": "Building gameplay systems for PC, console, and mobile games using Unreal Engine 5, C++, Unity, and C#.",
+    "intro2": "5+ years of professional experience in gameplay systems, multiplayer, UI, optimization, and cross-platform development.",
     "ctaProjects": "View Projects",
     "ctaResume": "Download Resume",
     "ctaGithub": "GitHub",
@@ -34,7 +35,7 @@
   },
   "featured": {
     "kicker": "Selected Work",
-    "title": "Featured commercial projects",
+    "title": "Featured Commercial Projects",
     "readMore": "Read more",
     "confidential": "Under NDA",
     "labels": {
@@ -52,7 +53,7 @@
     "unannounced-arpg": {
       "title": "Unannounced AAA Action RPG",
       "period": "Jul 2024 —",
-      "tagline": "In development at Blast Edge Games, Tokyo",
+      "tagline": "Action RPG",
       "role": "Gameplay Programmer",
       "genre": "Action RPG",
       "overview": "An unannounced AAA action RPG in development at Blast Edge Games for Steam, PlayStation 5, and Xbox Series X|S. I work across the event, cinematic, and UI layers of the game in Unreal Engine 5 and C++. Title and details are under NDA.",
@@ -78,10 +79,10 @@
     "hyke": {
       "title": "HYKE: Northern Light(s)",
       "period": "Jul 2024 — Sep 2024",
-      "tagline": "Action adventure shipped on five platforms",
+      "tagline": "Top-down Action Adventure",
       "role": "Gameplay Programmer",
       "genre": "Action Adventure",
-      "overview": "A shipped action-adventure title built in Unreal Engine 5, released on Steam, PlayStation 5, Nintendo Switch, iOS, and Mac. I joined the ~50-person team at Blast Edge Games as a gameplay programmer, focusing on character implementation, debugging, and Game Thread and memory optimization.",
+      "overview": "As a Gameplay Programmer at Blast Edge Games, I contributed to HYKE: Northern Light(s) by implementing gameplay features, character functionality, debugging gameplay issues, and optimizing memory and Game Thread performance across multiple platforms.",
       "contributions": [
         "Fixed ~60 player-related bugs.",
         "Optimized memory usage on iOS.",
@@ -113,10 +114,10 @@
     "apeiron": {
       "title": "Apeiron",
       "period": "Mar 2022 — Feb 2023",
-      "tagline": "Action RTS card battler on Steam & Epic Games Store",
+      "tagline": "Action RTS Card Battle",
       "role": "Lead Programmer",
       "genre": "Action RTS / Card Battle",
-      "overview": "An action RTS card-battle game built in Unity, released on Steam and the Epic Games Store. As lead programmer of a 5-person gameplay team at Ember Entertainment, I owned system design and core gameplay — combat mechanics, card systems, and enemy AI — and implemented the multiplayer synchronization layer.",
+      "overview": "As Lead Programmer of a five-person gameplay team, I designed and implemented core gameplay systems including combat mechanics, card systems, enemy AI, and multiplayer synchronization for this action RTS card battler.",
       "contributions": [
         "Developed gameplay systems, combat mechanics, card systems, and enemy AI in C#.",
         "Implemented multiplayer synchronization using Socket.IO.",
@@ -137,10 +138,10 @@
     "every-hero": {
       "title": "Every Hero",
       "period": "Jun 2020 — Feb 2022",
-      "tagline": "1M+ players · App Store Action Games #2",
+      "tagline": "Rogue-lite Action RPG",
       "role": "Gameplay Programmer",
       "genre": "Rogue-lite Action RPG",
-      "overview": "A rogue-lite hack-and-slash action RPG for iOS and Android, built in Unity with a 5-person team at Feeling Game Company. The game reached over one million players and ranked #2 in App Store Action Games.",
+      "overview": "As a Gameplay Programmer at Feeling Game Company, I developed the Equipment System, Character Skill System, and Main Menu UI for Every Hero, a mobile rogue-lite action RPG built with Unity. The game surpassed one million players and reached #2 in the App Store Action Games category.",
       "contributions": [
         "Developed gameplay systems, combat mechanics, equipment systems, and UI.",
         "Optimized game performance across a wide range of mobile devices.",
@@ -179,7 +180,7 @@
   },
   "experience": {
     "kicker": "Career",
-    "title": "Professional experience",
+    "title": "Professional Experience",
     "present": "Present",
     "items": {
       "blast-edge": {
@@ -304,7 +305,7 @@
   },
   "jams": {
     "kicker": "Prototypes & Jams",
-    "title": "Game jam projects",
+    "title": "Game Jam Projects",
     "description": "Rapid prototypes built solo or in small teams — each one designed, programmed, and shipped in days to weeks.",
     "source": "Source Code",
     "items": {
@@ -339,8 +340,9 @@
   },
   "independent": {
     "kicker": "Independent Work",
-    "title": "Independent projects",
-    "description": "Personal and freelance game development outside of studio work — the projects I build because I can't stop making games.",
+    "title": "Independent Projects",
+    "description": "Projects developed independently to explore gameplay ideas, tools, and technical experimentation beyond my professional work.",
+    "source": "Source Code",
     "items": {
       "guards": {
         "title": "GUARDS!",
@@ -348,11 +350,11 @@
       },
       "doki-doki-house": {
         "title": "Doki Doki House",
-        "desc": "Tooling and narrative systems for a released mobile visual novel."
+        "desc": "Developed Python tools and implemented narrative systems for a Ren'Py visual novel game."
       },
       "hero-race": {
         "title": "Hero Race (Warcraft III)",
-        "desc": "A custom Warcraft III map I've designed and iterated on since 2011 — 15 years of self-taught level design and scripting."
+        "desc": "An original Warcraft III custom map that I have continuously designed, balanced, and programmed since 2011, serving as my foundation in gameplay programming, scripting, and multiplayer game design."
       }
     }
   },
@@ -406,5 +408,93 @@
     "title": "Page not found",
     "description": "The page you are looking for does not exist.",
     "back": "Back to home"
+  },
+  "heroRace": {
+    "meta": {
+      "title": "Hero Race — 15 Years of Independent Gameplay Design",
+      "description": "A case study on Hero Race, a Warcraft III multiplayer racing game I have designed, programmed, and balanced continuously since 2011."
+    },
+    "back": "All projects",
+    "kicker": "Independent Work · Case Study",
+    "title": "Hero Race (Warcraft III)",
+    "type": "Multiplayer Racing Game",
+    "period": "2011 – Present",
+    "lede": [
+      "A multiplayer racing game that I have continuously designed, programmed, balanced, and maintained for over 15 years.",
+      "Unlike a one-off hobby project, Hero Race has evolved through years of live player feedback, gameplay iteration, and technical improvement — becoming my personal sandbox for gameplay programming and game design."
+    ],
+    "ctaSource": "Source Code",
+    "ctaVideo": "Gameplay Video",
+    "quickFacts": {
+      "kicker": "Quick Facts",
+      "role": { "label": "Role", "lines": ["Solo Gameplay Programmer", "Game Designer"] },
+      "engine": { "label": "Engine", "value": "Warcraft III World Editor" },
+      "language": { "label": "Language", "value": "JASS" },
+      "development": { "label": "Development", "value": "2011 – Present" },
+      "focus": { "label": "Focus", "tags": ["Gameplay Systems", "Multiplayer", "Game Design", "AI", "Live Balancing"] }
+    },
+    "overview": {
+      "kicker": "Project Overview",
+      "text": "Hero Race started in 2011 and remains the longest-running project in my personal body of work. I've continuously designed, programmed, and balanced it ever since, using it as my sandbox for gameplay programming and game design."
+    },
+    "philosophy": {
+      "kicker": "Design Philosophy",
+      "principles": [
+        {
+          "title": "Every Match Feels Different",
+          "desc": "Random items and dynamic mechanics keep every race unique."
+        },
+        {
+          "title": "Player Interaction",
+          "desc": "Abilities create constant interaction rather than isolated racing."
+        },
+        {
+          "title": "High Skill Ceiling",
+          "desc": "Movement, timing, and positioning reward mastery."
+        },
+        {
+          "title": "High Risk, High Reward",
+          "desc": "Powerful abilities require commitment and create exciting moments."
+        },
+        {
+          "title": "Continuous Comebacks",
+          "desc": "Map mechanics and items prevent races from being decided too early."
+        }
+      ]
+    },
+    "technical": {
+      "kicker": "Technical Highlights",
+      "groups": [
+        {
+          "title": "Gameplay Systems",
+          "desc": "Hero abilities, race mechanics, items, and multiplayer gameplay."
+        },
+        {
+          "title": "Bot Players",
+          "desc": "State machine–based bots for solo play, practice, and filling empty matches."
+        },
+        {
+          "title": "Programming",
+          "desc": "JASS scripting, the trigger system, and gameplay architecture."
+        },
+        {
+          "title": "Game Design",
+          "desc": "15 years of balancing and iterative gameplay improvements."
+        }
+      ]
+    },
+    "community": {
+      "kicker": "Community-Driven Iteration",
+      "text": "I actively manage the player community, collect feedback, observe player behaviour, and continuously refine the game. Every patch is evaluated by asking one question.",
+      "question": "Does this change still preserve the gameplay experience I originally wanted?"
+    },
+    "gallery": {
+      "kicker": "Gallery"
+    },
+    "sourceCode": {
+      "kicker": "Source Code",
+      "text": "The GitHub repository contains the JASS-scripted state machine bot AI. The rest of the game's systems live inside the compiled .w3x map file, which requires the Warcraft III World Editor to open and can't be browsed on GitHub.",
+      "cta": "View Source Code"
+    }
   }
 }

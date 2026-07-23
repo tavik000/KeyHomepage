@@ -81,7 +81,13 @@ export default function Hero() {
           {...fadeUp(0.32)}
           className="mt-8 max-w-2xl text-base leading-relaxed text-muted sm:text-lg"
         >
-          {t("intro")}
+          {t("intro1")}
+        </motion.p>
+        <motion.p
+          {...fadeUp(0.4)}
+          className="mt-4 max-w-2xl text-base leading-relaxed text-muted"
+        >
+          {t("intro2")}
         </motion.p>
 
         <motion.div {...fadeUp(0.5)} className="mt-10 flex flex-wrap gap-4">
