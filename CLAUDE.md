@@ -20,3 +20,7 @@ Project-specific instructions for working in this repo. These apply regardless o
 ## Browser automation
 
 - **Use the Playwright MCP tools for browser verification/automation in this repo, not the built-in Claude Browser tools (`mcp__Claude_Browser__*`).** Load Playwright's tools via `ToolSearch` if they aren't already available.
+
+## Git / PR workflow
+
+- **When asked to create a PR (including via the "PR作成" / create-pr-command flow), commit and push directly to `master` instead of opening a feature branch + pull request.** This is a solo personal-site repo with no branch protection and no `gh` CLI installed, so the PR flow is unnecessary overhead — just get the change onto `master`.
