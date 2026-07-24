@@ -79,7 +79,7 @@ export default function FeaturedHeroMedia({
   };
 
   const content = (
-    <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[16/9] lg:aspect-[21/9]">
+    <div className="relative aspect-[16/10] overflow-hidden sm:aspect-[2/1] lg:aspect-[5/2]">
       <Image
         src={image}
         alt={title}

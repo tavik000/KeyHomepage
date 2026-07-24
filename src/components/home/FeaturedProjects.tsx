@@ -40,13 +40,13 @@ export default function FeaturedProjects() {
 
               <div className="mt-10 grid gap-10 md:grid-cols-[1fr_auto] md:items-start">
                 <div>
-                  <p className="text-sm text-muted">{tp(`${project.slug}.tagline`)}</p>
-                  <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
+                  <p className="text-base text-muted">{tp(`${project.slug}.tagline`)}</p>
+                  <p className="mt-5 max-w-2xl text-xl leading-relaxed text-muted">
                     {tp(`${project.slug}.overview`)}
                   </p>
                   <Link
                     href={`/projects/${project.slug}`}
-                    className="mt-6 inline-flex items-center gap-2 text-sm text-accent-soft transition-colors hover:text-fg"
+                    className="mt-6 inline-flex items-center gap-2 text-base text-accent-soft transition-colors hover:text-fg"
                   >
                     {t("readMore")}
                     <span aria-hidden="true">→</span>
@@ -55,23 +55,23 @@ export default function FeaturedProjects() {
 
                 <dl className="flex flex-wrap gap-x-10 gap-y-6 md:flex-col md:gap-x-0">
                   <div>
-                    <dt className="meta-label !text-[10px]">{t("labels.company")}</dt>
+                    <dt className="meta-label !text-xs">{t("labels.company")}</dt>
                     <dd className="mt-1.5 text-fg">{project.company}</dd>
                   </div>
                   <div>
-                    <dt className="meta-label !text-[10px]">{t("labels.role")}</dt>
+                    <dt className="meta-label !text-xs">{t("labels.role")}</dt>
                     <dd className="mt-1.5 text-fg">{tp(`${project.slug}.role`)}</dd>
                   </div>
                   <div>
-                    <dt className="meta-label !text-[10px]">{t("labels.engine")}</dt>
+                    <dt className="meta-label !text-xs">{t("labels.engine")}</dt>
                     <dd className="mt-1.5 text-fg">{project.engine}</dd>
                   </div>
                   <div>
-                    <dt className="meta-label !text-[10px]">{t("labels.platforms")}</dt>
+                    <dt className="meta-label !text-xs">{t("labels.platforms")}</dt>
                     <dd className="mt-1.5 max-w-[16rem] text-muted">{project.platforms.join(" · ")}</dd>
                   </div>
                   <div>
-                    <dt className="meta-label !text-[10px]">{t("labels.technologies")}</dt>
+                    <dt className="meta-label !text-xs">{t("labels.technologies")}</dt>
                     <dd className="mt-2 flex max-w-[16rem] flex-wrap gap-1.5">
                       {project.technologies.map((tech) => (
                         <Tag key={tech}>{tech}</Tag>

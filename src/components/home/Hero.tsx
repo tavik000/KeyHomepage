@@ -79,13 +79,13 @@ export default function Hero() {
 
         <motion.p
           {...fadeUp(0.32)}
-          className="mt-8 max-w-2xl text-base leading-relaxed text-muted sm:text-lg"
+          className="mt-8 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl"
         >
           {t("intro1")}
         </motion.p>
         <motion.p
           {...fadeUp(0.4)}
-          className="mt-4 max-w-2xl text-base leading-relaxed text-muted"
+          className="mt-4 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl"
         >
           {t("intro2")}
         </motion.p>
@@ -126,8 +126,8 @@ export default function Hero() {
         >
           {stats.map((s) => (
             <div key={s.label}>
-              <dd className="text-base text-fg">{s.value}</dd>
-              <dt className="mt-1 text-xs uppercase tracking-[0.1em] text-faint">{s.label}</dt>
+              <dd className="text-lg text-fg">{s.value}</dd>
+              <dt className="mt-1 text-sm uppercase tracking-[0.1em] text-faint">{s.label}</dt>
             </div>
           ))}
         </motion.dl>
