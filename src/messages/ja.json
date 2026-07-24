@@ -408,7 +408,7 @@
     "cta": "ジャーナルを見る"
   },
   "blogTeaser": {
-    "kicker": "執筆活動",
+    "kicker": "技術ブログ",
     "title": "Unreal Engine・ゲーム開発の技術ブログ",
     "lead": "Unreal Engine 5、C++、ゲームプレイプログラミングに関する技術記事を執筆しています。ゲームをリリースする上で実際に使っている仕組みや手法について解説しています。",
     "cta": "ブログを読む"
@@ -439,7 +439,7 @@
     "backToTop": "トップへ戻る"
   },
   "blog": {
-    "kicker": "Writing",
+    "kicker": "技術ブログ",
     "title": "ブログ",
     "description": "Unreal Engine 5、ゲームプレイプログラミング、グラフィックスに関する技術ノート。",
     "empty": "この言語の記事はまだありません。",

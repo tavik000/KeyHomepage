@@ -404,7 +404,7 @@
     "cta": "瀏覽筆記"
   },
   "blogTeaser": {
-    "kicker": "寫作",
+    "kicker": "技術部落格",
     "title": "Unreal Engine 與遊戲開發技術部落格",
     "lead": "我撰寫關於Unreal Engine 5、C++與遊戲程式設計的深度技術文章，分享遊戲上線背後實際運用的系統與技巧。",
     "cta": "閱讀部落格"
@@ -435,7 +435,7 @@
     "backToTop": "回到頂部"
   },
   "blog": {
-    "kicker": "Writing",
+    "kicker": "技術部落格",
     "title": "網誌",
     "description": "關於Unreal Engine 5、遊戲程式設計與圖形技術的筆記。",
     "empty": "此語言暫無文章。",

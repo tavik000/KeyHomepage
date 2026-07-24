@@ -404,7 +404,7 @@
     "cta": "Browse the journal"
   },
   "blogTeaser": {
-    "kicker": "Writing",
+    "kicker": "Technical Blog",
     "title": "Technical blog on Unreal Engine & game development",
     "lead": "I write in-depth articles on Unreal Engine 5, C++, and gameplay programming — the practical systems and techniques behind shipping games.",
     "cta": "Read the blog"
@@ -435,7 +435,7 @@
     "backToTop": "Back to top"
   },
   "blog": {
-    "kicker": "Writing",
+    "kicker": "Technical Blog",
     "title": "Blog",
     "description": "Technical notes on Unreal Engine 5, gameplay programming, and graphics.",
     "empty": "No articles in this language yet.",
