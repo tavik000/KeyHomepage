@@ -188,7 +188,7 @@
         "position": "Gameplay Programmer (UE5)",
         "groups": [
           {
-            "project": "HYKE: Northern Light(s)",
+            "project": "HYKE: Northern Light(s) (Steam / PS5 / Switch / iOS / Mac)",
             "tech": ["UE5", "C++"],
             "bullets": [
               "Fixed ~60 player-related bugs and improved character behaviors.",

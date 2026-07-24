@@ -192,7 +192,7 @@
         "position": "ゲームエンジニア（UE5）",
         "groups": [
           {
-            "project": "HYKE: Northern Light(s)",
+            "project": "HYKE: Northern Light(s)（Steam / PS5 / Switch / iOS / Mac）",
             "tech": ["UE5", "C++"],
             "bullets": [
               "プレイヤー関連の不具合を約60件修正し、キャラクター挙動を改善。",

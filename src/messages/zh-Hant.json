@@ -188,7 +188,7 @@
         "position": "遊戲程式設計師（UE5）",
         "groups": [
           {
-            "project": "HYKE: Northern Light(s)",
+            "project": "HYKE: Northern Light(s)（Steam / PS5 / Switch / iOS / Mac）",
             "tech": ["UE5", "C++"],
             "bullets": [
               "修復約60個玩家相關問題，改善角色行為。",
