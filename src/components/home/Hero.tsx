@@ -97,14 +97,16 @@ export default function Hero() {
           >
             {t("ctaProjects")}
           </a>
-          <a
-            href={resumeHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded border border-border px-6 py-3 text-sm text-fg transition-colors hover:border-faint"
-          >
-            {t("ctaResume")}
-          </a>
+          {site.showResume && (
+            <a
+              href={resumeHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded border border-border px-6 py-3 text-sm text-fg transition-colors hover:border-faint"
+            >
+              {t("ctaResume")}
+            </a>
+          )}
           <a
             href={site.github}
             target="_blank"

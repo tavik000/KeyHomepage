@@ -74,14 +74,16 @@ export default function Header() {
               </Link>
             );
           })}
-          <a
-            href={resumeHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted transition-colors hover:text-fg"
-          >
-            {t("resume")}
-          </a>
+          {site.showResume && (
+            <a
+              href={resumeHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted transition-colors hover:text-fg"
+            >
+              {t("resume")}
+            </a>
+          )}
           <LanguageSwitcher />
         </nav>
 
@@ -143,17 +145,19 @@ export default function Header() {
                   )}
                 </li>
               ))}
-              <li>
-                <a
-                  href={resumeHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={close}
-                  className="block rounded px-2 py-3 text-lg text-accent-soft"
-                >
-                  {t("resume")}
-                </a>
-              </li>
+              {site.showResume && (
+                <li>
+                  <a
+                    href={resumeHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={close}
+                    className="block rounded px-2 py-3 text-lg text-accent-soft"
+                  >
+                    {t("resume")}
+                  </a>
+                </li>
+              )}
             </ul>
           </motion.nav>
         )}

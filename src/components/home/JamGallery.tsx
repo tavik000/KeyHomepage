@@ -17,7 +17,7 @@ export default function JamGallery() {
       />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {jamProjects.map((project, i) => {
-          const award = project.hasAward
+          const award = project.awardLink
             ? (t.raw(`items.${project.id}.award`) as { name: string; event: string })
             : undefined;
           return (

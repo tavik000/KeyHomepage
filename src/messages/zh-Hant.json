@@ -186,38 +186,76 @@
       "blast-edge": {
         "period": "2024年7月 —",
         "position": "遊戲程式設計師（UE5）",
-        "bullets": [
-          "以Unreal Engine 5 / C++開發未公開AAA動作RPG（Steam / PS5 / Xbox Series X|S）的遊戲事件、過場演出、UI與互動系統。",
-          "改善角色行為、動畫與鏡頭表現，處理卡關問題與遊戲測試回饋。",
-          "於《HYKE: Northern Light(s)》負責iOS記憶體最佳化與Nintendo Switch Game Thread效能最佳化。",
-          "在大型多團隊程式碼庫中使用Perforce協作。"
+        "groups": [
+          {
+            "project": "HYKE: Northern Light(s)",
+            "tech": ["UE5", "C++"],
+            "bullets": [
+              "修復約60個玩家相關問題，改善角色行為。",
+              "最佳化iOS的記憶體使用量。",
+              "最佳化Nintendo Switch的Game Thread效能。"
+            ]
+          }
         ]
       },
       "freelance": {
         "period": "2023年3月 — 2024年6月",
         "position": "自由接案遊戲開發者",
-        "bullets": [
-          "《GUARDS!》（Steam）：於4人多人連線獨立團隊負責遊戲QA、除錯與日文在地化（UE / C++）。",
-          "彈幕射擊遊戲：以Unity / C#開發遊戲系統、戰鬥、敵人AI與UI。",
-          "《Doki Doki House》（iOS / Steam）：開發將Excel腳本轉換為Ren'Py程式碼的工具，該作品iOS玩家超過5萬人。"
+        "groups": [
+          {
+            "project": "GUARDS!（Steam）",
+            "tech": ["UE", "C++"],
+            "bullets": [
+              "於4人多人連線團隊負責遊戲QA與除錯。",
+              "負責日文在地化。"
+            ]
+          },
+          {
+            "project": "彈幕射擊原型",
+            "tech": ["Unity", "C#"],
+            "bullets": [
+              "開發遊戲系統、戰鬥機制與敵人AI。",
+              "建置UI。"
+            ]
+          },
+          {
+            "project": "Doki Doki House（iOS / Steam）",
+            "tech": ["Python", "Ren'Py"],
+            "bullets": [
+              "開發將Excel腳本轉換為Ren'Py程式碼的工具。"
+            ]
+          }
         ]
       },
       "ember": {
         "period": "2022年3月 — 2023年2月",
         "position": "遊戲程式設計師（Unity）",
-        "bullets": [
-          "《Apeiron》（Steam / Epic）：以C#開發遊戲系統、戰鬥機制、卡牌系統與敵人AI。",
-          "以Socket.IO實作多人連線同步。",
-          "指導初級程式設計師、參與技術面試並協助專案規劃。"
+        "groups": [
+          {
+            "project": "Apeiron（Steam / Epic Games Store / iOS / Android）",
+            "tech": ["Unity", "C#"],
+            "bullets": [
+              "開發戰鬥機制、卡牌系統與敵人AI。",
+              "以Socket.IO實作多人連線同步。",
+              "指導初級程式設計師並參與技術面試。"
+            ]
+          }
         ]
       },
       "feeling-game": {
         "period": "2020年6月 — 2022年2月",
         "position": "遊戲程式設計師（Unity）",
-        "bullets": [
-          "《Every Hero》（iOS / Android）：以C#開發遊戲玩法、戰鬥、裝備系統與UI。",
-          "負責效能最佳化、QA、日文在地化與廣告整合。",
-          "該作品累計超過100萬名玩家，並登上App Store動作遊戲排行第2名。"
+        "groups": [
+          {
+            "project": "Every Hero（iOS / Android）",
+            "tech": ["Unity", "C#"],
+            "bullets": [
+              "建置裝備系統並實作角色技能。",
+              "開發約20個頁面的主選單UI。",
+              "負責效能最佳化、QA、在地化與廣告整合。",
+              "該作品累計超過100萬名玩家，並登上App Store動作遊戲排行第2名。"
+            ]
+          }
         ]
       }
     }
@@ -306,7 +344,7 @@
   "jams": {
     "kicker": "Prototypes & Jams",
     "title": "Game Jam作品",
-    "description": "獨自或與小型團隊在數天至數週內完成設計、開發與發布的快速原型作品。",
+    "description": "獨自或與小型團隊在數天至數週內完成設計、開發與發布的快速原型作品。其中3款作品曾在國際遊戲競賽中獲獎。",
     "source": "原始碼",
     "items": {
       "danmaku": {
@@ -315,25 +353,25 @@
       },
       "hook-racer": {
         "title": "Hook Racer",
-        "desc": "以鉤索疾馳的競速動作遊戲。7週獨自完成，包辦遊戲程式、像素美術與音樂。第24回UE5ぷちコン獲獎作品。",
+        "desc": "以鉤索疾馳的多人連線競速動作遊戲。7週獨自完成，包辦遊戲程式、像素美術與音樂。第24回UE5ぷちコン獲獎作品。",
         "award": { "name": "盛り上がるで賞", "event": "第24回UE5ぷちコン" }
       },
       "shadow-bubble": {
         "title": "Shadow Bubble: Hide and Seek Chaos",
-        "desc": "7天完成的雙人非對稱匿蹤遊戲。獲GGJ香港2025觀眾票選獎與最佳XR遊戲獎。",
+        "desc": "一款非對稱多人連線捉迷藏遊戲，玩家可躲進陰影中隱身。7天完成。",
         "award": { "name": "觀眾票選獎・最佳XR遊戲獎", "event": "GGJ香港2025" }
       },
       "teacup": {
         "title": "Nesmy Land: Teacup",
-        "desc": "3人團隊5天完成的動作模擬遊戲，負責遊戲程式與關卡設計。"
+        "desc": "一款第三人稱遊戲，玩家需一邊躲避貓咪一邊收集茶杯。3人團隊5天完成，負責遊戲程式與關卡設計。"
       },
       "path-of-osu": {
         "title": "The Path of Osu",
-        "desc": "具戰鬥與解謎要素的第三人稱動作冒險原型，7週獨自開發。"
+        "desc": "結合隻狼式劍戟戰鬥與槍械射擊的第三人稱原型。為探索混合戰鬥，獨自花費7週開發。"
       },
       "blite": {
         "title": "Blite",
-        "desc": "2天完成的解謎平台遊戲。獲GGJ香港2022最佳原創遊戲獎。",
+        "desc": "一款解謎平台遊戲，黑白平台重疊時地形隨之改變，開闢或封閉通往終點的路徑。2天完成。",
         "award": { "name": "最佳原創遊戲獎", "event": "GGJ香港2022" }
       }
     }
@@ -346,15 +384,15 @@
     "items": {
       "guards": {
         "title": "GUARDS!",
-        "desc": "為一款已在Steam上架的Unreal Engine作品負責QA測試與日文在地化。"
+        "desc": "一款在Steam上架的第一人稱多人合作動作遊戲，我負責QA測試與日文在地化。"
       },
       "doki-doki-house": {
         "title": "Doki Doki House（心跳度假屋）",
-        "desc": "為一款Ren'Py視覺小說遊戲開發Python工具並實作敘事系統。"
+        "desc": "一款以Ren'Py開發的戀愛視覺小說，我建置了Python開發工具，並實作了分支敘事系統。"
       },
       "hero-race": {
         "title": "Hero Race（魔獸爭霸III）",
-        "desc": "自2011年起持續設計、調整平衡並實作的原創魔獸爭霸III自訂地圖，是我在遊戲玩法程式設計、腳本撰寫與多人遊戲設計上的起點。"
+        "desc": "一張靈感來自Dota英雄技能的魔獸爭霸III多人連線競速自訂地圖，玩家運用走位技巧、道具與團隊合作搶先超越對手。自2011年起持續設計、實作、調整平衡並維護至今。"
       }
     }
   },
@@ -373,7 +411,7 @@
   },
   "hobbies": {
     "title": "Off hours",
-    "text": "製作與遊玩遊戲、電吉他、花式滑冰、動畫、逛博物館、學習語言。"
+    "text": "製作與遊玩遊戲、電吉他、花式滑冰、動畫、Cosplay、逛博物館、學習語言。"
   },
   "resume": {
     "kicker": "Resume",
@@ -485,8 +523,8 @@
     },
     "community": {
       "kicker": "社群驅動的迭代",
-      "text": "我親自經營玩家社群、收集回饋、觀察玩家的遊玩行為，並持續改良這款遊戲。每一次更新，都會用同一個問題來檢驗。",
-      "question": "這項改動是否仍然保留了我當初想要的遊戲玩法體驗？"
+      "text": "玩家的回饋，一直是 Hero Race 演進背後的重要推動力。",
+      "text2": "與其單純加入新功能，我更傾向於觀察玩家行為、收集社群回饋，並持續迭代遊戲玩法系統，在忠於最初設計理念的同時，提升整體的遊戲體驗。"
     },
     "gallery": {
       "kicker": "圖庫"

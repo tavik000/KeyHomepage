@@ -4,6 +4,13 @@ import { experience, education } from "@/content/experience";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
+import Tag from "@/components/ui/Tag";
+
+interface ExperienceGroup {
+  project: string;
+  tech: string[];
+  bullets: string[];
+}
 
 export default function ExperienceSection() {
   const t = useTranslations("experience");
@@ -14,7 +21,7 @@ export default function ExperienceSection() {
       <SectionHeading kicker={t("kicker")} title={t("title")} />
       <ol className="relative ml-2 space-y-14 border-l border-border pl-8 md:ml-4 md:pl-12">
         {experience.map((item, i) => {
-          const bullets = t.raw(`items.${item.id}.bullets`) as string[];
+          const groups = t.raw(`items.${item.id}.groups`) as ExperienceGroup[];
           return (
             <li key={item.id} className="relative">
               <span
@@ -53,14 +60,26 @@ export default function ExperienceSection() {
                     </p>
                   </div>
                 </div>
-                <ul className="mt-4 max-w-2xl space-y-2 text-sm leading-relaxed text-muted">
-                  {bullets.map((b) => (
-                    <li key={b} className="flex gap-3">
-                      <span aria-hidden="true" className="mt-[9px] h-px w-3 shrink-0 bg-faint" />
-                      <span>{b}</span>
-                    </li>
+                <div className="mt-4 max-w-2xl space-y-5">
+                  {groups.map((group) => (
+                    <div key={group.project}>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <h4 className="text-sm font-medium text-fg">{group.project}</h4>
+                        {group.tech.map((tech) => (
+                          <Tag key={tech}>{tech}</Tag>
+                        ))}
+                      </div>
+                      <ul className="mt-2 space-y-2 text-sm leading-relaxed text-muted">
+                        {group.bullets.map((b) => (
+                          <li key={b} className="flex gap-3">
+                            <span aria-hidden="true" className="mt-[9px] h-px w-3 shrink-0 bg-faint" />
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </Reveal>
             </li>
           );

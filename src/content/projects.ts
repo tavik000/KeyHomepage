@@ -114,7 +114,10 @@ export interface JamProject {
   link?: string;
   /** Optional GitHub repo link, shown as a small icon button on the card. */
   sourceLink?: string;
-  hasAward?: boolean;
+  /** Presence indicates the project won an award; links to the event/award page. */
+  awardLink?: string;
+  /** Optional photo of the actual award badge/medal, used instead of the generic seal icon. */
+  awardIcon?: string;
 }
 
 export const jamProjects: JamProject[] = [
@@ -124,10 +127,11 @@ export const jamProjects: JamProject[] = [
     previewVideo: "/videos/hook-racer-preview.mp4",
     year: "2025",
     engine: "Unreal Engine 5",
-    tags: ["UE5", "C++"],
+    tags: ["UE5", "C++", "Multiplayer"],
     link: "https://www.youtube.com/watch?v=GqbONar8b5c",
     sourceLink: "https://github.com/tavik000/HookRacer",
-    hasAward: true
+    awardLink: "https://historia.co.jp/ue5petitcon24",
+    awardIcon: "/images/awards/petitcon-badge.png"
   },
   {
     id: "shadow-bubble",
@@ -138,7 +142,8 @@ export const jamProjects: JamProject[] = [
     tags: ["UE5", "C++", "Multiplayer"],
     link: "https://www.youtube.com/watch?v=U_8e_a2troo",
     sourceLink: "https://github.com/tavik000/Paw",
-    hasAward: true
+    awardLink:
+      "https://www.facebook.com/ggjhongkong/photos/the-ggjhk-2025-award-winners%E6%B4%97%E7%A2%97%E5%A4%A7%E4%BD%9C%E6%88%B0-most-innovative-mechanic-presented-by-g-bitsbu/1119781389933188/"
   },
   {
     id: "blite",
@@ -148,7 +153,7 @@ export const jamProjects: JamProject[] = [
     engine: "Unity",
     tags: ["Unity", "C#"],
     link: "https://www.youtube.com/watch?v=YRxEiL2IRiU",
-    hasAward: true
+    awardLink: "https://www.facebook.com/photo/?fbid=3116310891972747&set=a.1540675036203015"
   },
   {
     id: "teacup",

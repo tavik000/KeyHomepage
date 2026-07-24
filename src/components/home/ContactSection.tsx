@@ -58,29 +58,31 @@ export default function ContactSection() {
         ))}
       </Reveal>
 
-      <Reveal className="mt-16" delay={0.1}>
-        <h3 className="meta-label mb-5">{tr("title")}</h3>
-        <div className="grid max-w-2xl gap-4 sm:grid-cols-2">
-          <a
-            href={site.resumeEn}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent/50"
-          >
-            <p className="text-fg group-hover:text-accent-soft">{tr("en")}</p>
-            <p className="mt-2 text-xs text-faint">PDF ↓</p>
-          </a>
-          <a
-            href={site.resumeJa}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent/50"
-          >
-            <p className="text-fg group-hover:text-accent-soft">{tr("ja")}</p>
-            <p className="mt-2 text-xs text-faint">PDF ↓</p>
-          </a>
-        </div>
-      </Reveal>
+      {site.showResume && (
+        <Reveal className="mt-16" delay={0.1}>
+          <h3 className="meta-label mb-5">{tr("title")}</h3>
+          <div className="grid max-w-2xl gap-4 sm:grid-cols-2">
+            <a
+              href={site.resumeEn}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent/50"
+            >
+              <p className="text-fg group-hover:text-accent-soft">{tr("en")}</p>
+              <p className="mt-2 text-xs text-faint">PDF ↓</p>
+            </a>
+            <a
+              href={site.resumeJa}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent/50"
+            >
+              <p className="text-fg group-hover:text-accent-soft">{tr("ja")}</p>
+              <p className="mt-2 text-xs text-faint">PDF ↓</p>
+            </a>
+          </div>
+        </Reveal>
+      )}
     </Section>
   );
 }

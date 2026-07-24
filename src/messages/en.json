@@ -186,38 +186,76 @@
       "blast-edge": {
         "period": "Jul 2024 —",
         "position": "Gameplay Programmer (UE5)",
-        "bullets": [
-          "Developing gameplay events, cinematics, UI, and interactive systems for an unannounced AAA action RPG (Steam / PS5 / Xbox Series X|S) in Unreal Engine 5 and C++.",
-          "Improved character behaviors, animations, and camera presentation; fixed progression blockers and playtest findings.",
-          "Optimized HYKE: Northern Light(s) — memory usage on iOS and Game Thread performance on Nintendo Switch.",
-          "Working with Perforce in a large multi-team codebase."
+        "groups": [
+          {
+            "project": "HYKE: Northern Light(s)",
+            "tech": ["UE5", "C++"],
+            "bullets": [
+              "Fixed ~60 player-related bugs and improved character behaviors.",
+              "Optimized memory usage on iOS.",
+              "Optimized Game Thread performance on Nintendo Switch."
+            ]
+          }
         ]
       },
       "freelance": {
         "period": "Mar 2023 — Jun 2024",
         "position": "Freelance Game Developer",
-        "bullets": [
-          "GUARDS! (Steam): gameplay QA, debugging, and Japanese localization in a 4-person multiplayer indie team (UE, C++).",
-          "Danmaku shooting game: developed gameplay systems, combat, enemy AI, and UI in Unity / C#.",
-          "Doki Doki House (iOS / Steam): built a pipeline tool converting Excel scripts to Ren'Py code for a title with 50,000+ iOS players."
+        "groups": [
+          {
+            "project": "GUARDS! (Steam)",
+            "tech": ["UE", "C++"],
+            "bullets": [
+              "Performed QA testing and debugging for a 4-person multiplayer team.",
+              "Localized the game into Japanese."
+            ]
+          },
+          {
+            "project": "Danmaku Prototype",
+            "tech": ["Unity", "C#"],
+            "bullets": [
+              "Developed gameplay systems, combat mechanics, and enemy AI.",
+              "Built the UI."
+            ]
+          },
+          {
+            "project": "Doki Doki House (iOS / Steam)",
+            "tech": ["Python", "Ren'Py"],
+            "bullets": [
+              "Built a pipeline tool converting Excel scripts into Ren'Py code."
+            ]
+          }
         ]
       },
       "ember": {
         "period": "Mar 2022 — Feb 2023",
         "position": "Gameplay Programmer (Unity)",
-        "bullets": [
-          "Apeiron (Steam / Epic): developed gameplay systems, combat mechanics, card systems, and enemy AI in C#.",
-          "Implemented multiplayer synchronization using Socket.IO.",
-          "Mentored junior programmers, joined technical interviews, and assisted project planning."
+        "groups": [
+          {
+            "project": "Apeiron (Steam / Epic Games Store / iOS / Android)",
+            "tech": ["Unity", "C#"],
+            "bullets": [
+              "Developed combat mechanics, card systems, and enemy AI.",
+              "Implemented multiplayer synchronization with Socket.IO.",
+              "Mentored junior programmers and joined technical interviews."
+            ]
+          }
         ]
       },
       "feeling-game": {
         "period": "Jun 2020 — Feb 2022",
         "position": "Gameplay Programmer (Unity)",
-        "bullets": [
-          "Every Hero (iOS / Android): developed gameplay, combat, equipment systems, and UI in C#.",
-          "Optimized performance; performed QA, Japanese localization, and ad integration.",
-          "Contributed to a title with 1M+ players and an App Store Action Games #2 ranking."
+        "groups": [
+          {
+            "project": "Every Hero (iOS / Android)",
+            "tech": ["Unity", "C#"],
+            "bullets": [
+              "Built the equipment system and implemented character skills.",
+              "Developed the main menu UI across ~20 screens.",
+              "Optimized performance and handled QA, localization, and ad integration.",
+              "Shipped to 1M+ players, reaching #2 in App Store Action Games."
+            ]
+          }
         ]
       }
     }
@@ -306,7 +344,7 @@
   "jams": {
     "kicker": "Prototypes & Jams",
     "title": "Game Jam Projects",
-    "description": "Rapid prototypes built solo or in small teams — each one designed, programmed, and shipped in days to weeks.",
+    "description": "Rapid prototypes built solo or in small teams — each one designed, programmed, and shipped in days to weeks. Three of these projects received awards at international game jams and competitions.",
     "source": "Source Code",
     "items": {
       "danmaku": {
@@ -315,25 +353,25 @@
       },
       "hook-racer": {
         "title": "Hook Racer",
-        "desc": "Grappling-hook racing action. 7-week solo project — all gameplay, pixel art, and music. Award winner at the 24th UE5ぷちコン.",
+        "desc": "Grappling-hook multiplayer racing action. 7-week solo project — all gameplay, pixel art, and music. Award winner at the 24th UE5ぷちコン.",
         "award": { "name": "Crowd Excitement Award", "event": "24th UE5 Petit Con" }
       },
       "shadow-bubble": {
         "title": "Shadow Bubble: Hide and Seek Chaos",
-        "desc": "Two-player asymmetric stealth in 7 days. Audience Choice & Best XR Game, GGJ Hong Kong 2025.",
-        "award": { "name": "Audience Choice & Best XR Game", "event": "GGJ Hong Kong 2025" }
+        "desc": "An asymmetric multiplayer hide-and-seek game where players become invisible by hiding inside shadows. Built in 7 days.",
+        "award": { "name": "Audience Choice / Best XR Game", "event": "GGJ Hong Kong 2025" }
       },
       "teacup": {
         "title": "Nesmy Land: Teacup",
-        "desc": "Action-simulation built in 5 days in a 3-person team — gameplay programming and level design."
+        "desc": "A third-person game about escaping a chasing cat while collecting teacups. Built in 5 days with a 3-person team — gameplay and level design."
       },
       "path-of-osu": {
         "title": "The Path of Osu",
-        "desc": "Third-person action-adventure prototype with combat and puzzles, solo-developed over 7 weeks."
+        "desc": "A third-person prototype blending Sekiro-style sword combat with gun shooting. Solo-developed over 7 weeks to explore hybrid combat."
       },
       "blite": {
         "title": "Blite",
-        "desc": "Puzzle platformer built in 2 days. Best Original Game, GGJ Hong Kong 2022.",
+        "desc": "A puzzle platformer where overlapping black and white platforms reshape the level, opening or closing paths to the goal. Built in 2 days.",
         "award": { "name": "Best Original Game", "event": "GGJ Hong Kong 2022" }
       }
     }
@@ -341,20 +379,20 @@
   "independent": {
     "kicker": "Independent Work",
     "title": "Independent Projects",
-    "description": "Projects developed independently to explore gameplay ideas, tools, and technical experimentation beyond my professional work.",
+    "description": "Personal and freelance game projects built to explore gameplay systems, design ideas, and technical experimentation outside of commercial development.",
     "source": "Source Code",
     "items": {
       "guards": {
         "title": "GUARDS!",
-        "desc": "QA testing and Japanese localization for a released Unreal Engine title on Steam."
+        "desc": "A first-person multiplayer co-op action game released on Steam, where I contributed QA testing and Japanese localization."
       },
       "doki-doki-house": {
         "title": "Doki Doki House",
-        "desc": "Developed Python tools and implemented narrative systems for a Ren'Py visual novel game."
+        "desc": "A romance visual novel developed with Ren'Py, where I built Python development tools and implemented branching narrative systems."
       },
       "hero-race": {
         "title": "Hero Race (Warcraft III)",
-        "desc": "An original Warcraft III custom map that I have continuously designed, balanced, and programmed since 2011, serving as my foundation in gameplay programming, scripting, and multiplayer game design."
+        "desc": "A Warcraft III custom multiplayer racing map inspired by Dota hero abilities, where players use movement skills, items, and teamwork to outpace opponents. Continuously designed, programmed, balanced, and maintained since 2011."
       }
     }
   },
@@ -373,7 +411,7 @@
   },
   "hobbies": {
     "title": "Off hours",
-    "text": "Making and playing games, electric guitar, figure skating, anime, museums, language learning."
+    "text": "Making and playing games, electric guitar, figure skating, anime, cosplay, museums, language learning."
   },
   "resume": {
     "kicker": "Resume",
@@ -485,8 +523,8 @@
     },
     "community": {
       "kicker": "Community-Driven Iteration",
-      "text": "I actively manage the player community, collect feedback, observe player behaviour, and continuously refine the game. Every patch is evaluated by asking one question.",
-      "question": "Does this change still preserve the gameplay experience I originally wanted?"
+      "text": "Player feedback has been one of the driving forces behind Hero Race's evolution.",
+      "text2": "Rather than simply adding new features, I observe player behaviour, collect feedback from the community, and iterate on gameplay systems to improve the overall experience while staying true to the original design vision."
     },
     "gallery": {
       "kicker": "Gallery"

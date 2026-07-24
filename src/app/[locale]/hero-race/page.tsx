@@ -297,11 +297,9 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <blockquote className="border-l-2 border-accent py-1 pl-6">
-              <p className="font-[family-name:var(--font-display)] text-xl leading-snug text-fg md:text-2xl">
-                “{t("community.question")}”
-              </p>
-            </blockquote>
+            <p className="text-base leading-relaxed text-muted md:text-lg">
+              {t("community.text2")}
+            </p>
           </Reveal>
         </div>
       </Chapter>
