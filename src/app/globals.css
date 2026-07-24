@@ -22,6 +22,10 @@
 }
 
 html {
+  /* Global type-scale bump — Tailwind's text-* utilities are rem-based, so this
+     lifts every section's body copy, tags, and labels uniformly instead of
+     patching font sizes component-by-component. */
+  font-size: 112.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }

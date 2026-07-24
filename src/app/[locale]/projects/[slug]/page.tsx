@@ -112,38 +112,38 @@ export default async function ProjectPage({
           <h1 className="font-[family-name:var(--font-display)] text-3xl leading-tight text-fg md:text-5xl">
             {t(`${slug}.title`)}
           </h1>
-          <p className="mt-3 text-lg text-muted">{t(`${slug}.tagline`)}</p>
+          <p className="mt-3 text-xl text-muted">{t(`${slug}.tagline`)}</p>
         </Reveal>
 
         {/* Meta strip */}
         <Reveal className="mt-10">
-          <dl className="grid grid-cols-2 gap-6 rounded-lg border border-border bg-surface p-6 text-sm md:grid-cols-5">
+          <dl className="grid grid-cols-2 gap-6 rounded-lg border border-border bg-surface p-6 text-base md:grid-cols-5">
             <div>
-              <dt className="meta-label !text-[10px]">{tf("labels.company")}</dt>
+              <dt className="meta-label !text-xs">{tf("labels.company")}</dt>
               <dd className="mt-1.5 text-fg">{project.company}</dd>
             </div>
             <div>
-              <dt className="meta-label !text-[10px]">{tf("labels.role")}</dt>
+              <dt className="meta-label !text-xs">{tf("labels.role")}</dt>
               <dd className="mt-1.5 text-fg">{t(`${slug}.role`)}</dd>
             </div>
             <div>
-              <dt className="meta-label !text-[10px]">{tf("labels.genre")}</dt>
+              <dt className="meta-label !text-xs">{tf("labels.genre")}</dt>
               <dd className="mt-1.5 text-fg">{t(`${slug}.genre`)}</dd>
             </div>
             <div>
-              <dt className="meta-label !text-[10px]">{tf("labels.engine")}</dt>
+              <dt className="meta-label !text-xs">{tf("labels.engine")}</dt>
               <dd className="mt-1.5 text-fg">{project.engine}</dd>
             </div>
             <div>
-              <dt className="meta-label !text-[10px]">{tf("labels.period")}</dt>
+              <dt className="meta-label !text-xs">{tf("labels.period")}</dt>
               <dd className="mt-1.5 text-fg">{t(`${slug}.period`)}</dd>
             </div>
             <div className="col-span-2">
-              <dt className="meta-label !text-[10px]">{tf("labels.platforms")}</dt>
+              <dt className="meta-label !text-xs">{tf("labels.platforms")}</dt>
               <dd className="mt-1.5 text-muted">{project.platforms.join(" · ")}</dd>
             </div>
             <div className="col-span-2">
-              <dt className="meta-label !text-[10px]">{tf("labels.technologies")}</dt>
+              <dt className="meta-label !text-xs">{tf("labels.technologies")}</dt>
               <dd className="mt-2 flex flex-wrap gap-1.5">
                 {project.technologies.map((tech) => (
                   <Tag key={tech}>{tech}</Tag>
@@ -155,7 +155,7 @@ export default async function ProjectPage({
 
         {project.confidential && (
           <Reveal className="mt-6">
-            <p className="rounded-lg border border-accent/30 bg-accent/5 p-4 text-sm leading-relaxed text-muted">
+            <p className="rounded-lg border border-accent/30 bg-accent/5 p-4 text-base leading-relaxed text-muted">
               {t(`${slug}.confidentialNote`)}
             </p>
           </Reveal>
@@ -164,7 +164,7 @@ export default async function ProjectPage({
         {/* Overview */}
         <Reveal className="mt-16">
           <h2 className="meta-label mb-5">{tp("overview")}</h2>
-          <p className="max-w-3xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="max-w-3xl text-lg leading-relaxed text-muted md:text-xl">
             {t(`${slug}.overview`)}
           </p>
         </Reveal>
@@ -174,7 +174,7 @@ export default async function ProjectPage({
           <h2 className="meta-label mb-6">{tp("contributions")}</h2>
           <ul className="max-w-3xl space-y-3">
             {contributions.map((c) => (
-              <li key={c} className="flex gap-4 leading-relaxed text-muted">
+              <li key={c} className="flex gap-4 text-lg leading-relaxed text-muted">
                 <span aria-hidden="true" className="mt-[11px] h-px w-4 shrink-0 bg-accent/70" />
                 <span>{c}</span>
               </li>
@@ -191,14 +191,14 @@ export default async function ProjectPage({
                 key={item.challenge}
                 className="rounded-lg border border-border bg-surface p-6"
               >
-                <p className="font-[family-name:var(--font-mono)] text-[10px] uppercase tracking-widest text-accent-soft">
+                <p className="font-[family-name:var(--font-mono)] text-xs uppercase tracking-widest text-accent-soft">
                   {tp("challenge")}
                 </p>
-                <p className="mt-2 leading-relaxed text-fg">{item.challenge}</p>
-                <p className="mt-5 font-[family-name:var(--font-mono)] text-[10px] uppercase tracking-widest text-faint">
+                <p className="mt-2 text-lg leading-relaxed text-fg">{item.challenge}</p>
+                <p className="mt-5 font-[family-name:var(--font-mono)] text-xs uppercase tracking-widest text-faint">
                   {tp("solution")}
                 </p>
-                <p className="mt-2 leading-relaxed text-muted">{item.solution}</p>
+                <p className="mt-2 text-lg leading-relaxed text-muted">{item.solution}</p>
                 {item.links && item.links.length > 0 && (
                   <div className="mt-4 flex flex-wrap gap-3">
                     {item.links.map((link) => (
@@ -207,7 +207,7 @@ export default async function ProjectPage({
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-accent-soft transition-colors hover:text-fg"
+                        className="text-base text-accent-soft transition-colors hover:text-fg"
                       >
                         {link.label} ↗
                       </a>
@@ -265,7 +265,7 @@ export default async function ProjectPage({
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded border border-border px-5 py-2.5 text-sm text-fg transition-colors hover:border-faint"
+                className="rounded border border-border px-5 py-2.5 text-base text-fg transition-colors hover:border-faint"
               >
                 {tp(`links.${link.type}`)} ↗
               </a>
