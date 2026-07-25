@@ -222,7 +222,7 @@ export const independentProjects: IndependentProject[] = [
     id: "guards",
     image: "/images/projects/guards.png",
     previewVideo: "/videos/guards-preview.mp4",
-    tags: ["Unreal Engine", "QA", "Japanese Localization"],
+    tags: ["Unreal Engine", "QA", "Japanese Localization", "Multiplayer"],
     link: "https://store.steampowered.com/app/2514460/GUARDS/",
     year: "2023"
   }
