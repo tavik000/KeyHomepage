@@ -2,7 +2,7 @@
 
 export const site = {
   name: "Key",
-  url: "https://master.d2qyb13wnib5il.amplifyapp.com",
+  url: "https://master.d3k9bxcuvbvdg7.amplifyapp.com",
   email: "tavik002@gmail.com",
   github: "https://github.com/tavik000",
   /** Add your LinkedIn profile URL to show the LinkedIn contact entry. */
@@ -14,5 +14,6 @@ export const site = {
   /** Toggle off to hide every resume link/section site-wide without deleting the content. */
   showResume: true,
   resumeEn: "/assets/CV_Key_Eng_Jul2026.pdf",
-  resumeJa: "/assets/Key_GameEngineer_Rirekisho_Combined_Homepage_Jul2026.pdf"
+  resumeJa: "/assets/Key_GameEngineer_Rirekisho_Combined_Homepage_Jul2026.pdf",
+  ogImage: "/images/og-image.png"
 };
