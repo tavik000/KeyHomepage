@@ -142,7 +142,7 @@ export const jamProjects: JamProject[] = [
     previewVideo: "/videos/hook-racer-preview.mp4",
     year: "2025",
     engine: "Unreal Engine 5",
-    tags: ["UE5", "C++", "Multiplayer"],
+    tags: ["UE5", "C++", "Multiplayer", "Paper2D", "PaperZD"],
     link: "https://www.youtube.com/watch?v=GqbONar8b5c",
     sourceLink: "https://github.com/tavik000/HookRacer",
     awardLink: "https://historia.co.jp/ue5petitcon24",
@@ -176,7 +176,7 @@ export const jamProjects: JamProject[] = [
     previewVideo: "/videos/teacup-preview.mp4",
     year: "2024",
     engine: "Unreal Engine 5",
-    tags: ["UE5", "C++"],
+    tags: ["UE5", "C++", "Behavior Tree", "AI Perception"],
     link: "https://www.youtube.com/watch?v=ENJegabO2dw",
     sourceLink: "https://github.com/tavik000/NesmyLandTeacup"
   },
@@ -196,7 +196,7 @@ export const jamProjects: JamProject[] = [
     previewVideo: "/videos/danmaku-preview.mp4",
     year: "2022",
     engine: "Unity",
-    tags: ["Unity", "C#"],
+    tags: ["Unity", "C#", "Web Crawler"],
     link: "/videos/danmaku-full.mp4"
   }
 ];
