@@ -10,7 +10,7 @@ interface SectionProps {
 
 export default function Section({ id, children, className = "", wide }: SectionProps) {
   return (
-    <section id={id} className={`scroll-mt-20 py-24 md:py-32 ${className}`}>
+    <section id={id} className={`scroll-mt-20 pb-24 pt-12 md:pb-32 md:pt-16 ${className}`}>
       <div className={`mx-auto px-6 ${wide ? "max-w-7xl" : "max-w-6xl"}`}>
         {children}
       </div>
