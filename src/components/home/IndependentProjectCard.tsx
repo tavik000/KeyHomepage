@@ -98,7 +98,7 @@ export default function IndependentProjectCard({
             </span>
           )}
         </div>
-        <p className="mt-3 text-sm leading-relaxed text-muted">{desc}</p>
+        <p className="mt-3 text-base leading-relaxed text-muted">{desc}</p>
         <div className="mt-4 flex flex-wrap items-center gap-2">
           <div className="flex flex-wrap gap-1.5">
             {project.tags.map((tag) => (

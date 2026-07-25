@@ -189,6 +189,7 @@
     "present": "現在",
     "items": {
       "blast-edge": {
+        "company": "株式会社ブラストエッジゲームズ",
         "period": "2024年7月 —",
         "position": "ゲームエンジニア（UE5）",
         "groups": [
@@ -204,6 +205,7 @@
         ]
       },
       "freelance": {
+        "company": "フリーランス",
         "period": "2023年3月 — 2024年6月",
         "position": "フリーランス ゲーム開発者",
         "groups": [
@@ -233,6 +235,7 @@
         ]
       },
       "ember": {
+        "company": "Realm of Alters（Ember Entertainment）",
         "period": "2022年3月 — 2023年2月",
         "position": "ゲームエンジニア（Unity）",
         "groups": [
@@ -248,6 +251,7 @@
         ]
       },
       "feeling-game": {
+        "company": "Feeling Game Company",
         "period": "2020年6月 — 2022年2月",
         "position": "ゲームエンジニア（Unity）",
         "groups": [
@@ -270,10 +274,12 @@
     "title": "学歴",
     "items": {
       "polyu": {
+        "school": "香港理工大学",
         "degree": "情報技術学 修士（MSc in Information Technology）",
         "detail": "AI・機械学習を専攻。ゲームデザイン・ゲーム開発の科目を履修。"
       },
       "chuhai": {
+        "school": "珠海学院",
         "degree": "計算機科学 学士（BSc (Hons) in Computer Science）",
         "detail": "アルゴリズム、データ構造、オブジェクト指向、データベース、ソフトウェア工学を学ぶ。"
       }
@@ -358,7 +364,7 @@
       },
       "hook-racer": {
         "title": "Hook Racer",
-        "desc": "グラップリングフックで駆け抜けるマルチプレイヤーレースアクション。7週間のソロ制作で、ゲームプレイ・ドット絵・音楽をすべて担当。第24回UE5ぷちコン受賞作。",
+        "desc": "グラップリングフックで駆け抜けるマルチプレイヤーレースアクション。7週間のソロ制作。第24回UE5ぷちコン受賞作。",
         "award": { "name": "盛り上がるで賞", "event": "第24回UE5ぷちコン" }
       },
       "shadow-bubble": {
@@ -473,8 +479,8 @@
       "role": { "label": "役割", "lines": ["ソロ・ゲームプレイプログラマー", "ゲームデザイナー"] },
       "engine": { "label": "エンジン", "value": "Warcraft III ワールドエディタ" },
       "language": { "label": "言語", "value": "JASS" },
-      "development": { "label": "開発期間", "value": "2011年 – 現在" },
-      "focus": { "label": "注力分野", "tags": ["ゲームプレイシステム", "マルチプレイヤー", "ゲームデザイン", "AI", "ライブバランス調整"] }
+      "development": { "label": "期間", "value": "2011年 – 現在" },
+      "focus": { "label": "使用技術", "tags": ["ゲームプレイシステム", "マルチプレイヤー", "ゲームデザイン", "AI", "ライブバランス調整"] }
     },
     "overview": {
       "kicker": "プロジェクト概要",

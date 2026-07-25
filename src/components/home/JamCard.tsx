@@ -134,7 +134,7 @@ export default function JamCard({ project, title, desc, award, sourceLabel }: Ja
           </div>
         )}
       </div>
-      <div className="flex flex-1 flex-col p-5">
+      <div className="flex flex-1 flex-col p-6">
         {award && project.awardLink && (
           <button
             type="button"
@@ -192,8 +192,8 @@ export default function JamCard({ project, title, desc, award, sourceLabel }: Ja
             {project.year}
           </span>
         </div>
-        <p className="mt-2 line-clamp-3 min-h-[4.5rem] flex-1 text-sm leading-relaxed text-muted">{desc}</p>
-        <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
+        <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted">{desc}</p>
+        <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-4">
           <div className="flex flex-wrap gap-1.5">
             {project.tags.map((tag) => (
               <Tag key={tag}>{tag}</Tag>

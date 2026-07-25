@@ -20,7 +20,7 @@ export default function SkillsSection() {
               {cat.items.map((skill) => (
                 <li
                   key={skill.name}
-                  className="flex items-baseline justify-between gap-3 text-sm"
+                  className="flex items-baseline justify-between gap-3 text-base"
                 >
                   <span className="text-fg">{skill.name}</span>
                   {skill.years !== undefined && (
@@ -29,7 +29,7 @@ export default function SkillsSection() {
                         aria-hidden="true"
                         className="grow border-b border-dotted border-border"
                       />
-                      <span className="shrink-0 font-[family-name:var(--font-mono)] text-xs tracking-wider text-accent-soft">
+                      <span className="shrink-0 font-[family-name:var(--font-mono)] text-base tracking-wider text-accent-soft">
                         {t("years", { years: skill.years })}
                       </span>
                     </>
@@ -47,7 +47,7 @@ export default function SkillsSection() {
           {spokenLanguages.map(({ id }) => (
             <div key={id} className="rounded-lg border border-border bg-surface p-5">
               <dt className="text-fg">{t(`spoken.${id}.name`)}</dt>
-              <dd className="mt-1 font-[family-name:var(--font-mono)] text-xs tracking-wider text-accent-soft">
+              <dd className="mt-1 font-[family-name:var(--font-mono)] text-base tracking-wider text-accent-soft">
                 {t(`spoken.${id}.level`)}
               </dd>
             </div>

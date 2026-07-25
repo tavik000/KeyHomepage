@@ -9,7 +9,7 @@ export default function HobbiesStrip() {
     <section className="border-t border-border py-10">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
-          <p className="text-sm leading-relaxed text-faint">
+          <p className="text-base leading-relaxed text-faint">
             <span className="meta-label mr-4">{t("title")}</span>
             {t("text")}
           </p>

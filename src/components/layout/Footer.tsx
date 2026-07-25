@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 text-sm text-faint md:flex-row">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 text-base text-faint md:flex-row">
         <p>{t("rights", { year })}</p>
         <div className="flex items-center gap-6">
           <a

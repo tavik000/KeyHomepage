@@ -4,7 +4,6 @@
 
 export interface ExperienceItem {
   id: string;
-  company: string;
   location: string;
   current?: boolean;
   bulletCount: number;
@@ -15,7 +14,6 @@ export interface ExperienceItem {
 export const experience: ExperienceItem[] = [
   {
     id: "blast-edge",
-    company: "Blast Edge Games",
     location: "Tokyo, Japan",
     current: true,
     bulletCount: 4,
@@ -23,20 +21,17 @@ export const experience: ExperienceItem[] = [
   },
   {
     id: "freelance",
-    company: "Freelance",
     location: "Tokyo, Japan",
     bulletCount: 3
   },
   {
     id: "ember",
-    company: "Realm of Alters (Ember Entertainment)",
     location: "Hong Kong",
     bulletCount: 3,
     logo: "/images/companies/ember-entertainment.jpg"
   },
   {
     id: "feeling-game",
-    company: "Feeling Game Company",
     location: "Hong Kong",
     bulletCount: 3,
     logo: "/images/companies/feeling-game.png"
@@ -45,19 +40,20 @@ export const experience: ExperienceItem[] = [
 
 export interface EducationItem {
   id: string;
-  school: string;
   period: string;
+  /** School crest/logo shown next to the entry. */
+  logo?: string;
 }
 
 export const education: EducationItem[] = [
   {
     id: "polyu",
-    school: "The Hong Kong Polytechnic University",
-    period: "2018 — 2020"
+    period: "2018 — 2020",
+    logo: "/images/education/polyu-icon.png"
   },
   {
     id: "chuhai",
-    school: "Chu Hai College of Higher Education",
-    period: "2014 — 2018"
+    period: "2014 — 2018",
+    logo: "/images/education/chuhai.png"
   }
 ];

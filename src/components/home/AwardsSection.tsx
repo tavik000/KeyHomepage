@@ -20,8 +20,8 @@ export default function AwardsSection() {
           <Reveal>
             <ul className="space-y-5">
               {awards.map((award) => (
-                <li key={award.id} className="text-sm leading-relaxed">
-                  <span className="mr-3 font-[family-name:var(--font-mono)] text-xs text-faint">
+                <li key={award.id} className="text-base leading-relaxed">
+                  <span className="mr-3 font-[family-name:var(--font-mono)] text-base text-faint">
                     {award.year}
                   </span>
                   {award.eventLink ? (
@@ -37,7 +37,7 @@ export default function AwardsSection() {
                     <span className="text-fg">{t(`items.${award.id}.award`)}</span>
                   )}
                   <span className="text-muted"> — {t(`items.${award.id}.game`)}</span>
-                  <span className="block pl-0 text-xs text-faint sm:inline sm:pl-2">
+                  <span className="block pl-0 text-base text-faint sm:inline sm:pl-2">
                     {t(`items.${award.id}.event`)}
                     {award.gameLink && (
                       <>
@@ -60,12 +60,12 @@ export default function AwardsSection() {
           <Reveal delay={0.08}>
             <ul className="space-y-5 border-border lg:border-l lg:pl-10">
               {certifications.map((cert) => (
-                <li key={cert.id} className="text-sm leading-relaxed">
-                  <span className="mr-3 font-[family-name:var(--font-mono)] text-xs text-faint">
+                <li key={cert.id} className="text-base leading-relaxed">
+                  <span className="mr-3 font-[family-name:var(--font-mono)] text-base text-faint">
                     {cert.year}
                   </span>
                   <span className="text-fg">{tc(`items.${cert.id}.name`)}</span>
-                  <span className="block text-xs text-faint sm:inline sm:pl-2">
+                  <span className="block text-base text-faint sm:inline sm:pl-2">
                     {tc(`items.${cert.id}.issuer`)}
                   </span>
                 </li>

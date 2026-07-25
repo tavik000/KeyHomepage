@@ -185,6 +185,7 @@
     "present": "至今",
     "items": {
       "blast-edge": {
+        "company": "Blast Edge Games",
         "period": "2024年7月 —",
         "position": "遊戲程式設計師（UE5）",
         "groups": [
@@ -200,6 +201,7 @@
         ]
       },
       "freelance": {
+        "company": "自由接案",
         "period": "2023年3月 — 2024年6月",
         "position": "自由接案遊戲開發者",
         "groups": [
@@ -229,6 +231,7 @@
         ]
       },
       "ember": {
+        "company": "Realm of Alters（Ember Entertainment）",
         "period": "2022年3月 — 2023年2月",
         "position": "遊戲程式設計師（Unity）",
         "groups": [
@@ -244,6 +247,7 @@
         ]
       },
       "feeling-game": {
+        "company": "Feeling Game Company",
         "period": "2020年6月 — 2022年2月",
         "position": "遊戲程式設計師（Unity）",
         "groups": [
@@ -266,10 +270,12 @@
     "title": "學歷",
     "items": {
       "polyu": {
+        "school": "香港理工大學",
         "degree": "資訊科技碩士（MSc in Information Technology）",
         "detail": "主修AI與機器學習，並修習遊戲設計與遊戲開發課程。"
       },
       "chuhai": {
+        "school": "珠海學院",
         "degree": "電腦科學榮譽學士（BSc (Hons) in Computer Science）",
         "detail": "修習演算法、資料結構、物件導向、資料庫與軟體工程。"
       }
@@ -354,7 +360,7 @@
       },
       "hook-racer": {
         "title": "Hook Racer",
-        "desc": "以鉤索疾馳的多人連線競速動作遊戲。7週獨自完成，包辦遊戲程式、像素美術與音樂。第24回UE5ぷちコン獲獎作品。",
+        "desc": "以鉤索疾馳的多人連線競速動作遊戲。7週獨自完成。第24回UE5ぷちコン獲獎作品。",
         "award": { "name": "盛り上がるで賞", "event": "第24回UE5ぷちコン" }
       },
       "shadow-bubble": {
@@ -469,8 +475,8 @@
       "role": { "label": "角色", "lines": ["獨立遊戲玩法程式設計師", "遊戲設計師"] },
       "engine": { "label": "引擎", "value": "魔獸爭霸III世界編輯器" },
       "language": { "label": "程式語言", "value": "JASS" },
-      "development": { "label": "開發期間", "value": "2011年 – 至今" },
-      "focus": { "label": "專注領域", "tags": ["遊戲玩法系統", "多人連線", "遊戲設計", "AI", "即時平衡調整"] }
+      "development": { "label": "期間", "value": "2011年 – 至今" },
+      "focus": { "label": "使用技術", "tags": ["遊戲玩法系統", "多人連線", "遊戲設計", "AI", "即時平衡調整"] }
     },
     "overview": {
       "kicker": "專案概述",

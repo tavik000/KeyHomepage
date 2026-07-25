@@ -20,19 +20,19 @@ export default function GameJournalSection() {
               <h3 className="font-[family-name:var(--font-display)] text-xl text-fg md:text-2xl">
                 {t("title")}
               </h3>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
                 {t("lead")}
               </p>
             </div>
             <div className="flex flex-col items-start justify-center gap-4 border-border lg:border-l lg:pl-10">
-              <p className="font-[family-name:var(--font-mono)] text-xs uppercase tracking-[0.18em] text-accent-soft">
+              <p className="font-[family-name:var(--font-mono)] text-base uppercase tracking-[0.18em] text-accent-soft">
                 {t("stat")}
               </p>
               <a
                 href={site.gameDesignDb}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded border border-border px-5 py-2.5 text-sm text-fg transition-colors hover:border-faint"
+                className="rounded border border-border px-5 py-2.5 text-base text-fg transition-colors hover:border-faint"
               >
                 {t("cta")} ↗
               </a>

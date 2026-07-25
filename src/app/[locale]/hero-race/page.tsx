@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { independentProjects } from "@/content/projects";
 import { site } from "@/content/site";
 import Reveal from "@/components/ui/Reveal";
+import Tag from "@/components/ui/Tag";
 
 /** Tighter vertical rhythm than the shared `Section` primitive — this page is deliberately compact. */
 function Chapter({
@@ -132,12 +133,12 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
         <div className="relative z-10 mt-auto w-full">
           <div className="mx-auto max-w-6xl px-6 pb-10 pt-24">
             <Reveal>
-              <p className="meta-label mb-3 !text-fg/75 [text-shadow:0_2px_10px_rgba(0,0,0,0.8)]">
+              <p className="meta-label mb-3 !text-base !text-fg/75 [text-shadow:0_2px_10px_rgba(0,0,0,0.8)]">
                 <Link href="/#independent-projects" className="transition-colors hover:text-fg">
                   ← {t("back")}
                 </Link>
               </p>
-              <p className="meta-label mb-5 text-accent-soft">{t("kicker")}</p>
+              <p className="meta-label mb-5 !text-base text-accent-soft">{t("kicker")}</p>
               <h1 className="font-[family-name:var(--font-display)] text-5xl leading-[1.05] text-fg sm:text-6xl md:text-8xl">
                 {t("title")}
               </h1>
@@ -165,7 +166,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded bg-fg px-6 py-3 text-sm font-medium text-bg transition-colors hover:bg-white"
+                  className="rounded bg-fg px-6 py-3 text-base font-medium text-bg transition-colors hover:bg-white"
                 >
                   {t("ctaSource")} ↗
                 </a>
@@ -174,7 +175,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
                 href={BILIBILI_WATCH_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded border border-fg/40 bg-bg/30 px-6 py-3 text-sm text-fg backdrop-blur transition-colors hover:border-fg"
+                className="rounded border border-fg/40 bg-bg/30 px-6 py-3 text-base text-fg backdrop-blur transition-colors hover:border-fg"
               >
                 {t("ctaVideo")} ↗
               </a>
@@ -186,12 +187,12 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
       {/* ================= Quick Facts ================= */}
       <Chapter border={false}>
         <Reveal className="mb-8">
-          <p className="meta-label">{quickFacts.kicker}</p>
+          <p className="meta-label !text-base">{quickFacts.kicker}</p>
         </Reveal>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           <Reveal delay={0.02} className="h-full">
             <div className="flex h-full flex-col rounded-lg border border-border bg-surface p-6">
-              <p className="meta-label !text-[10px]">{quickFacts.role.label}</p>
+              <p className="meta-label !text-base">{quickFacts.role.label}</p>
               <div className="mt-3 space-y-1">
                 {quickFacts.role.lines.map((line) => (
                   <p key={line} className="text-fg">
@@ -203,13 +204,13 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
           </Reveal>
           <Reveal delay={0.06} className="h-full">
             <div className="flex h-full flex-col rounded-lg border border-border bg-surface p-6">
-              <p className="meta-label !text-[10px]">{quickFacts.engine.label}</p>
+              <p className="meta-label !text-base">{quickFacts.engine.label}</p>
               <p className="mt-3 text-fg">{quickFacts.engine.value}</p>
             </div>
           </Reveal>
           <Reveal delay={0.1} className="h-full">
             <div className="flex h-full flex-col rounded-lg border border-border bg-surface p-6">
-              <p className="meta-label !text-[10px]">{quickFacts.language.label}</p>
+              <p className="meta-label !text-base">{quickFacts.language.label}</p>
               <p className="mt-3 font-[family-name:var(--font-mono)] text-fg">
                 {quickFacts.language.value}
               </p>
@@ -217,21 +218,16 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
           </Reveal>
           <Reveal delay={0.14} className="h-full">
             <div className="flex h-full flex-col rounded-lg border border-border bg-surface p-6">
-              <p className="meta-label !text-[10px]">{quickFacts.development.label}</p>
+              <p className="meta-label !text-base">{quickFacts.development.label}</p>
               <p className="mt-3 text-fg">{quickFacts.development.value}</p>
             </div>
           </Reveal>
           <Reveal delay={0.18} className="h-full">
             <div className="flex h-full flex-col rounded-lg border border-border bg-surface p-6">
-              <p className="meta-label !text-[10px]">{quickFacts.focus.label}</p>
+              <p className="meta-label !text-base">{quickFacts.focus.label}</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
                 {quickFacts.focus.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="inline-block rounded border border-border bg-bg px-2.5 py-1 font-[family-name:var(--font-mono)] text-[11px] tracking-wider text-muted"
-                  >
-                    {tag}
-                  </span>
+                  <Tag key={tag}>{tag}</Tag>
                 ))}
               </div>
             </div>
@@ -242,7 +238,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
       {/* ================= Project Overview ================= */}
       <Chapter>
         <Reveal className="max-w-3xl">
-          <p className="meta-label mb-5">{t("overview.kicker")}</p>
+          <p className="meta-label mb-5 !text-base">{t("overview.kicker")}</p>
           <p className="font-[family-name:var(--font-display)] text-2xl leading-snug text-fg md:text-3xl">
             {t("overview.text")}
           </p>
@@ -252,7 +248,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
       {/* ================= Design Philosophy ================= */}
       <Chapter>
         <Reveal className="mb-8">
-          <p className="meta-label">{t("philosophy.kicker")}</p>
+          <p className="meta-label !text-base">{t("philosophy.kicker")}</p>
         </Reveal>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {philosophyPrinciples.map((p, i) => (
@@ -261,7 +257,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
                 <h3 className="font-[family-name:var(--font-display)] text-lg text-fg">
                   {p.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{p.desc}</p>
+                <p className="mt-3 text-base leading-relaxed text-muted">{p.desc}</p>
               </div>
             </Reveal>
           ))}
@@ -271,7 +267,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
       {/* ================= Technical Highlights ================= */}
       <Chapter>
         <Reveal className="mb-8">
-          <p className="meta-label">{t("technical.kicker")}</p>
+          <p className="meta-label !text-base">{t("technical.kicker")}</p>
         </Reveal>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {technicalGroups.map((group, i) => (
@@ -280,7 +276,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
                 <h3 className="font-[family-name:var(--font-display)] text-lg text-fg">
                   {group.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{group.desc}</p>
+                <p className="mt-3 text-base leading-relaxed text-muted">{group.desc}</p>
               </div>
             </Reveal>
           ))}
@@ -291,7 +287,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
       <Chapter>
         <div className="grid gap-10 lg:grid-cols-2">
           <Reveal>
-            <p className="meta-label mb-5">{t("community.kicker")}</p>
+            <p className="meta-label mb-5 !text-base">{t("community.kicker")}</p>
             <p className="text-base leading-relaxed text-muted md:text-lg">
               {t("community.text")}
             </p>
@@ -307,7 +303,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
       {/* ================= Gallery ================= */}
       <Chapter wide>
         <Reveal className="mb-8">
-          <p className="meta-label">{t("gallery.kicker")}</p>
+          <p className="meta-label !text-base">{t("gallery.kicker")}</p>
         </Reveal>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {GALLERY_IMAGES.map((src, i) => (
@@ -330,7 +326,7 @@ export default async function HeroRacePage({ params }: { params: Promise<Params>
       <Chapter>
         <Reveal>
           <div className="rounded-2xl border border-accent/25 bg-gradient-to-br from-surface to-surface-2 p-10 md:p-16">
-            <p className="meta-label mb-5 text-accent-soft">{t("sourceCode.kicker")}</p>
+            <p className="meta-label mb-5 !text-base text-accent-soft">{t("sourceCode.kicker")}</p>
             <p className="max-w-2xl text-base leading-relaxed text-muted md:text-lg">
               {t("sourceCode.text")}
             </p>

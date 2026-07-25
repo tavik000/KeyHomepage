@@ -33,7 +33,7 @@ export default function ExperienceSection() {
                 }`}
               />
               <Reveal delay={i * 0.05}>
-                <p className="font-[family-name:var(--font-mono)] text-xs tracking-wider text-faint">
+                <p className="font-[family-name:var(--font-mono)] text-base tracking-wider text-faint">
                   {t(`items.${item.id}.period`)}
                   {item.current && (
                     <span className="ml-2 text-accent-soft">· {t("present")}</span>
@@ -55,8 +55,8 @@ export default function ExperienceSection() {
                     <h3 className="text-lg text-fg md:text-xl">
                       {t(`items.${item.id}.position`)}
                     </h3>
-                    <p className="mt-0.5 text-sm text-muted">
-                      {item.company} — {item.location}
+                    <p className="mt-0.5 text-base text-muted">
+                      {t(`items.${item.id}.company`)} — {item.location}
                     </p>
                   </div>
                 </div>
@@ -64,12 +64,12 @@ export default function ExperienceSection() {
                   {groups.map((group) => (
                     <div key={group.project}>
                       <div className="flex flex-wrap items-center gap-2">
-                        <h4 className="text-sm font-medium text-fg">{group.project}</h4>
+                        <h4 className="text-base font-medium text-fg">{group.project}</h4>
                         {group.tech.map((tech) => (
                           <Tag key={tech}>{tech}</Tag>
                         ))}
                       </div>
-                      <ul className="mt-2 space-y-2 text-sm leading-relaxed text-muted">
+                      <ul className="mt-2 space-y-2 text-base leading-relaxed text-muted">
                         {group.bullets.map((b) => (
                           <li key={b} className="flex gap-3">
                             <span aria-hidden="true" className="mt-[9px] h-px w-3 shrink-0 bg-faint" />
@@ -94,12 +94,27 @@ export default function ExperienceSection() {
               key={item.id}
               className="rounded-lg border border-border bg-surface p-6"
             >
-              <p className="font-[family-name:var(--font-mono)] text-xs tracking-wider text-faint">
-                {item.period}
-              </p>
-              <p className="mt-2 text-fg">{te(`items.${item.id}.degree`)}</p>
-              <p className="mt-0.5 text-sm text-muted">{item.school}</p>
-              <p className="mt-3 text-sm leading-relaxed text-faint">
+              <div className="flex items-start gap-4">
+                {item.logo && (
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-white p-1.5">
+                    <Image
+                      src={item.logo}
+                      alt=""
+                      width={56}
+                      height={56}
+                      className="h-auto max-h-full w-auto max-w-full object-contain"
+                    />
+                  </div>
+                )}
+                <div>
+                  <p className="font-[family-name:var(--font-mono)] text-base tracking-wider text-faint">
+                    {item.period}
+                  </p>
+                  <p className="mt-2 text-fg">{te(`items.${item.id}.degree`)}</p>
+                  <p className="mt-0.5 text-base text-muted">{te(`items.${item.id}.school`)}</p>
+                </div>
+              </div>
+              <p className="mt-3 text-base leading-relaxed text-faint">
                 {te(`items.${item.id}.detail`)}
               </p>
             </div>

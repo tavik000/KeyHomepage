@@ -205,7 +205,7 @@ export const independentProjects: IndependentProject[] = [
     id: "hero-race",
     image: "/images/projects/hero-race.png",
     previewVideo: "/videos/hero-race-preview.mp4",
-    tags: ["Warcraft III", "JASS", "Gameplay Design", "Scripting", "Multiplayer"],
+    tags: ["Warcraft III", "JASS", "Gameplay Design", "Multiplayer"],
     link: "https://github.com/tavik000/HeroRace",
     detailHref: "/hero-race",
     year: "2011 — 2026"

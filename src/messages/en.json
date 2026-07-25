@@ -185,6 +185,7 @@
     "present": "Present",
     "items": {
       "blast-edge": {
+        "company": "Blast Edge Games",
         "period": "Jul 2024 —",
         "position": "Gameplay Programmer (UE5)",
         "groups": [
@@ -200,6 +201,7 @@
         ]
       },
       "freelance": {
+        "company": "Freelance",
         "period": "Mar 2023 — Jun 2024",
         "position": "Freelance Game Developer",
         "groups": [
@@ -229,6 +231,7 @@
         ]
       },
       "ember": {
+        "company": "Realm of Alters (Ember Entertainment)",
         "period": "Mar 2022 — Feb 2023",
         "position": "Gameplay Programmer (Unity)",
         "groups": [
@@ -244,6 +247,7 @@
         ]
       },
       "feeling-game": {
+        "company": "Feeling Game Company",
         "period": "Jun 2020 — Feb 2022",
         "position": "Gameplay Programmer (Unity)",
         "groups": [
@@ -266,10 +270,12 @@
     "title": "Education",
     "items": {
       "polyu": {
+        "school": "The Hong Kong Polytechnic University",
         "degree": "MSc in Information Technology",
         "detail": "Specialized in AI and machine learning; coursework in game design and game development."
       },
       "chuhai": {
+        "school": "Chu Hai College of Higher Education",
         "degree": "BSc (Hons) in Computer Science",
         "detail": "Algorithms, data structures, OOP, databases, and software engineering."
       }
@@ -354,7 +360,7 @@
       },
       "hook-racer": {
         "title": "Hook Racer",
-        "desc": "Grappling-hook multiplayer racing action. 7-week solo project — all gameplay, pixel art, and music. Award winner at the 24th UE5ぷちコン.",
+        "desc": "Grappling-hook multiplayer racing action. 7-week solo project. Award winner at the 24th UE5ぷちコン.",
         "award": { "name": "Crowd Excitement Award", "event": "24th UE5 Petit Con" }
       },
       "shadow-bubble": {
@@ -469,8 +475,8 @@
       "role": { "label": "Role", "lines": ["Solo Gameplay Programmer", "Game Designer"] },
       "engine": { "label": "Engine", "value": "Warcraft III World Editor" },
       "language": { "label": "Language", "value": "JASS" },
-      "development": { "label": "Development", "value": "2011 – Present" },
-      "focus": { "label": "Focus", "tags": ["Gameplay Systems", "Multiplayer", "Game Design", "AI", "Live Balancing"] }
+      "development": { "label": "Period", "value": "2011 – Present" },
+      "focus": { "label": "Technologies", "tags": ["Gameplay Systems", "Multiplayer", "Game Design", "AI", "Live Balancing"] }
     },
     "overview": {
       "kicker": "Project Overview",

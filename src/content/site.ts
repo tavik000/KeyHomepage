@@ -12,7 +12,7 @@ export const site = {
   gameDesignDb:
     "https://docs.google.com/spreadsheets/d/1zbtpIVIXUZrLG2tm4hGZZb-B6TtdhewR2uTw475d0kQ/edit?usp=sharing",
   /** Toggle off to hide every resume link/section site-wide without deleting the content. */
-  showResume: false,
+  showResume: true,
   resumeEn: "/assets/CV_Key_Eng_Jul2026.pdf",
   resumeJa: "/assets/Key_GameEngineer_Rirekisho_Combined_Homepage_Jul2026.pdf",
   ogImage: "/images/projects/hook-racer.jpg"

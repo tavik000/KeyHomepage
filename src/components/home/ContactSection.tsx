@@ -27,7 +27,7 @@ export default function ContactSection() {
         >
           {site.email}
         </a>
-        <p className="mt-4 flex items-center gap-1.5 text-sm text-muted">
+        <p className="mt-4 flex items-center gap-1.5 text-base text-muted">
           <svg
             aria-hidden="true"
             width="14"
@@ -50,7 +50,7 @@ export default function ContactSection() {
             key={link.label}
             href={link.href}
             {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            className="rounded border border-border px-5 py-2.5 text-sm text-fg transition-colors hover:border-faint"
+            className="rounded border border-border px-5 py-2.5 text-base text-fg transition-colors hover:border-faint"
           >
             {link.label}
             {link.external && <span aria-hidden="true"> ↗</span>}
@@ -69,7 +69,7 @@ export default function ContactSection() {
               className="group rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent/50"
             >
               <p className="text-fg group-hover:text-accent-soft">{tr("en")}</p>
-              <p className="mt-2 text-xs text-faint">PDF ↓</p>
+              <p className="mt-2 text-base text-faint">PDF ↓</p>
             </a>
             <a
               href={site.resumeJa}
@@ -78,7 +78,7 @@ export default function ContactSection() {
               className="group rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent/50"
             >
               <p className="text-fg group-hover:text-accent-soft">{tr("ja")}</p>
-              <p className="mt-2 text-xs text-faint">PDF ↓</p>
+              <p className="mt-2 text-base text-faint">PDF ↓</p>
             </a>
           </div>
         </Reveal>

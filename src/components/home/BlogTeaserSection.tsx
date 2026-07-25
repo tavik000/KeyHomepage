@@ -80,10 +80,10 @@ export default function BlogTeaserSection() {
               <h3 className="font-[family-name:var(--font-display)] text-xl text-fg transition-colors group-hover:text-accent-soft md:text-2xl">
                 {t("title")}
               </h3>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
                 {t("lead")}
               </p>
-              <span className="mt-6 inline-flex items-center gap-2 text-sm text-accent-soft transition-colors group-hover:text-fg">
+              <span className="mt-6 inline-flex items-center gap-2 text-base text-accent-soft transition-colors group-hover:text-fg">
                 {t("cta")}
                 <span aria-hidden="true">↗</span>
               </span>
