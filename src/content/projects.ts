@@ -64,7 +64,7 @@ export const featuredProjects: FeaturedProject[] = [
     platforms: ["Steam", "PlayStation 5", "Nintendo Switch", "iOS", "Mac"],
     engine: "Unreal Engine 5",
     languages: ["C++"],
-    technologies: ["Unreal Engine 5", "C++", "Perforce"],
+    technologies: ["Unreal Engine 5", "C++", "Perforce", "Paper2D", "PaperZD"],
     teamSize: "50",
     links: [
       {
