@@ -14,6 +14,5 @@ export const site = {
   /** Toggle off to hide every resume link/section site-wide without deleting the content. */
   showResume: true,
   resumeEn: "/assets/CV_Key_Eng_Jul2026.pdf",
-  resumeJa: "/assets/Key_GameEngineer_Rirekisho_Combined_Homepage_Jul2026.pdf",
-  ogImage: "/images/projects/hook-racer.jpg"
+  resumeJa: "/assets/Key_GameEngineer_Rirekisho_Combined_Homepage_Jul2026.pdf"
 };

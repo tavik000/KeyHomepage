@@ -62,13 +62,14 @@ export async function generateMetadata({
       siteName: "Key — Gameplay Programmer",
       title: t("title"),
       description: t("description"),
-      locale: locale.replace("-", "_"),
-      images: [{ url: site.ogImage, width: 1200, height: 675 }]
+      locale: locale.replace("-", "_")
+      // og:image is supplied by opengraph-image.tsx (Next.js file convention)
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description")
+      // twitter:image falls back to opengraph-image.tsx automatically
     },
     robots: { index: true, follow: true }
   };
