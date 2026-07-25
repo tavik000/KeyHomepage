@@ -225,7 +225,7 @@
             "project": "Doki Doki House (iOS / Steam)",
             "tech": ["Python", "Ren'Py"],
             "bullets": [
-              "Built a pipeline tool converting Excel scripts into Ren'Py code."
+              "Built a narrative pipeline tool converting Excel scripts into Ren'Py code, so designers could write and build the entire branching story without any programming."
             ]
           }
         ]
@@ -374,7 +374,7 @@
       },
       "path-of-osu": {
         "title": "The Path of Osu",
-        "desc": "A third-person prototype blending Sekiro-style sword combat with gun shooting. Solo-developed over 7 weeks."
+        "desc": "Action-adventure about collecting 「おす (osu)」 puns — push switches, take down foes, solve puzzles — via TPS exploration and Sekiro-style parry/posture combat with guns."
       },
       "blite": {
         "title": "Blite",
@@ -395,7 +395,7 @@
       },
       "doki-doki-house": {
         "title": "Doki Doki House",
-        "desc": "A romance visual novel developed with Ren'Py, where I built Python development tools and implemented branching narrative systems."
+        "desc": "A romance visual novel built with Ren'Py. I built a narrative pipeline that converts Excel scripts into Ren'Py code, letting designers write and build the entire branching story without programming."
       },
       "hero-race": {
         "title": "Hero Race (Warcraft III)",

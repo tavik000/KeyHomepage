@@ -28,7 +28,9 @@ export default function FeaturedProjects() {
                 href={storeHref ?? `/projects/${project.slug}`}
                 external={Boolean(storeHref)}
                 ariaLabel={tp(`${project.slug}.title`)}
-                image={project.image}
+                image={project.heroImage ?? project.image}
+                objectPosition={project.heroObjectPosition}
+                fit={project.heroFit}
                 appIcon={project.appIcon}
                 previewVideo={project.previewVideo}
                 priority={i === 0}

@@ -14,7 +14,7 @@ export default function SectionHeading({ kicker, title, description }: SectionHe
         {title}
       </h2>
       {description && (
-        <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted">
+        <p className="mt-5 max-w-2xl whitespace-pre-line text-base leading-relaxed text-muted">
           {description}
         </p>
       )}

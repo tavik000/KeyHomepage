@@ -229,7 +229,7 @@
             "project": "Doki Doki House（iOS / Steam）",
             "tech": ["Python", "Ren'Py"],
             "bullets": [
-              "ExcelスクリプトをRen'Pyコードへ変換するパイプラインツールを開発。"
+              "ExcelスクリプトをRen'Pyコードへ変換するナラティブパイプラインツールを開発し、プログラミングなしでデザイナーが分岐シナリオ全体を執筆・制作できるようにしました。"
             ]
           }
         ]
@@ -355,7 +355,7 @@
   "jams": {
     "kicker": "Prototypes & Jams",
     "title": "ゲームジャム作品",
-    "description": "数日から数週間で設計・実装・完成まで行った、ソロまたは少人数チームによるプロトタイプです。うち3作品は、国際的なゲームジャムやコンテストで受賞しています。",
+    "description": "数日から数週間で設計・実装・完成まで行った、ソロまたは少人数チームによるプロトタイプです。うち3作品は、ゲームジャムやコンテストで受賞しています。",
     "source": "ソースコード",
     "items": {
       "danmaku": {
@@ -370,7 +370,7 @@
       "shadow-bubble": {
         "title": "Shadow Bubble: Hide and Seek Chaos",
         "desc": "影の中に隠れることで透明になれる、非対称マルチプレイヤーのかくれんぼゲーム。7日間で制作。",
-        "award": { "name": "Audience Choice賞・Best XR Game賞", "event": "GGJ香港2025" }
+        "award": { "name": "Audience Choice ・ Best XR Game", "event": "GGJ Hong Kong 2025" }
       },
       "teacup": {
         "title": "Nesmy Land: Teacup",
@@ -378,19 +378,19 @@
       },
       "path-of-osu": {
         "title": "The Path of Osu",
-        "desc": "隻狼のような剣戟アクションとガンシューティングを組み合わせた三人称プロトタイプ。7週間ソロ開発。"
+        "desc": "「おす」の言葉遊びを集めるアクションアドベンチャー——スイッチを「押す」、敵をた「おす」、謎を解く。隻狼風のパリィ・体幹システムとTPS射撃を、三人称探索とパズルで融合した戦闘プロトタイプ。"
       },
       "blite": {
         "title": "Blite",
         "desc": "白と黒のプラットフォームが重なると地形が変化し、ゴールへの道が現れたり消えたりするパズルプラットフォーマー。2日間で制作。",
-        "award": { "name": "Best Original Game賞", "event": "GGJ香港2022" }
+        "award": { "name": "Best Original Game", "event": "GGJ Hong Kong 2022" }
       }
     }
   },
   "independent": {
     "kicker": "Independent Work",
     "title": "個人プロジェクト",
-    "description": "業務範囲を超えて、ゲームプレイのアイデアやツール、技術的な実験を探求するために個人で開発したプロジェクトです。",
+    "description": "個人で開発したインディーゲームや、フリーランスとして手がけたゲーム開発プロジェクトです。商業開発の枠を超えて、ゲームプレイシステムやデザインのアイデア、技術的な実験を探求しています。",
     "source": "ソースコード",
     "items": {
       "guards": {
@@ -399,7 +399,7 @@
       },
       "doki-doki-house": {
         "title": "Doki Doki House（心跳度假屋）",
-        "desc": "Ren'Pyで開発された恋愛ビジュアルノベル。Python製の開発ツールを構築し、分岐するナラティブシステムを実装しました。"
+        "desc": "Ren'Pyで開発された恋愛ビジュアルノベル。Excelの原稿をRen'Pyコードへ変換するナラティブパイプラインを構築し、プログラミングなしでデザイナーが分岐シナリオ全体を執筆・制作できるようにしました。"
       },
       "hero-race": {
         "title": "Hero Race（Warcraft III）",
@@ -434,7 +434,7 @@
   "contact": {
     "kicker": "Contact",
     "title": "お問い合わせ",
-    "lead": "ゲームエンジニアとしての機会や、ゲーム開発に関するご相談を歓迎します。メールでのご連絡が最も確実です。",
+    "lead": "ゲームエンジニアとしての採用や業務委託、ゲーム開発に関するご相談など、お気軽にお問い合わせください。\n\nご連絡はメールにてお願いいたします。",
     "email": "メール",
     "github": "GitHub",
     "linkedin": "LinkedIn",

@@ -10,6 +10,14 @@ interface FeaturedHeroMediaProps {
   external: boolean;
   ariaLabel: string;
   image: string;
+  /** CSS object-position for the key art, e.g. "center 20%" to keep a subject
+   *  near the top in frame when the banner crops a landscape image's edges. */
+  objectPosition?: string;
+  /** "cover" (default) fills the banner, cropping edges as needed. "contain"
+   *  shrinks the art to fit with nothing cropped, filling the leftover edge
+   *  with a blurred copy of itself — for art whose important content (e.g. a
+   *  tall boss silhouette) can't survive cropping in either direction. */
+  fit?: "cover" | "contain";
   appIcon?: string;
   previewVideo?: string;
   priority: boolean;
@@ -35,6 +43,8 @@ export default function FeaturedHeroMedia({
   external,
   ariaLabel,
   image,
+  objectPosition,
+  fit = "cover",
   appIcon,
   previewVideo,
   priority,
@@ -79,14 +89,38 @@ export default function FeaturedHeroMedia({
   };
 
   const content = (
-    <div className="relative aspect-[16/10] overflow-hidden sm:aspect-[2/1] lg:aspect-[5/2]">
+    <div className="relative aspect-[32/15] overflow-hidden sm:aspect-[8/3] lg:aspect-[10/3]">
+      {/* Full-bleed cover crop by default. Portrait/product-shot key art (e.g.
+          HYKE) should pass a pre-composited `heroImage` (see content/projects.ts)
+          — art at full scale over a color-matched blurred extension of itself,
+          baked to this banner's ratio — so cover shows it edge-to-edge with no
+          runtime letterboxing. Landscape key art crops normally; use
+          `objectPosition` to keep the important subject in frame. When neither
+          direction can crop safely (e.g. a tall subject that spans the full
+          height with no headroom), pass `fit="contain"` to shrink the art
+          instead, backed by a blurred copy of itself so the leftover edge still
+          reads as continuous artwork rather than a flat bar. */}
+      {fit === "contain" && (
+        <Image
+          src={image}
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="100vw"
+          className={`scale-110 object-cover blur-3xl brightness-[0.45] saturate-[1.15] transition-opacity duration-[400ms] ${
+            previewing ? "opacity-0" : "opacity-100"
+          }`}
+        />
+      )}
       <Image
         src={image}
         alt={title}
         fill
         sizes="100vw"
         priority={priority}
-        className={`object-cover transition-opacity duration-[400ms] ${
+        quality={90}
+        style={objectPosition ? { objectPosition } : undefined}
+        className={`${fit === "contain" ? "object-contain" : "object-cover"} transition-opacity duration-[400ms] ${
           previewing ? "opacity-0" : "opacity-100"
         } group-hover:scale-[1.04] transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)]`}
       />
@@ -123,7 +157,7 @@ export default function FeaturedHeroMedia({
       )}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-bg via-bg/5 to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-bg/90 via-bg/25 via-40% to-transparent"
       />
       <div className="absolute inset-x-0 bottom-0 mx-auto flex w-full max-w-6xl items-end gap-4 px-6 pb-8 md:pb-12">
         {appIcon && (

@@ -192,9 +192,9 @@ export default function JamCard({ project, title, desc, award, sourceLabel }: Ja
             {project.year}
           </span>
         </div>
-        <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted">{desc}</p>
-        <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-4">
-          <div className="flex flex-wrap gap-1.5">
+        <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-muted">{desc}</p>
+        <div className="mt-auto flex items-end justify-between gap-2 pt-4">
+          <div className="flex min-w-0 flex-1 flex-wrap gap-1.5">
             {project.tags.map((tag) => (
               <Tag key={tag}>{tag}</Tag>
             ))}

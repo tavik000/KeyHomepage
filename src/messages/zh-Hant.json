@@ -225,7 +225,7 @@
             "project": "Doki Doki House（iOS / Steam）",
             "tech": ["Python", "Ren'Py"],
             "bullets": [
-              "開發將Excel腳本轉換為Ren'Py程式碼的工具。"
+              "開發將Excel腳本轉換為Ren'Py程式碼的敘事管線工具，讓企劃無需寫程式即可獨立撰寫並製作整部視覺小說的分支劇情。"
             ]
           }
         ]
@@ -374,7 +374,7 @@
       },
       "path-of-osu": {
         "title": "The Path of Osu",
-        "desc": "結合隻狼式劍戟戰鬥與槍械射擊的第三人稱原型。獨自花費7週開發。"
+        "desc": "一款圍繞「押す（Osu）」諧音玩出各種意義的收詞動作冒險——按開關、推敵人、解謎題。以第三人稱探索與解謎為核心，並融入隻狼式「架勢／彈反」戰鬥系統與TPS射擊的戰鬥原型。"
       },
       "blite": {
         "title": "Blite",
@@ -395,7 +395,7 @@
       },
       "doki-doki-house": {
         "title": "Doki Doki House（心跳度假屋）",
-        "desc": "一款以Ren'Py開發的戀愛視覺小說，我建置了Python開發工具，並實作了分支敘事系統。"
+        "desc": "一款以Ren'Py開發的戀愛視覺小說。我建置了將Excel腳本轉換為Ren'Py程式碼的敘事管線，讓企劃無需寫程式即可獨立撰寫並製作整部視覺小說的分支劇情。"
       },
       "hero-race": {
         "title": "Hero Race（魔獸爭霸III）",

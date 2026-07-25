@@ -11,6 +11,18 @@ export interface ProjectLink {
 export interface FeaturedProject {
   slug: string;
   image: string;
+  /** Homepage hero banner crop, pre-fitted to the banner's aspect ratio when
+   *  `image` needs different framing (e.g. a mostly-white product shot that
+   *  would otherwise show as a small centered box). Falls back to `image`. */
+  heroImage?: string;
+  /** CSS object-position for the homepage hero banner crop, e.g. "center 85%"
+   *  to keep a subject near the bottom of a landscape image in frame when the
+   *  banner's aspect ratio is wider than the source and crops top/bottom. */
+  heroObjectPosition?: string;
+  /** "cover" (default) crops the hero banner to fill it. "contain" shrinks the
+   *  art to fit uncropped instead — for key art whose subject can't survive
+   *  cropping from either edge. */
+  heroFit?: "cover" | "contain";
   /** Square app icon shown as a badge on the hero banner for mobile releases. */
   appIcon?: string;
   /** YouTube video id for an embedded gameplay video (omit for confidential titles) */
@@ -47,6 +59,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     slug: "hyke",
     image: "/images/projects/hyke.jpg",
+    heroImage: "/images/projects/hyke-hero.jpg",
     company: "Blast Edge Games",
     platforms: ["Steam", "PlayStation 5", "Nintendo Switch", "iOS", "Mac"],
     engine: "Unreal Engine 5",
@@ -64,6 +77,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     slug: "apeiron",
     image: "/images/projects/apeiron.jpg",
+    heroObjectPosition: "center bottom",
     previewVideo: "/videos/apeiron-preview.mp4",
     company: "Realm of Alters (Ember Entertainment)",
     platforms: ["Steam", "Epic Games Store", "iOS", "Android"],
@@ -82,6 +96,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     slug: "every-hero",
     image: "/images/projects/every-hero.jpg",
+    heroImage: "/images/projects/every-hero-hero.png",
     appIcon: "/images/projects/every-hero-icon.png",
     previewVideo: "/videos/every-hero-preview.mp4",
     company: "Feeling Game Company",
@@ -139,7 +154,7 @@ export const jamProjects: JamProject[] = [
     previewVideo: "/videos/shadow-bubble-preview.mp4",
     year: "2025",
     engine: "Unreal Engine 5",
-    tags: ["UE5", "C++", "Multiplayer"],
+    tags: ["UE5", "C++", "Multiplayer", "Online Subsystem"],
     link: "https://www.youtube.com/watch?v=U_8e_a2troo",
     sourceLink: "https://github.com/tavik000/Paw",
     awardLink:
