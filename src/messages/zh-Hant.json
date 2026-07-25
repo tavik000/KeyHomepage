@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Key — 遊戲程式設計師 · Unreal Engine 5 / C++",
-    "description": "現居東京的遊戲程式設計師（Gameplay Programmer），擁有5年以上PC、主機及手機遊戲開發經驗，專精Unreal Engine 5 / C++與Unity / C#。現正開發PS5 / Xbox Series X|S / Steam平台的未公開AAA動作RPG。"
+    "description": "現居東京的遊戲程式設計師（Gameplay Programmer），擁有5年以上PC、主機及手機遊戲開發經驗，專精Unreal Engine 5 / C++與Unity / C#。曾於Blast Edge Games參與PS5 / Xbox Series X|S / Steam平台動作RPG《Beast of Reincarnation》的開發。"
   },
   "nav": {
     "home": "首頁",
@@ -51,31 +51,23 @@
     }
   },
   "projects": {
-    "unannounced-arpg": {
-      "title": "未公開AAA動作RPG",
-      "period": "2024年7月 —",
-      "tagline": "動作RPG",
-      "role": "遊戲程式設計師",
-      "genre": "動作RPG",
-      "overview": "Blast Edge Games開發中的未公開AAA動作RPG，目標平台為Steam、PlayStation 5與Xbox Series X|S。我以Unreal Engine 5與C++負責遊戲事件、過場演出與UI相關的遊戲玩法實作。作品名稱與細節受NDA保密。",
-      "confidentialNote": "本作尚未公開，圖片僅為示意，內容僅限於履歷中已載明的範圍。",
+    "beast-of-reincarnation": {
+      "title": "Beast of Reincarnation",
+      "period": "2024年10月 — 2026年6月",
+      "tagline": "動作RPG / 砍殺",
+      "role": "事件與UI程式設計師",
+      "genre": "動作RPG / 砍殺",
+      "overview": "《Beast of Reincarnation》是Blast Edge Games製作的動作RPG / 砍殺遊戲，平台為Steam、PlayStation 5與Xbox Series X|S。身為事件與UI程式設計師，我以Unreal Engine 5與C++負責過場事件流程與互動物件的實作。",
       "contributions": [
-        "開發並打磨遊戲事件、過場演出與互動式遊戲系統。",
-        "實作UI功能並修正遊戲相關錯誤。",
-        "改善角色行為、動畫與鏡頭表現。",
-        "實作並調校音效、環境特效與互動物件。",
-        "處理卡關問題、碰撞問題與遊戲測試回饋。"
+        "實作UI功能並修正相關錯誤。",
+        "調整事件演出與運鏡 — LookAt、景深(DOF)、鏡頭運動、節奏與即時事件應對。",
+        "修正事件相關問題 — 卡關(進行不能)、重生、碰撞、閘門/快門、探索目標。",
+        "調整角色行為 — 懸浮・卡地修正、動作、對嘴、視線控制。",
+        "實作並調校音效 — BGM、環境音、機械語音、通訊雜訊及其他音效。",
+        "實作機關與互動物件 — 纜車、燭台等演出與行為。",
+        "處理遊玩測試回饋 — 演出・節奏改善、台詞調整、緊急錯誤修正。"
       ],
-      "challenges": [
-        {
-          "challenge": "過場演出與互動遊戲之間必須順暢交接操控權，且不能破壞玩家狀態。",
-          "solution": "實作並強化演出與玩家操控之間的事件流程，修正遊戲測試中發現的狀態轉換邊界情況。"
-        },
-        {
-          "challenge": "在廣大且高密度的遊戲世界中，遊戲測試回報了大量卡關與碰撞問題。",
-          "solution": "系統性重現問題報告，從遊戲邏輯與碰撞程式碼的根源修正，並透過測試回饋循環驗證修正結果。"
-        }
-      ]
+      "challenges": []
     },
     "hyke": {
       "title": "HYKE: Northern Light(s)",
@@ -189,6 +181,15 @@
         "period": "2024年7月 —",
         "position": "遊戲程式設計師（UE5）",
         "groups": [
+          {
+            "project": "Beast of Reincarnation（Steam / PS5 / Xbox Series X|S）",
+            "tech": ["UE5", "C++"],
+            "bullets": [
+              "負責事件與UI程式設計 — 演出、運鏡與互動物件的實作。",
+              "修正遊戲測試中發現的事件、角色與進度相關問題。",
+              "實作並調校音效、機關與互動物件。"
+            ]
+          },
           {
             "project": "HYKE: Northern Light(s)（Steam / PS5 / Switch / iOS / Mac）",
             "tech": ["UE5", "C++"],

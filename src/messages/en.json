@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Key — Gameplay Programmer · Unreal Engine 5 / C++",
-    "description": "Gameplay programmer in Tokyo with 5+ years shipping PC, console, and mobile games in Unreal Engine 5 / C++ and Unity / C#. Currently developing an unannounced AAA action RPG for PS5, Xbox Series X|S, and Steam."
+    "description": "Gameplay programmer in Tokyo with 5+ years shipping PC, console, and mobile games in Unreal Engine 5 / C++ and Unity / C#. Recently worked on Beast of Reincarnation, an action RPG for PS5, Xbox Series X|S, and Steam, at Blast Edge Games."
   },
   "nav": {
     "home": "Home",
@@ -51,31 +51,23 @@
     }
   },
   "projects": {
-    "unannounced-arpg": {
-      "title": "Unannounced AAA Action RPG",
-      "period": "Jul 2024 —",
-      "tagline": "Action RPG",
-      "role": "Gameplay Programmer",
-      "genre": "Action RPG",
-      "overview": "An unannounced AAA action RPG in development at Blast Edge Games for Steam, PlayStation 5, and Xbox Series X|S. I work across the event, cinematic, and UI layers of the game in Unreal Engine 5 and C++. Title and details are under NDA.",
-      "confidentialNote": "This title has not been announced. Artwork is a placeholder and project details are limited to what my resume already states.",
+    "beast-of-reincarnation": {
+      "title": "Beast of Reincarnation",
+      "period": "Oct 2024 — Jun 2026",
+      "tagline": "Action RPG / Hack and Slash",
+      "role": "Event & UI Programmer",
+      "genre": "Action RPG / Hack and Slash",
+      "overview": "Beast of Reincarnation is an action RPG / hack-and-slash title from Blast Edge Games for Steam, PlayStation 5, and Xbox Series X|S. As the event and UI programmer, I worked on cinematic event flows and interactive objects using Unreal Engine 5 and C++.",
       "contributions": [
-        "Developed and polished gameplay events, cinematic sequences, and interactive gameplay systems.",
-        "Implemented UI features and fixed gameplay-related bugs.",
-        "Improved character behaviors, animations, and camera presentation.",
-        "Implemented and tuned audio, environmental effects, and interactive objects.",
-        "Addressed progression blockers, collision issues, and playtest feedback."
+        "Implemented UI features and fixed related bugs.",
+        "Tuned event staging and direction — LookAt targeting, depth of field, camera work, pacing, and real-time event handling.",
+        "Fixed event-related bugs — progression blockers, respawn issues, collision, shutters/doors, and exploration objectives.",
+        "Adjusted character behavior — floating/clipping fixes, motion, lip-sync, and gaze/eye-line control.",
+        "Implemented and tuned audio — BGM, environmental sound, mechanical voice lines, communication noise, and other SFX.",
+        "Implemented gimmicks and interactive objects — staging and behavior for elements like ropeways and candlesticks.",
+        "Addressed playtest feedback — staging/pacing improvements, dialogue adjustments, and urgent bug fixes."
       ],
-      "challenges": [
-        {
-          "challenge": "Cinematic sequences must hand control back and forth with interactive gameplay without ever stranding the player.",
-          "solution": "Implemented and hardened event flows that transition between cinematic presentation and player control, fixing state edge cases surfaced by playtests."
-        },
-        {
-          "challenge": "Playtests surfaced progression blockers and collision issues across a large, dense game world.",
-          "solution": "Reproduced reports systematically, fixed root causes in gameplay and collision code, and verified fixes against playtest feedback loops."
-        }
-      ]
+      "challenges": []
     },
     "hyke": {
       "title": "HYKE: Northern Light(s)",
@@ -189,6 +181,15 @@
         "period": "Jul 2024 —",
         "position": "Gameplay Programmer (UE5)",
         "groups": [
+          {
+            "project": "Beast of Reincarnation (Steam / PS5 / Xbox Series X|S)",
+            "tech": ["UE5", "C++"],
+            "bullets": [
+              "Implemented event and UI programming — cinematic staging, camera work, and interactive objects.",
+              "Fixed event, character, and progression bugs surfaced by playtesting.",
+              "Implemented and tuned audio, gimmicks, and interactive objects."
+            ]
+          },
           {
             "project": "HYKE: Northern Light(s) (Steam / PS5 / Switch / iOS / Mac)",
             "tech": ["UE5", "C++"],
