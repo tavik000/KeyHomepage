@@ -58,7 +58,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav aria-label="Main" className="hidden items-center gap-8 md:flex">
+        <nav aria-label="Main" className="hidden items-center gap-8 lg:flex">
           {SECTION_LINKS.map(({ key, href, external }) => {
             const className =
               key === "projects"
@@ -99,7 +99,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile controls */}
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 lg:hidden">
           <LanguageSwitcher />
           <button
             type="button"
@@ -130,7 +130,7 @@ export default function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="overflow-hidden border-b border-border bg-bg/95 backdrop-blur-md md:hidden"
+            className="overflow-hidden border-b border-border bg-bg/95 backdrop-blur-md lg:hidden"
           >
             <ul className="space-y-1 px-6 py-4">
               {SECTION_LINKS.map(({ key, href, external }) => (
