@@ -1,10 +1,9 @@
-# Key Zhao — Portfolio
+# Key — Portfolio
 
-Professional portfolio for a Gameplay Programmer (Unreal Engine 5 / C++), targeting
-AAA game studios. Built with Next.js 15 (App Router), TypeScript, Tailwind CSS v4,
-Framer Motion, and next-intl.
+Professional portfolio for a Gameplay Programmer (Unreal Engine 5 / C++). Built with
+Next.js 15 (App Router), TypeScript, Tailwind CSS v4, Framer Motion, and next-intl.
 
-Live: https://master.d2qyb13wnib5il.amplifyapp.com/
+Live: https://www.keyprogrammer.dev/
 
 ## Stack
 
