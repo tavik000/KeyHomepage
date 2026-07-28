@@ -6,7 +6,9 @@ export const site = {
   email: "tavik002@gmail.com",
   github: "https://github.com/tavik000",
   /** Add your LinkedIn profile URL to show the LinkedIn contact entry. */
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/feed/",
+  /** Add your X (Twitter) profile URL to show the X contact entry. */
+  twitter: "https://x.com/kiikey4",
   linktree: "https://linktr.ee/keyzhao",
   blogExternal: "https://www.reactkeyblog.com/",
   gameDesignDb:

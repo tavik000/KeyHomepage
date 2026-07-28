@@ -13,6 +13,9 @@ export default function ContactSection() {
     ...(site.linkedin
       ? [{ label: t("linkedin"), href: site.linkedin, external: true }]
       : []),
+    ...(site.twitter
+      ? [{ label: t("twitter"), href: site.twitter, external: true }]
+      : []),
     { label: t("blog"), href: site.blogExternal, external: true }
   ];
 
