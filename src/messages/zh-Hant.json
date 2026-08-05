@@ -54,18 +54,18 @@
     "beast-of-reincarnation": {
       "title": "Beast of Reincarnation",
       "period": "2024年10月 — 2026年6月",
-      "tagline": "動作RPG / 砍殺",
+      "tagline": "第三人稱ARPG",
       "role": "事件與UI程式設計師",
-      "genre": "動作RPG / 砍殺",
-      "overview": "《Beast of Reincarnation》是Blast Edge Games製作的動作RPG / 砍殺遊戲，平台為Steam、PlayStation 5與Xbox Series X|S。身為事件與UI程式設計師，我以Unreal Engine 5與C++負責過場事件流程與互動物件的實作。",
+      "genre": "ARPG / 第三人稱視角",
+      "overview": "《Beast of Reincarnation》是Blast Edge Games部分受託開發的第三人稱ARPG，平台為Steam、PlayStation 5與Xbox Series X|S。身為事件與UI程式設計師，我以Unreal Engine 5與C++負責遊戲事件、UI、音效與互動機關等功能的實作與調校。",
       "contributions": [
-        "實作UI功能並修正相關錯誤。",
-        "調整事件演出與運鏡 — LookAt、景深(DOF)、鏡頭運動、節奏與即時事件應對。",
-        "修正事件相關問題 — 卡關(進行不能)、重生、碰撞、閘門/快門、探索目標。",
-        "調整角色行為 — 懸浮・卡地修正、動作、對嘴、視線控制。",
-        "實作並調校音效 — BGM、環境音、機械語音、通訊雜訊及其他音效。",
-        "實作機關與互動物件 — 纜車、燭台等演出與行為。",
-        "處理遊玩測試回饋 — 演出・節奏改善、台詞調整、緊急錯誤修正。"
+        "使用Unreal Engine 5實作事件、UI、機關等遊戲玩法功能。",
+        "實作並調校事件演出功能 — LookAt、景深(DOF)、鏡頭演出、角色行為。",
+        "實作並調校互動機關，如纜車、燭台等。",
+        "修正並調整字幕、在地化文字鍵、標記等UI相關功能。",
+        "實作並調校音效整合功能 — BGM、環境音、機械語音、音效(SE)。",
+        "調查並修正影響遊戲進行的問題 — 卡關、重生、碰撞、探索目標。",
+        "依據遊玩測試回饋，調整事件演出與遊戲節奏。"
       ],
       "challenges": []
     },

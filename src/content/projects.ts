@@ -52,14 +52,14 @@ export const featuredProjects: FeaturedProject[] = [
     engine: "Unreal Engine 5",
     languages: ["C++"],
     technologies: ["Unreal Engine 5", "C++", "Hexa", "Perforce"],
+    teamSize: "100+",
     links: [
       {
         type: "steam",
         href: "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/"
       }
     ],
-    gallery: [],
-    hidden: true
+    gallery: []
   },
   {
     slug: "hyke",

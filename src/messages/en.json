@@ -54,18 +54,18 @@
     "beast-of-reincarnation": {
       "title": "Beast of Reincarnation",
       "period": "Oct 2024 — Jun 2026",
-      "tagline": "Action RPG / Hack and Slash",
+      "tagline": "Third-Person ARPG",
       "role": "Event & UI Programmer",
-      "genre": "Action RPG / Hack and Slash",
-      "overview": "Beast of Reincarnation is an action RPG / hack-and-slash title from Blast Edge Games for Steam, PlayStation 5, and Xbox Series X|S. As the event and UI programmer, I worked on cinematic event flows and interactive objects using Unreal Engine 5 and C++.",
+      "genre": "ARPG / Third-Person",
+      "overview": "Beast of Reincarnation is a third-person ARPG from Blast Edge Games, developed in part under contract, for Steam, PlayStation 5, and Xbox Series X|S. As the event and UI programmer, I worked on gameplay events, UI, sound, and interactive gimmicks using Unreal Engine 5 and C++.",
       "contributions": [
-        "Implemented UI features and fixed related bugs.",
-        "Tuned event staging and direction — LookAt targeting, depth of field, camera work, pacing, and real-time event handling.",
-        "Fixed event-related bugs — progression blockers, respawn issues, collision, shutters/doors, and exploration objectives.",
-        "Adjusted character behavior — floating/clipping fixes, motion, lip-sync, and gaze/eye-line control.",
-        "Implemented and tuned audio — BGM, environmental sound, mechanical voice lines, communication noise, and other SFX.",
-        "Implemented gimmicks and interactive objects — staging and behavior for elements like ropeways and candlesticks.",
-        "Addressed playtest feedback — staging/pacing improvements, dialogue adjustments, and urgent bug fixes."
+        "Implemented gameplay features such as events, UI, and gimmicks using Unreal Engine 5.",
+        "Implemented and tuned event staging features — LookAt, depth of field, camera direction, and character behavior.",
+        "Implemented and tuned interaction gimmicks such as ropeways and candlesticks.",
+        "Fixed and adjusted UI-related features such as subtitles, localization keys, and markers.",
+        "Implemented and tuned sound integration features — BGM, environmental sound, mechanical voice, and SFX.",
+        "Investigated and fixed bugs affecting game progression — softlocks, respawn, collision, and exploration objectives.",
+        "Reflected playtest feedback to adjust event staging and game pacing."
       ],
       "challenges": []
     },
