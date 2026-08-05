@@ -44,16 +44,21 @@ export interface FeaturedProject {
 
 export const featuredProjects: FeaturedProject[] = [
   {
-    slug: "unannounced-arpg",
-    image: "/images/projects/unannounced-arpg.png",
+    slug: "beast-of-reincarnation",
+    image: "/images/projects/beast-of-reincarnation.jpg",
+    heroImage: "/images/projects/beast-of-reincarnation-hero.jpg",
     company: "Blast Edge Games",
     platforms: ["Steam", "PlayStation 5", "Xbox Series X|S"],
     engine: "Unreal Engine 5",
     languages: ["C++"],
     technologies: ["Unreal Engine 5", "C++", "Hexa", "Perforce"],
-    links: [],
+    links: [
+      {
+        type: "steam",
+        href: "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/"
+      }
+    ],
     gallery: [],
-    confidential: true,
     hidden: true
   },
   {

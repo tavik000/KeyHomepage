@@ -183,41 +183,43 @@ export default async function ProjectPage({
         </Reveal>
 
         {/* Challenges & solutions */}
-        <Reveal className="mt-16">
-          <h2 className="meta-label mb-6">{tp("challenges")}</h2>
-          <div className="space-y-6">
-            {challenges.map((item) => (
-              <div
-                key={item.challenge}
-                className="rounded-lg border border-border bg-surface p-6"
-              >
-                <p className="font-[family-name:var(--font-mono)] text-xs uppercase tracking-widest text-accent-soft">
-                  {tp("challenge")}
-                </p>
-                <p className="mt-2 text-lg leading-relaxed text-fg">{item.challenge}</p>
-                <p className="mt-5 font-[family-name:var(--font-mono)] text-xs uppercase tracking-widest text-faint">
-                  {tp("solution")}
-                </p>
-                <p className="mt-2 text-lg leading-relaxed text-muted">{item.solution}</p>
-                {item.links && item.links.length > 0 && (
-                  <div className="mt-4 flex flex-wrap gap-3">
-                    {item.links.map((link) => (
-                      <a
-                        key={link.href}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-base text-accent-soft transition-colors hover:text-fg"
-                      >
-                        {link.label} ↗
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </Reveal>
+        {challenges.length > 0 && (
+          <Reveal className="mt-16">
+            <h2 className="meta-label mb-6">{tp("challenges")}</h2>
+            <div className="space-y-6">
+              {challenges.map((item) => (
+                <div
+                  key={item.challenge}
+                  className="rounded-lg border border-border bg-surface p-6"
+                >
+                  <p className="font-[family-name:var(--font-mono)] text-xs uppercase tracking-widest text-accent-soft">
+                    {tp("challenge")}
+                  </p>
+                  <p className="mt-2 text-lg leading-relaxed text-fg">{item.challenge}</p>
+                  <p className="mt-5 font-[family-name:var(--font-mono)] text-xs uppercase tracking-widest text-faint">
+                    {tp("solution")}
+                  </p>
+                  <p className="mt-2 text-lg leading-relaxed text-muted">{item.solution}</p>
+                  {item.links && item.links.length > 0 && (
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      {item.links.map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-base text-accent-soft transition-colors hover:text-fg"
+                        >
+                          {link.label} ↗
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        )}
 
         {/* Gallery */}
         {project.gallery.length > 0 && (

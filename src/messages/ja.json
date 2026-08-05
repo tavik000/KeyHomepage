@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "趙海騏 — ゲームエンジニア · Unreal Engine 5 / C++",
-    "description": "東京在住のゲームエンジニア。Unreal Engine 5 / C++、Unity / C#でPC・コンソール・モバイルゲームの開発に5年以上従事。現在はPS5 / Xbox Series X|S / Steam向け未発表AAAアクションRPGを開発中。"
+    "description": "東京在住のゲームエンジニア。Unreal Engine 5 / C++、Unity / C#でPC・コンソール・モバイルゲームの開発に5年以上従事。Blast Edge Gamesでは、PS5 / Xbox Series X|S / Steam向けアクションRPG『Beast of Reincarnation』の開発に携わりました。"
   },
   "nav": {
     "home": "ホーム",
@@ -55,31 +55,23 @@
     }
   },
   "projects": {
-    "unannounced-arpg": {
-      "title": "未発表AAAアクションRPG",
-      "period": "2024年7月 —",
-      "tagline": "アクションRPG",
-      "role": "ゲームエンジニア",
-      "genre": "アクションRPG",
-      "overview": "Blast Edge Gamesにて開発中の未発表AAAアクションRPG（Steam / PlayStation 5 / Xbox Series X|S向け）。Unreal Engine 5とC++を用いて、イベント・カットシーン・UIまわりのゲームプレイ実装を担当しています。タイトルおよび詳細はNDAのため非公開です。",
-      "confidentialNote": "本タイトルは未発表のため、画像はプレースホルダーであり、記載内容は履歴書に記載済みの範囲に限定しています。",
+    "beast-of-reincarnation": {
+      "title": "Beast of Reincarnation",
+      "period": "2024年10月 — 2026年6月",
+      "tagline": "アクションRPG / ハック・アンド・スラッシュ",
+      "role": "イベント・UI プログラマー",
+      "genre": "アクションRPG / ハック・アンド・スラッシュ",
+      "overview": "『Beast of Reincarnation』は、Blast Edge Gamesが手がけたアクションRPG / ハック・アンド・スラッシュタイトルで、Steam / PlayStation 5 / Xbox Series X|S向けです。イベント・UI担当プログラマーとして、Unreal Engine 5とC++を用いてカットシーンのイベントフロー、インタラクティブオブジェクトの実装を担当しました。",
       "contributions": [
-        "ゲームプレイイベント、カットシーン、インタラクティブなゲームプレイシステムの実装とポリッシュ。",
-        "UI機能の実装およびゲームプレイ関連バグの修正。",
-        "キャラクター挙動・アニメーション・カメラ演出の改善。",
-        "サウンド、環境エフェクト、インタラクティブオブジェクトの実装と調整。",
-        "進行不能バグ・コリジョン問題・プレイテストのフィードバックへの対応。"
+        "UI実装・不具合修正",
+        "イベント演出調整（LookAt、DOF、カメラ、演出テンポ、リアルタイムイベント対応）",
+        "イベント不具合修正（進行不能、リスポーン、コリジョン、シャッター、探索目標）",
+        "キャラクター調整（浮き・埋まり修正、モーション、口パク、視線制御）",
+        "サウンド実装・調整（BGM、環境音、機械音声、通信ノイズ、その他SE）",
+        "ギミック・インタラクト実装（ロープウェイ、燭台などの演出・挙動）",
+        "プレイテストフィードバック対応（演出・テンポ改善、セリフ調整、緊急不具合修正）"
       ],
-      "challenges": [
-        {
-          "challenge": "カットシーンとインタラクティブなゲームプレイの間で、プレイヤーの状態を壊さずに制御を受け渡す必要がありました。",
-          "solution": "演出とプレイヤー操作を遷移させるイベントフローを実装・堅牢化し、プレイテストで顕在化した状態遷移のエッジケースを修正しました。"
-        },
-        {
-          "challenge": "広大で密度の高いゲーム世界において、プレイテストで進行不能バグやコリジョン問題が多数報告されました。",
-          "solution": "報告を体系的に再現し、ゲームプレイおよびコリジョンコードの根本原因を修正。プレイテストのフィードバックループで修正を検証しました。"
-        }
-      ]
+      "challenges": []
     },
     "hyke": {
       "title": "HYKE: Northern Light(s)",
@@ -193,6 +185,15 @@
         "period": "2024年7月 —",
         "position": "ゲームエンジニア（UE5）",
         "groups": [
+          {
+            "project": "Beast of Reincarnation（Steam / PS5 / Xbox Series X|S）",
+            "tech": ["UE5", "C++"],
+            "bullets": [
+              "イベント・UIプログラミングを担当 — 演出、カメラワーク、インタラクトオブジェクトの実装。",
+              "プレイテストで顕在化したイベント・キャラクター・進行関連の不具合を修正。",
+              "サウンド、ギミック、インタラクトオブジェクトの実装と調整。"
+            ]
+          },
           {
             "project": "HYKE: Northern Light(s)（Steam / PS5 / Switch / iOS / Mac）",
             "tech": ["UE5", "C++"],
