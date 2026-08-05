@@ -57,14 +57,14 @@
       "tagline": "Third-Person ARPG",
       "role": "Event & UI Programmer",
       "genre": "ARPG / Third-Person",
-      "overview": "Beast of Reincarnation is a third-person ARPG from Blast Edge Games, developed in part under contract, for Steam, PlayStation 5, and Xbox Series X|S. As the event and UI programmer, I worked on gameplay events, UI, sound, and interactive gimmicks using Unreal Engine 5 and C++.",
+      "overview": "Beast of Reincarnation is a third-person ARPG released for Steam, PlayStation 5, and Xbox Series X|S. As the Event & UI Programmer at Blast Edge Games, I contributed to gameplay events, UI, sound integration, and interactive gimmicks using Unreal Engine 5 and C++.",
       "contributions": [
-        "Implemented gameplay features such as events, UI, and gimmicks using Unreal Engine 5.",
+        "Implemented gameplay features such as events, UI, and interactive gimmicks in Unreal Engine 5.",
         "Implemented and tuned event staging features — LookAt, depth of field, camera direction, and character behavior.",
-        "Implemented and tuned interaction gimmicks such as ropeways and candlesticks.",
+        "Implemented and tuned interactive gimmicks such as ropeways and candlesticks.",
         "Fixed and adjusted UI-related features such as subtitles, localization keys, and markers.",
         "Implemented and tuned sound integration features — BGM, environmental sound, mechanical voice, and SFX.",
-        "Investigated and fixed bugs affecting game progression — softlocks, respawn, collision, and exploration objectives.",
+        "Investigated and fixed bugs affecting game progression, respawn logic, collision, and exploration objectives.",
         "Reflected playtest feedback to adjust event staging and game pacing."
       ],
       "challenges": []

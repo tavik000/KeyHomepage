@@ -57,7 +57,7 @@
       "tagline": "第三人稱ARPG",
       "role": "事件與UI程式設計師",
       "genre": "ARPG / 第三人稱視角",
-      "overview": "《Beast of Reincarnation》是Blast Edge Games部分受託開發的第三人稱ARPG，平台為Steam、PlayStation 5與Xbox Series X|S。身為事件與UI程式設計師，我以Unreal Engine 5與C++負責遊戲事件、UI、音效與互動機關等功能的實作與調校。",
+      "overview": "《Beast of Reincarnation》是已於Steam、PlayStation 5與Xbox Series X|S平台推出的第三人稱ARPG。我在Blast Edge Games擔任事件與UI程式設計師，以Unreal Engine 5與C++負責遊戲事件、UI、音效與互動機關等功能的實作與調校。",
       "contributions": [
         "使用Unreal Engine 5實作事件、UI、機關等遊戲玩法功能。",
         "實作並調校事件演出功能 — LookAt、景深(DOF)、鏡頭演出、角色行為。",

@@ -52,7 +52,6 @@ export const featuredProjects: FeaturedProject[] = [
     engine: "Unreal Engine 5",
     languages: ["C++"],
     technologies: ["Unreal Engine 5", "C++", "Hexa", "Perforce"],
-    teamSize: "100+",
     links: [
       {
         type: "steam",

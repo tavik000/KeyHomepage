@@ -61,7 +61,7 @@
       "tagline": "三人称視点ARPG",
       "role": "イベント・UI プログラマー",
       "genre": "ARPG / 3人称視点",
-      "overview": "『Beast of Reincarnation』は、Blast Edge Gamesが開発の一部を受託した三人称視点ARPGで、Steam / PlayStation 5 / Xbox Series X|S向けです。イベント・UI担当プログラマーとして、Unreal Engine 5とC++を用いてゲームプレイイベント、UI、サウンド、インタラクションギミックなどの実装・調整を担当しました。",
+      "overview": "『Beast of Reincarnation』は、Steam / PlayStation 5 / Xbox Series X|S向けにリリースされた三人称視点ARPGです。Blast Edge Gamesにてイベント・UI担当プログラマーとして、Unreal Engine 5とC++を用いてゲームプレイイベント、UI、サウンド、インタラクティブギミックなどの実装・調整を担当しました。",
       "contributions": [
         "Unreal Engine 5を用いたイベント、UI、ギミックなどのゲームプレイ機能を実装。",
         "LookAt、DOF、カメラ演出、キャラクター挙動などのイベント演出機能の実装・調整を担当。",
